@@ -11,7 +11,7 @@ jobs:
         with:
           fetch-depth: 1
       - name: Download raw csv from OxCGRT database
-        run: wget -O /OxCGRT/data/OxCGRT_database "https://ocgptweb.azurewebsites.net/CSVDownload"
+        run: curl -O /OxCGRT/data/OxCGRT_database "https://ocgptweb.azurewebsites.net/CSVDownload"
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
