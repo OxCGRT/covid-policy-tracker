@@ -1,7 +1,7 @@
 name: Get latest data from OxCGRT
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '*/30 * * * *'
 
 jobs:
   build:
