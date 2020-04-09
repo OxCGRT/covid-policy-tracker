@@ -1,0 +1,24 @@
+name: Get latest data from OxCGRT
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+      - name: Download raw csv from OxCGRT database
+        run: wget -O /data/OxCGRT_database.csv "https://ocgptweb.azurewebsites.net/CSVDownload"
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .
+          git commit -m "Updating data file" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.MY_GITHUB_TOKEN }}
