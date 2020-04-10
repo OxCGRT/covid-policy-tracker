@@ -13,12 +13,11 @@ jobs:
       - name: Download raw csv from OxCGRT database
         run: curl -s 'https://ocgptweb.azurewebsites.net/CSVDownload?type=Compressed' > data/OxCGRT_latest.csv
       - name: Commit changes
-        if: "!contains(github.event.head_commit.message, '[ci skip]')"
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add .
-          git commit -m "Pull latest OxCGRT data" -a
+          git diff-index --quiet HEAD || git commit -m "Pull latest OxCGRT data" -a
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
