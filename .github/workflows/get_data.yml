@@ -1,4 +1,4 @@
-name: Get latest data from OxCGRT
+name: Data link to OxCGRT
 on:
   schedule:
     - cron: '*/30 * * * *'
