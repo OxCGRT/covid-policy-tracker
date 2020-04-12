@@ -81,8 +81,8 @@ Several examples of the type of analysis enabled by OxCGRT:
 
 ![World map of school closures](images/OxCGRT_worldmap_schools.png)
 
-![Stringency of six countries](images/OxCGRT_six_countries.png)
+<img src="images/OxCGRT_six_countries.png" width=80%>
 
-![Stringency of six countries - line chart](images/OxCGRT_sixin1_bycases.png)
+<img src="images/OxCGRT_sixin1_bycases.png" width=80%>
 
-![Comparison of maximum stringency levels and number of cases](images/OxCGRT_stringency_vs_cases.png)
+<img src="images/OxCGRT_stringency_vs_cases.png" width=80%>
