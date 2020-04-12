@@ -75,7 +75,7 @@ For details on how these issues around patchy or missing data affect our Stringe
 
 ## Sample analysis
 
-Several examples of the type of analysis enabled by OxCGRT:
+Here are several examples of the type of analysis enabled by OxCGRT:
 
 ![World map of current stringency](images/OxCGRT_worldmap_stringency.png)
 
