@@ -54,7 +54,7 @@ The OxCGRT is updated continuously in real time. There are numerous ways you can
 The most direct way to get real-time data from the OxCGRT is through our API. Documentation for this is [published here](https://covidtracker.bsg.ox.ac.uk/about-api).
 
 ### Getting data from this repo
-![Data link to OxCGRT](https://github.com/TobyPhillips/OxCGRT/workflows/Data%20link%20to%20OxCGRT/badge.svg) <-- status of connection to OxCGRT database
+![Data link to OxCGRT](https://github.com/OxCGRT/covid-policy-tracker/workflows/Data%20link%20to%20OxCGRT/badge.svg) <-- status of connection to OxCGRT database
 
 The [/data](data/) folder in this repository contains recent exports from the OxCGRT. You are welcome to build applications that draw directly from this repo.
 - The CSV file [/data/OxCGRT_latest.csv](data/OxCGRT_latest.csv) is a full export from the database presented in "list" format with each country-day as a single row. This CSV is updated every half hour from the main database, and the badge above shows whether this data link is functioning correctly.
