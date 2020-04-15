@@ -58,7 +58,7 @@ The most direct way to get real-time data from the OxCGRT is through our API. Do
 
 The [/data](data/) folder in this repo contains recent exports from the OxCGRT. You are welcome to build applications that draw directly from this repository.
 - The CSV file [/data/OxCGRT_latest.csv](data/OxCGRT_latest.csv) is a full export from the database presented in "list" format with each country-day as a single row. This CSV is updated every half hour from the main database, and the badge above shows whether this data link is functioning correctly.
-- The [/data/timeseries](data/timeseries/) folder contains individual timeseries for each indicator in CSV format, as well as a combined Excel file with a tab for each indicator. This is updated periodically – the date will be listed in the commit description and at the bottom of each sheet.
+- The [/data/timeseries](data/timeseries/) folder contains individual timeseries for each indicator (except S8-S11, for which our data coverage is not consistent) in CSV format, as well as a combined Excel file with a tab for each indicator. This is updated periodically – the date will be listed in the commit description and at the bottom of each sheet.
 
 ### Data quality
 
@@ -71,6 +71,7 @@ For details on how these issues around patchy or missing data affect our Stringe
 - **Some indicators and Stringency Index values will be changed retroactively.** We aim to have a second pair of eyes review every data point in the OxCGRT. As at 12 April 2020, the majority of our 150,000 data points are yet to be reviewed. Inevitably, some things may be tweaked in this review process, leading to changes to past dates. This is one reason why you should always make sure to use current data from the OxCGRT.
 - **Zeroes are not the same as null values**. The gaps described above – where countries are not up to date, or where some indicators are missing – will be represented as null values. These should not be interpreted as a 0, although for the purposes of calculating our Stringency Index, we conservatively treat them as such.
 - **Notes, sources and references are available through the API**. For each indicator our data collectors also record notes which have sources, references and sometimes a brief description of the policy setting. These are not included with the data here in this repo, but can be accessed through [our API](https://covidtracker.bsg.ox.ac.uk/about-api).
+- **Fiscal and monetary indicators are not evenly covered**. We do not yet have comprehensive and high quality coverage of our indicators S8-S11. Apart from missing data, there are also frequent duplicate entries. You should check the data carefully before using the data under these indicators.
 
 
 ## Sample analysis
