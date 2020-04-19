@@ -58,8 +58,9 @@ The most direct way to get real-time data from the OxCGRT is through our API. Do
 ### Getting data from this GitHub repository
 ![Data link to OxCGRT](https://github.com/OxCGRT/covid-policy-tracker/workflows/Data%20link%20to%20OxCGRT/badge.svg) <-- status of connection to OxCGRT database
 
-The [/data](data/) folder in this repo contains recent exports from the OxCGRT. You are welcome to build applications that draw directly from this repository.
+The [/data](data/) folder in this repo contains recent exports from the OxCGRT database. You are welcome to build applications that draw directly from this repository.
 - The CSV file [/data/OxCGRT_latest.csv](data/OxCGRT_latest.csv) is a full export from the database presented in "list" format with each country-day as a single row. This CSV is updated every hour from the main database, and the badge above shows whether this data link is functioning correctly.
+- The CSV file [/data/OxCGRT_latest_withnotes.csv](data/OxCGRT_latest_withnotes.csv) is a full export from the database in "list" format _with_ a column of notes from our data collectors for each indicator. This is also updated every hour from the main database. Please note that some of the comments contain commas and other characters interpreted as a delimiter, and so may cause problems when parsing this CSV file.
 - The [/data/timeseries](data/timeseries/) folder contains individual timeseries for each indicator (except S8-S11, for which our data coverage is not consistent) in CSV format, as well as a combined Excel file with a tab for each indicator. This is updated periodically – usually daily – and the date will be listed in the commit description and at the bottom of each sheet.
 
 ### Data quality
@@ -75,19 +76,23 @@ For details on how these issues around patchy or missing data affect our Stringe
 - **Null values are not the same as 0**. The gaps described above – where countries are not up to date, or where some indicators are missing – will be represented as null values. These should not be interpreted as a 0, although for the purposes of calculating our Stringency Index, we conservatively treat them as such.
 - **You should ignore some values recorded for *isgeneral* variables**. Indicators S1-S6 are accompanied by an "isgeneral" variable to describe the geographical scope of the policy. Sometimes, due to data entry errors, we have isgeneral=1 when the underlying indicator is 0 or null. These cases should be disregarded. Only use isgeneral=1 values when the underlying indicator is 1 or higher.
 - **Fiscal and monetary indicators are not evenly covered**. We do not yet have comprehensive and high quality coverage of our indicators S8-S11. Apart from missing data, there are also frequent duplicate entries. You should check the data carefully before using these indicators.
-- **Notes, sources and references are available through the API**. For each indicator our data collectors also record notes which have sources, references and sometimes a brief description of the policy setting. These are not included with the data here in this repo, but can be accessed through [our API](https://covidtracker.bsg.ox.ac.uk/about-api).
-
 
 ## Sample analysis
 
 Here are several examples of the type of analysis enabled by OxCGRT:
 
-![World map of current stringency](images/OxCGRT_worldmap_stringency.png)
+### Analysis of specific countries
 
-![World map of school closures](images/OxCGRT_worldmap_schools.png)
+An individual chart of each country is in the [/images/country charts](images/country%20charts/) folder.
 
-<img src="images/OxCGRT_six_countries.png" width=80%>
+<img src="images/OxCGRT_six_countries.png" width=80%> 
 
 <img src="images/OxCGRT_sixin1_bycases.png" width=80%>
 
 <img src="images/OxCGRT_stringency_vs_cases.png" width=80%>
+
+### Global comparisons
+
+![World map of current stringency](images/OxCGRT_worldmap_stringency.png)
+
+![World map of school closures](images/OxCGRT_worldmap_schools.png)
