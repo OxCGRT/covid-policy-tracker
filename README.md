@@ -14,6 +14,8 @@ __Cite as:__ Thomas Hale, Sam Webster, Anna Petherick, Toby Phillips, and Beatri
 
 OxCGRT collects publicly available information on 13 indicators of government response (S1-S13). This information is collected by a team of over 100 volunteers from the Oxford community and is updated continuously.
 
+We also include statistics on the number of reported Covid-19 cases and deaths in each country. These are taken from the European Centre for Disease Prevention and Control ([ECDC](https://www.ecdc.europa.eu/en)) for most countries, and from the [JHU CSSE data repository](https://github.com/CSSEGISandData/COVID-19) for the Chinese special administrative regions of Hong Kong and Macau.
+
 ### Individual policy measures
 
 Seven of the indicators (S1-S7) record policies around containment and social isoaltion, such as school closures and restrictions in movement. These are recorded on an ordinal scale that represents the level of strictness of the policy. Two of the indicators (S12 and S13) represent policies around testing and contact tracing, also recorded on an ordinal scale. The remainder (S8-S11) are financial indicators such as fiscal or monetary measures.
