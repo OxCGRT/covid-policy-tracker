@@ -1,3 +1,15 @@
+# IMPORTANT NOTE: 24-30 April database update
+
+The OxCGRT is undergoing a major update and will be offline from Friday 24 April. ***The data here on GitHub and served through our API will no longer be "live" and updated in real time.*** It will be the data that was available on Friday 24 April.
+
+Further, the dataset is already out of date for several countries. In preparation for this database update, we had to move resources away from data collection, so some countries have not been updated since mid-April.
+
+We hope to be back online by Monday 27 April with a fresh back-end database, up-to-date data, and several new indicators. Some aspects of the update will continue into next week.
+
+OxCGRT team, 24 April 2020
+
+---
+
 # Oxford Covid-19 Government Response Tracker (OxCGRT)
 
 The Oxford Covid-19 Government Response Tracker (OxCGRT) collects systematic information on which governments have taken which measures, and when. This can help decision-makers and citizens understand the stringency of governmental responses in a consistent way, aiding efforts to fight the pandemic. The OxCGRT systematically collects information on several different common policy responses governments have taken, scores the stringency of such measures, and aggregates these scores into a common Stringency Index.
@@ -56,7 +68,7 @@ The OxCGRT is updated continuously in real time. There are numerous ways you can
 The most direct way to get real-time data from the OxCGRT is through our API. Documentation for this is [published here](https://covidtracker.bsg.ox.ac.uk/about-api).
 
 ### Getting data from this GitHub repository
-![Data link to OxCGRT](https://github.com/OxCGRT/covid-policy-tracker/workflows/Data%20link%20to%20OxCGRT/badge.svg) <-- status of connection to OxCGRT database
+<!-- ![Data link to OxCGRT](https://github.com/OxCGRT/covid-policy-tracker/workflows/Data%20link%20to%20OxCGRT/badge.svg) <-- status of connection to OxCGRT database -->
 
 The [/data](data/) folder in this repo contains recent exports from the OxCGRT database. You are welcome to build applications that draw directly from this repository.
 - The CSV file [/data/OxCGRT_latest.csv](data/OxCGRT_latest.csv) is a full export from the database presented in "list" format with each country-day as a single row. This CSV is updated every hour from the main database, and the badge above shows whether this data link is functioning correctly.
