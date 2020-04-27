@@ -1,7 +1,7 @@
 # IMPORTANT NOTE: 24-30 April database update
 
 #### Update 27 April 2020, 15:00 UTC
-Our database update is a bit behind schedule. We expect to be back up and running some time tomorrow Tuesday 28 April.
+Our data migration is a bit behind schedule. We expect to be back up and running some time tomorrow Tuesday 28 April.
 
 #### Original notice
 
