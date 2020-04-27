@@ -1,5 +1,10 @@
 # IMPORTANT NOTE: 24-30 April database update
 
+#### Update 27 April 2020, 15:00 UTC
+Our database update is a bit behind schedule. We expect to be back up and running some time tomorrow Tuesday 28 April.
+
+#### Original notice
+
 The OxCGRT is undergoing a major update and will be offline from Friday 24 April. ***The data here on GitHub and served through our API will no longer be "live" and updated in real time.*** It will be the data that was available on Friday 24 April.
 
 Further, the dataset is already out of date for several countries. In preparation for this database update, we had to move resources away from data collection, so some countries have not been updated since mid-April.
