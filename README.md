@@ -1,5 +1,10 @@
 # IMPORTANT NOTE: 24-30 April database update
 
+#### Update 28 April 2020, 13:00 UTC
+
+The data migration is complete, and [/data/OxCGRT_latest.csv](data/OxCGRT_latest.csv) now has the latest data from the new database.
+Please note there is a ***completely different data structure*** here. We will put documentation up soon. Old legacy data can be found in [/legacy_data_20200425](legacy_data_20200425/).
+
 #### Update 27 April 2020, 15:00 UTC
 Our data migration is a bit behind schedule. We expect to be back up and running some time tomorrow Tuesday 28 April.
 
