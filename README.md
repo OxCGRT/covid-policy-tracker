@@ -26,7 +26,7 @@ We also include statistics on the number of reported Covid-19 cases and deaths i
 
 ### Individual policy measures
 
-Eight of the policy indicators (C1-C8) record information on _containment and closure_ policies, such as school closures and restrictions in movement. Four of the indicators record _economic_ policies such as income support to citizens or provision of foreign aid. And five indicators record _health system_ policies such as the Covid-19 testing regime or emergency investments into healthcare.
+Eight of the policy indicators (C1-C8) record information on _containment and closure_ policies, such as school closures and restrictions in movement. Four of the indicators (E1-E4) record _economic_ policies such as income support to citizens or provision of foreign aid. And five indicators (H1-H5) record _health system_ policies such as the Covid-19 testing regime or emergency investments into healthcare.
 
 - Containment and closure
   - C1 - school closure
