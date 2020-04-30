@@ -88,7 +88,6 @@ The [/data](data/) folder in this repo contains recent exports from the OxCGRT d
 - The [/data/timeseries](data/timeseries/) folder contains individual timeseries for each indicator (except S8-S11, for which our data coverage is not consistent) in CSV format, as well as a combined Excel file with a tab for each indicator. This is updated periodically – usually daily – and the date will be listed in the commit description and at the bottom of each sheet.
 
 ### Getting data through our API
-***NOTE: the API is not yet up after our 25-28 April data migration***
 You can also get OxCGRT through our API. Documentation for this is [published here](https://covidtracker.bsg.ox.ac.uk/about-api).
 
 ### Data quality
