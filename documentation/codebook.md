@@ -2,13 +2,17 @@
 
 ***Codebook version 2.1 <br/>11 May 2020***
 
-This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([university website](https://www.bsg.ox.ac.uk/covidtracker), [GitHub repo](../../../)). The dataset contains 17 indicators and a miscellaneous notes field organised into four groups:
+This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)). The dataset contains 17 indicators and a miscellaneous notes field organised into four groups:
 - [C - containment and closure policies](#containment-and-closure-policies)
 - [E - economic policies](#economic-policies)
 - [H - health system policies](#health-system-policies)
 - [M - miscellaneous policies](#miscellaneous-policies)
 
 Updates to this codebook are recorded in the [changelog](#codebook-changelog) below.
+
+Most indicators are recorded on an ordinal scale that represents the level of strictness of the policy. Four of the indicators (E3, E4, H4 and H5) are recorded as a US dollar value of fiscal spending.
+
+Eight of the indicators (C1-C7 and H1) also have a flag for whether they are targeted to a specific geographical region (flag=0) or whether they are a "general" policy that is applied across the whole country (flag=1). One indicator (E1) has a flag to describe whether income support is for just formal sector workers (flag=0) or whether it includes informal workers as well (flag=1).
 
 ### Containment and closure policies
 
@@ -40,7 +44,7 @@ Updates to this codebook are recorded in the [changelog](#codebook-changelog) be
 | E3 | `E3_Fiscal measures` | Announced economic stimulus spending <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD of fiscal stimuli, includes any spending or tax cuts NOT included in E4, H4 or H5 <br/>0 - no new spending that day <br/>Blank - no data |
 | E4 | `E4_International support` | Announced offers of Covid-19 related aid spending to other countries <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD <br/>0 - no new spending that day <br/>Blank - no data |
 
-### H: health system policies
+### Health system policies
 
 | ID | Name | Description | Measurement | Coding |
 | --- | --- | --- | --- | --- |

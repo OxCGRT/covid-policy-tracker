@@ -26,42 +26,15 @@ We also include statistics on the number of reported Covid-19 cases and deaths i
 
 ### Individual policy measures
 
+Full descriptions of the policy indicators and their meaning can be found in our [codebook](documentation/codebook.md).
+
 Eight of the policy indicators (C1-C8) record information on _containment and closure_ policies, such as school closures and restrictions in movement. Four of the indicators (E1-E4) record _economic_ policies such as income support to citizens or provision of foreign aid. And five indicators (H1-H5) record _health system_ policies such as the Covid-19 testing regime or emergency investments into healthcare.
 
-- Containment and closure
-  - C1 - school closure
-  - C2 - workplace closure
-  - C3 - cancellation of public events
-  - C4 - restrictions on gathering size
-  - C5 - public transport closures
-  - C6 - stay-at-home requirements
-  - C7 - restrictions on domestic/internal movement
-  - C8 - restrictions on international travel
-
-- Economic
-  - E1 - income support
-  - E2 - debt/contract relief for households
-  - E3 - economic stimulus measures
-  - E4 - giving international support to other countries
-
-- Health system
-  - H1 - public information campaign
-  - H2 - testing policy
-  - H3 - contact tracing policy
-  - H4 - emergency investment in healthcare
-  - H5 - investment in vaccines
-
-Most indicators are recorded on an ordinal scale that represents the level of strictness of the policy. Four of the indicators (E3, E4, H4 and H5) are recorded as a US dollar value of fiscal spending.
-
-Eight of the indicators (C1-C7 and H1) also have a flag for whether they are targeted to a specific geographical region (flag=0) or whether they are a "general" policy that is applied countrywide (flag=1). One indicator (E1) has a flag to describe whether income support is for just formal sector workers (flag=0) or whether it includes informal workers (flag=1).
-
-Finally, we have a miscellaneous indicator (M1) for notes that do not fit elsewhere.
-
-*Note: some of these indicators were only introduced on 28 April 2020, and we are still collecting data for them*
+Finally, we have a miscellaneous indicator (M1) for notes that do not fit elsewhere. 
 
 ### Legacy database structure (from before 25 April 2020)
 
-Prior to 25 April 2020 the OxCGRT had a structure of 13 indicators (labelled S1-S13). Data up until this point is archived and still available in the [/legacy_data_20200425](/legacy_data_20200425) folder.
+Prior to 25 April 2020 the OxCGRT had a structure of 13 indicators (labelled S1-S13). Data up until this point is archived and still available in the [/legacy_data_20200425](legacy_data_20200425/) folder.
 
 ### Our working paper has more information
 
@@ -73,7 +46,7 @@ The Stringency Index is a nine-point aggregation of the eight _containment and c
 
 It does not take into account any _economic_ indicators or _health system_ policies beyond H1.
 
-We have published a [short note with a detailed explanation](https://www.bsg.ox.ac.uk/sites/default/files/Calculation%20and%20presentation%20of%20the%20Stringency%20Index.pdf) of how the stringency index is calculated, and also how it is reported for days with incomplete data are handled. This also describes how we are reporting a _legacy_ index while we finalise the transition from the [old](https://github.com/OxCGRT/covid-policy-tracker#legacy-database-structure-from-before-25-April-2020) database structure.
+We have published a [short note with a detailed explanation](https://www.bsg.ox.ac.uk/sites/default/files/Calculation%20and%20presentation%20of%20the%20Stringency%20Index.pdf) of how the stringency index is calculated, and also how it is reported for days with incomplete data are handled. This also describes how we are reporting a _legacy_ index while we finalise the transition from the [old](#legacy-database-structure-from-before-25-April-2020) database structure.
 
 ## Using OxCGRT data
 
