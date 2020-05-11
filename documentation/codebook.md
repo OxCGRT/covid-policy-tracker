@@ -1,8 +1,8 @@
 # Codebook for the Oxford Covid-19 Government Response Tracker
 
-***Codebook version 2.1
+***Codebook version 2.1***
 
-11 May 2020***
+***11 May 2020***
 
 This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([university website](https://www.bsg.ox.ac.uk/covidtracker), [GitHub repo](../../)). Updates to this codebook are recorded in the [changelog](#codebook-changelog) below.
 
@@ -35,10 +35,7 @@ This document is the authoritative codebook for the Oxford Covid-19 Government R
 | E2 | `E2_Debt/contract relief` <br/>(for households) | Record if the government is freezing financial obligations for households (eg stopping loan repayments, preventing services like water from stopping, or banning evictions) | Ordinal scale | 0 - no debt/contract relief <br/>1 - narrow relief, specific to one kind of contract <br/>2 - broad debt/contract relief |
 | E3 | `E3_Fiscal measures` | Announced economic stimulus spending <br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD of fiscal stimuli, includes any spending or tax cuts NOT included in E4, H4 or H5 <br/>0 - no new spending that day <br/>Blank - no data |
 | E4 | `E4_International support` | Announced offers of Covid-19 related aid spending to other countries <br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD <br/>0 - no new spending that day <br/>Blank - no data |
-
-### Health system policies
-
-| ID | Name | Description | Measurement | Coding |
+| *ID* | *Name* | *Description* | *Measurement* | *Coding* |
 | --- | --- | --- | --- | --- |
 | H1 | `H1_Public information campaigns` | Record presence of public info campaigns | Ordinal scale | 0 - no Covid-19 public information campaign <br/>1 - public officials urging caution about Covid-19 <br/>2- coordinated public information campaign (eg across traditional and social media) <br/>Blank - no data |
 | | `H1_Flag` | | Binary flag for geographic scope |  0 - targeted <br />1- general <br />Blank - no data |
@@ -55,4 +52,4 @@ This document is the authoritative codebook for the Oxford Covid-19 Government R
 
 ## Codebook changelog
 
-- 11 May 2020: moved v2 codebook to GitHub
+    - 11 May 2020: moved v2 codebook to GitHub
