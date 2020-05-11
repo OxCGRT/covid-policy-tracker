@@ -8,7 +8,7 @@ This document is the authoritative codebook for the Oxford Covid-19 Government R
 - [H - health system policies](#h-health-system-policies)
 - [M - miscellaneous policies](#m-miscellaneous-policies)
 
-### C - containment and closure policies
+### C: containment and closure policies
 
 | ID | Name | Description | Measurement | Coding |
 | --- | --- | --- | --- | --- |
@@ -28,7 +28,7 @@ This document is the authoritative codebook for the Oxford Covid-19 Government R
 | | `C7_Flag` | | Binary flag for geographic scope | 0 - targeted <br/>1- general <br/>Blank - no data |
 | C8 | `C8_International travel controls` | Record restrictions on international travel <br/><br/>Note: this records policy for foreign travellers, not citizens | Ordinal scale | 0 - no restrictions <br/>1 - screening arrivals <br/>2 - quarantine arrivals from some or all regions <br/>3 - ban arrivals from some regions <br/>4 - ban on all regions or total border closure <br/>Blank - no data |
 
-### E - economic policies
+### E: economic policies
 
 | ID | Name | Description | Measurement | Coding |
 | --- | --- | --- | --- | --- |
@@ -38,7 +38,7 @@ This document is the authoritative codebook for the Oxford Covid-19 Government R
 | E3 | `E3_Fiscal measures` | Announced economic stimulus spending <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD of fiscal stimuli, includes any spending or tax cuts NOT included in E4, H4 or H5 <br/>0 - no new spending that day <br/>Blank - no data |
 | E4 | `E4_International support` | Announced offers of Covid-19 related aid spending to other countries <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD <br/>0 - no new spending that day <br/>Blank - no data |
 
-### H - health system policies
+### H: health system policies
 
 | ID | Name | Description | Measurement | Coding |
 | --- | --- | --- | --- | --- |
@@ -49,7 +49,7 @@ This document is the authoritative codebook for the Oxford Covid-19 Government R
 | H4 | `H4_Emergency investment in healthcare` | Announced short term spending on healthcare system, eg hospitals, masks, etc <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD <br/>0 - no new spending that day <br/>Blank - no data |
 | H5 | `H5_Investment in vaccines` | Announced public spending on Covid-19 vaccine development <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD <br/>0 - no new spending that day <br/>Blank - no data |
 
-### M - miscellaneous policies
+### M: miscellaneous policies
 
 | ID | Name | Description | Measurement | Coding |
 | --- | --- | --- | --- | --- |
