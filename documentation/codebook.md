@@ -2,13 +2,15 @@
 
 ***Codebook version 2.1 <br/>11 May 2020***
 
-This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([university website](https://www.bsg.ox.ac.uk/covidtracker), [GitHub repo](../../../)). Updates to this codebook are recorded in the [changelog](#codebook-changelog) below. The database contains 17 indicators and a miscellaneous notes field. These are organised into four groups:
-- [C - containment and closure policies](#c-containment-and-closure-policies)
-- [E - economic policies](#e-economic-policies)
-- [H - health system policies](#h-health-system-policies)
-- [M - miscellaneous policies](#m-miscellaneous-policies)
+This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([university website](https://www.bsg.ox.ac.uk/covidtracker), [GitHub repo](../../../)). The dataset contains 17 indicators and a miscellaneous notes field organised into four groups:
+- [C - containment and closure policies](#containment-and-closure-policies)
+- [E - economic policies](#economic-policies)
+- [H - health system policies](#health-system-policies)
+- [M - miscellaneous policies](#miscellaneous-policies)
 
-### C: containment and closure policies
+Updates to this codebook are recorded in the [changelog](#codebook-changelog) below.
+
+### Containment and closure policies
 
 | ID | Name | Description | Measurement | Coding |
 | --- | --- | --- | --- | --- |
@@ -28,7 +30,7 @@ This document is the authoritative codebook for the Oxford Covid-19 Government R
 | | `C7_Flag` | | Binary flag for geographic scope | 0 - targeted <br/>1- general <br/>Blank - no data |
 | C8 | `C8_International travel controls` | Record restrictions on international travel <br/><br/>Note: this records policy for foreign travellers, not citizens | Ordinal scale | 0 - no restrictions <br/>1 - screening arrivals <br/>2 - quarantine arrivals from some or all regions <br/>3 - ban arrivals from some regions <br/>4 - ban on all regions or total border closure <br/>Blank - no data |
 
-### E: economic policies
+### Economic policies
 
 | ID | Name | Description | Measurement | Coding |
 | --- | --- | --- | --- | --- |
@@ -49,7 +51,7 @@ This document is the authoritative codebook for the Oxford Covid-19 Government R
 | H4 | `H4_Emergency investment in healthcare` | Announced short term spending on healthcare system, eg hospitals, masks, etc <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD <br/>0 - no new spending that day <br/>Blank - no data |
 | H5 | `H5_Investment in vaccines` | Announced public spending on Covid-19 vaccine development <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD <br/>0 - no new spending that day <br/>Blank - no data |
 
-### M: miscellaneous policies
+### Miscellaneous policies
 
 | ID | Name | Description | Measurement | Coding |
 | --- | --- | --- | --- | --- |
