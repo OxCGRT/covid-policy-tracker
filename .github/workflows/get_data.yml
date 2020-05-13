@@ -14,6 +14,7 @@ jobs:
         run: |
           curl -s 'https://oxcgrtportal.azurewebsites.net/api/CSVDownload?type=Compressed' > data/OxCGRT_latest.csv
           curl -s 'https://oxcgrtportal.azurewebsites.net/api/CSVDownload' > data/OxCGRT_latest_withnotes.csv
+          curl -s 'https://oxcgrtportal.azurewebsites.net/api/CSVDownload?type=changes_all' > data/OxCGRT_latest_allchanges.csv
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
