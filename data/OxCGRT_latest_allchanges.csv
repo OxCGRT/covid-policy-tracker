@@ -4554,6 +4554,8 @@ Niger,NER,20200424,C8: International travel controls,4,,"As above. No new polici
 Niger,NER,20200424,H1: Public information campaigns,2,1,"As above. No new policies."
 Niger,NER,20200424,H2: Testing policy,1,,"As above. No new policies."
 Niger,NER,20200424,H3: Contact tracing,1,,"As above. No new policies."
+Niger,NER,20200505,E1: Income support,0,,"No information on income support  https://web.archive.org/web/20200519194511/https://www.imf.org/en/Topics/imf-and-covid19/Policy-Responses-to-COVID-19"
+Niger,NER,20200505,E2: Debt/contract relief,1,,"Debt relief is to prequalified companies   https://web.archive.org/web/20200519195304/https://docs.google.com/spreadsheets/d/1s46Oz_NtkyrowAracg9FTPYRdkP8GHRzQqM7w6Qa_2k/edit?ts=5e836726"
 Niger,NER,20200507,C1: School closing,3,1,"School closures remain in place  https://web.archive.org/save/https://en.unesco.org/covid19/educationresponse"
 Niger,NER,20200507,C2: Workplace closing,0,,"There are no policies for workplace closures  https://web.archive.org/web/20200518203538/https://www.imf.org/en/Topics/imf-and-covid19/Policy-Responses-to-COVID-19"
 Niger,NER,20200507,C3: Cancel public events,2,1,"All gatherings of more than 50 people are prohibited   https://web.archive.org/web/20200413160934/https://www.osac.gov/Country/Niger/Content/Detail/Report/b1807de2-22ea-48b8-a18f-183b05e8c0e5"
