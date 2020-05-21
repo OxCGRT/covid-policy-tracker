@@ -75,7 +75,7 @@ Here are several examples of the type of analysis enabled by OxCGRT:
 
 ### Analysis of specific countries
 
-An individual chart of each country is in the [/images/country charts](images/country%20charts/) folder.
+An individual chart of each country is in the [/images/country charts](images/country_charts/) folder.
 
 <img src="images/OxCGRT_six_countries.png" width=80%>
 
