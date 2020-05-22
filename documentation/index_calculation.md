@@ -78,16 +78,16 @@ Here is an explicit example of the calculation:
 | C6 | 1 | 0 | | 3 | 1 | | 16.67 |
 | C7 | 1 | 1 | | 2 | 1 | | 50.00 |
 | C8 | 3 | N/A | | 4 | 0 | | 75.00 |
-| E1 | 1 | 0 | | 2 | 1 | | 25.00 |
-| E2 | 0 | N/A | | 2 | 0 | | 0.00 |
+| E1 | 2 | 0 | | 2 | 1 | | 75.00 |
+| E2 | 2 | N/A | | 2 | 0 | | 100.00 |
 | H1 | 2 | 0 | | 2 | 1 | | 75.00 |
 | H2 | 3 | N/A | | 3 | 0 | | 100.00 |
 | H3 | 2 | N/A | | 2 | 0 | | 100.00 |
 | | | | | | | | |
-| Government response | | | | | | | 47.76 |
+| Government response | | | | | | | 59.29 |
 | Containment and health | | | | | | | 54.17 |
 | Stringency | | | | | | | 43.98 |
-| Economic support | | | | | | | 12.50 |
+| Economic support | | | | | | | 87.50 |
 
 ## Dealing with gaps in the data for display purposes
 
