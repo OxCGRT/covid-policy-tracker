@@ -1,6 +1,6 @@
 # Codebook for the Oxford Covid-19 Government Response Tracker
 
-***Codebook version 2.1 <br/>11 May 2020***
+***Codebook version 2.2 <br/>22 May 2020***
 
 This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)). The dataset contains 17 indicators and a miscellaneous notes field organised into four groups:
 - [C - containment and closure policies](#containment-and-closure-policies)
@@ -38,7 +38,7 @@ Eight of the indicators (C1-C7 and H1) also have a flag for whether they are tar
 
 | ID | Name | Description | Measurement | Coding |
 | --- | --- | --- | --- | --- |
-| E1 | `E1_Income support` <br/>(for households) | Record if the government is providing direct cash payments to people who lose their jobs or cannot work. <br/><br/>Note: only includes payments to firms if explicitly linked to payroll/salaries | Ordinal scale | 0 - no income support <br/>1 - government is replacing less than 50% of lost salary (or if a flat sum, it is less than 50% median salary) <br/>2 - government is replacing more than 50% of lost salary (or if a flat sum, it is greater than 50% median salary) <br/>Blank - no data |
+| E1 | `E1_Income support` <br/>(for households) | Record if the government is providing direct cash payments to people who lose their jobs or cannot work. <br/><br/>Note: only includes payments to firms if explicitly linked to payroll/salaries | Ordinal scale | 0 - no income support <br/>1 - government is replacing less than 50% of lost salary (or if a flat sum, it is less than 50% median salary) <br/>2 - government is replacing 50% or more of lost salary (or if a flat sum, it is greater than 50% median salary) <br/>Blank - no data |
 | | `E1_Flag` | | Binary flag for sectoral scope | 0 - formal sector workers only <br/>1 - transfers to informal sector workers too <br/>Blank - no data |
 | E2 | `E2_Debt/contract relief` <br/>(for households) | Record if the government is freezing financial obligations for households (eg stopping loan repayments, preventing services like water from stopping, or banning evictions) | Ordinal scale | 0 - no debt/contract relief <br/>1 - narrow relief, specific to one kind of contract <br/>2 - broad debt/contract relief |
 | E3 | `E3_Fiscal measures` | Announced economic stimulus spending <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD of fiscal stimuli, includes any spending or tax cuts NOT included in E4, H4 or H5 <br/>0 - no new spending that day <br/>Blank - no data |
@@ -63,4 +63,5 @@ Eight of the indicators (C1-C7 and H1) also have a flag for whether they are tar
 
 ## Codebook changelog
 
+- 22 May 2020: v2.2 changed description of E1=2 from "replacing more than 50% of lost salary" to "replacing 50% or more of lost salary"
 - 11 May 2020: moved v2 codebook to GitHub
