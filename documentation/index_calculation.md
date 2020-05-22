@@ -15,7 +15,7 @@ The different indices are comprised as follows:
 | Stringency index | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | | | | | |
 | Economic support index | | | | | | | | | `x` | `x` | | | | | | | | |
 
-### Calculating sub-index scores for each indicators
+## Calculating sub-index scores for each indicator
 
 All of the indices use ordinal indicators where policies a ranked on a simple numerical scale. The non-ordinal indicators in the OxCGRT – E3, E4, H4, H5 and M1 – are not used in our index calculations.
 
