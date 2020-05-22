@@ -48,6 +48,17 @@ Each sub-index score (_I_) for any given indicator (_j_) on any given day (_t_),
 
 ![sub-index score equation](https://latex.codecogs.com/png.latex?%282%29%5Cqquad%20I_%7Bj%2Ct%7D%3D100%5Cfrac%7Bv_%7Bj%2Ct%7D&plus;0.5%28F_%7Bj%2Ct%7D-f_%7Bj%2Ct%7D%29%7D%7BN_%7Bj%7D%7D)
 
+----------
+
+***QUESTION TO OxCGRT TEAM***
+***is it better to split this into two equations, one for indicators with a flag and one for those without?***
+
+![sub-index score equation with flag](https://latex.codecogs.com/png.latex?I_%7Bj%7D%3D%5Cfrac%7BC_%7Bj%7D&plus;0.5%28f_%7Bj%7D%29%7D%7BN_%7Bj%7D&plus;0.5%7D)
+
+![sub-index score equation without flag](https://latex.codecogs.com/png.latex?I_%7Bj%7D%3D%5Cfrac%7BC_%7Bj%7D%7D%7BN_%7Bj%7D%7D)
+
+----------
+
 This normalises the different ordinal scales to produce a sub-index score between 0 and 100 where a lack of a flag represents a half-step between points on the ordinal scale.
 
 Note that the index only reports flag values if the indicator has a non-zero value. If the indicator is reporting that there is no policy in place (zero) then the corresponding flag is left blank. For the purposes of calculating the index, this is equivalent to _I<sub>j,t</sub>_=0.
@@ -56,29 +67,25 @@ We make the conservative assumption that an absence of data corresponds to a sub
 
 Here is an explicit example of the calculation:
 
-| Indicator | _v<sub>j,t</sub>_ | _f<sub>j,t</sub>_ | | _N<sub>j</sub>_ | _F<sub>j</sub>_ | | _I<sub>j,t</sub> |
-| --- | --- | --- | --- | --- | --- | --- | ---: |
-| C1 | No data | No data | | 3 | 1 | | 0 |
-| C2 | 2 | 1 | | 3 | 1 | | 66 |
-| C3 | 2 | 1 | | 2 | 1 | | 100 |
-| C4 | 3 | 0 | | 4 | 1 | | 62.5 |
-| C5 | 0 | N/A | | 2 | 1 | | 0 |
-| C6 | 3 | 0 | | 3 | 1 | | 83.3 |
-| C7 | 2 | 0 | | 2 | 1 | | 75 |
-| C8 | 2 | N/A | | 4 | 0 | | 50 |
-| E1 | 1 | 1 | | 2 | 1 | | 50 |
-| E2 | 1 | N/A | | 2 | 0 | | 50 |
-| H1 | 1 | 0 | | 2 | 1 | | 25 |
-| H2 | 2 | N/A | | 3 | 0 | | 66.6 |
-| H3 | 2 | N/A | | 2 | 0 | | 100 |
-| --- | --- | --- | --- | --- | --- | --- | ---: |
+| Indicator | _v<sub>j,t</sub>_ | _f<sub>j,t</sub>_ | | _N<sub>j</sub>_ | _F<sub>j</sub>_ | | _I<sub>j,t</sub>_ |
+| --- | ---: | ---: | --- | ---: | ---: | --- | ---: |
+| C1 | No data | No data | | 3 | 1 | | 0.00 |
+| C2 | 2 | 1 | | 3 | 1 | | 66.66 |
+| C3 | 2 | 1 | | 2 | 1 | | 100.00 |
+| C4 | 3 | 0 | | 4 | 1 | | 62.50 |
+| C5 | 0 | N/A | | 2 | 1 | | 0.00 |
+| C6 | 3 | 0 | | 3 | 1 | | 83.33 |
+| C7 | 2 | 0 | | 2 | 1 | | 75.00 |
+| C8 | 2 | N/A | | 4 | 0 | | 50.00 |
+| E1 | 1 | 1 | | 2 | 1 | | 50.00 |
+| E2 | 1 | N/A | | 2 | 0 | | 50.00 |
+| H1 | 1 | 0 | | 2 | 1 | | 25.00 |
+| H2 | 2 | N/A | | 3 | 0 | | 66.66 |
+| H3 | 2 | N/A | | 2 | 0 | | 100.00 |
 | | | | | | | | | 56.09 |
 
-![sub-index score equation with flag](https://latex.codecogs.com/png.latex?I_%7Bj%7D%3D%5Cfrac%7BC_%7Bj%7D&plus;0.5%28f_%7Bj%7D%29%7D%7BN_%7Bj%7D&plus;0.5%7D)
 
-![sub-index score equation without flag](https://latex.codecogs.com/png.latex?I_%7Bj%7D%3D%5Cfrac%7BC_%7Bj%7D%7D%7BN_%7Bj%7D%7D)
-
-### Dealing with gaps in the data for display purposes
+## Dealing with gaps in the data for display purposes
 
 Because data are updated on twice-weekly cycles, but not every country is updated in every cycle,recent dates may be prone to missing data. If fewer than _k-1_ indicators are present for an index on any given day, the index calculation is rejected and no value is returned.
 
@@ -89,7 +96,7 @@ Further, we produce two versions of each index. One with the raw calculated inde
 For example, the date at the time of writing was 22 May. The table below gives an example of which index calculations would be rejected based on the number of policy indicators with data on each data. In this table, we will consider the government response index where _k_=13.
 
 | Date | No. of valid indicators | No. of indicators in index (_k_) | Raw index | "Display" index |
-| --- | --- | --- | --- | ---: |
+| --- | :---: | :---: | ---: | ---: |
 | 10/05/2020 | 11 | 13 | `null` | `null` |
 | 11/05/2020 | 12 | 13 | 60 | 60 |
 | 12/05/2020 | 10 | 13 | `null` | `null` |
@@ -104,7 +111,7 @@ For example, the date at the time of writing was 22 May. The table below gives a
 | 21/05/2020 | 6 | 13 | `null` | 75 |
 | 22/05/2020 (today) | 4 | 13 | `null` | 75 |
 
-### Legacy stringency index
+## Legacy stringency index
 
 We also report a legacy stringency index that approximates the logic of the former version of the Stringency Index, which only had seven components under our old database structure. This legacy indicator should only be used for continuity purposes.
 
