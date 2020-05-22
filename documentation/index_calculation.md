@@ -14,6 +14,7 @@ The different indices are comprised as follows:
 | Containment and health index | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | `x` | `x` | | | |
 | Stringency index | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | | | | | |
 | Economic support index | | | | | | | | | `x` | `x` | | | | | | | | |
+| Legacy stringency index | `x` | `x` | `?` | `?` | `x` | `?` | `?` | `x` | | | | | `x` | | | | | |
 
 ## Calculating sub-index scores for each indicator
 
