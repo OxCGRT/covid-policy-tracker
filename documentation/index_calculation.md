@@ -46,7 +46,7 @@ Each sub-index score (_I_) for any given indicator (_j_) on any given day (_t_),
 - the recorded policy value on the ordinal scale (_v<sub>j,t</sub>_)
 - the recorded binary flag for that indicator (_f<sub>j,t</sub>_)
 
-![sub-index score equation](https://latex.codecogs.com/png.latex?%282%29%5Cqquad%20I_%7Bj%2Ct%7D%3D100%5Cfrac%7Bv_%7Bj%2Ct%7D&plus;0.5%28F_%7Bj%2Ct%7D-f_%7Bj%2Ct%7D%29%7D%7BN_%7Bj%7D%7D)
+![sub-index score equation](https://latex.codecogs.com/png.latex?%282%29%5Cqquad%20I_%7Bj%2Ct%7D%3D100%5Cfrac%7Bv_%7Bj%2Ct%7D-0.5%28F_%7Bj%2Ct%7D-f_%7Bj%2Ct%7D%29%7D%7BN_%7Bj%7D%7D)
 
 ----------
 
@@ -54,7 +54,7 @@ Each sub-index score (_I_) for any given indicator (_j_) on any given day (_t_),
 
 ***is it better to split this into two equations, one for indicators with a flag and one for those without?***
 
-![sub-index score equation with flag](https://latex.codecogs.com/png.latex?I_%7Bj%7D%3D%5Cfrac%7BC_%7Bj%7D&plus;0.5%28f_%7Bj%7D%29%7D%7BN_%7Bj%7D&plus;0.5%7D)
+![sub-index score equation with flag](https://latex.codecogs.com/png.latex?I_%7Bj%7D%3D%5Cfrac%7BC_%7Bj%7D-0.5%281-f_%7Bj%7D%29%7D%7BN_%7Bj%7D)
 
 ![sub-index score equation without flag](https://latex.codecogs.com/png.latex?I_%7Bj%7D%3D%5Cfrac%7BC_%7Bj%7D%7D%7BN_%7Bj%7D%7D)
 
