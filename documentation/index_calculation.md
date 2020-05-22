@@ -51,6 +51,7 @@ Each sub-index score (_I_) for any given indicator (_j_) on any given day (_t_),
 ----------
 
 ***QUESTION TO OxCGRT TEAM***
+
 ***is it better to split this into two equations, one for indicators with a flag and one for those without?***
 
 ![sub-index score equation with flag](https://latex.codecogs.com/png.latex?I_%7Bj%7D%3D%5Cfrac%7BC_%7Bj%7D&plus;0.5%28f_%7Bj%7D%29%7D%7BN_%7Bj%7D&plus;0.5%7D)
@@ -82,7 +83,7 @@ Here is an explicit example of the calculation:
 | H1 | 1 | 0 | | 2 | 1 | | 25.00 |
 | H2 | 2 | N/A | | 3 | 0 | | 66.66 |
 | H3 | 2 | N/A | | 2 | 0 | | 100.00 |
-| | | | | | | | | 56.09 |
+| | | | | | | | 56.09 |
 
 
 ## Dealing with gaps in the data for display purposes
