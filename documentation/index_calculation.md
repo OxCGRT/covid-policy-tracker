@@ -25,19 +25,19 @@ The codebook has details about what the different values represent. Because diff
 
 | Indicator | _N<sub>j</sub>_ | _F<sub>j</sub>_ |
 | --- | --- | --- |
-| C1 | `3 (0, 1, 2, 3)` | `1` |
-| C2 | `3 (0, 1, 2, 3)` | `1` |
-| C3 | `2 (0, 1, 2)` | `1` |
-| C4 | `4 (0, 1, 2, 3, 4)` | `1` |
-| C5 | `2 (0, 1, 2)` | `1` |
-| C6 | `3 (0, 1, 2, 3)` | `1` |
-| C7 | `2 (0, 1, 2)` | `1` |
-| C8 | `4 (0, 1, 2, 3, 4)` | `0` |
-| E1 | `2 (0, 1, 2)` | `1` |
-| E2 | `2 (0, 1, 2)` | `0` |
-| H1 | `2 (0, 1, 2)` | `1` |
-| H2 | `3 (0, 1, 2, 3)` | `0` |
-| H3 | `2 (0, 1, 2)` | `0` |
+| C1 | 3 (0, 1, 2, 3) | 1 |
+| C2 | 3 (0, 1, 2, 3) | 1 |
+| C3 | 2 (0, 1, 2) | 1 |
+| C4 | 4 (0, 1, 2, 3, 4) | 1 |
+| C5 | 2 (0, 1, 2) | 1 |
+| C6 | 3 (0, 1, 2, 3) | 1 |
+| C7 | 2 (0, 1, 2) | 1 |
+| C8 | 4 (0, 1, 2, 3, 4) | 0 |
+| E1 | 2 (0, 1, 2) | 1 |
+| E2 | 2 (0, 1, 2) | 0 |
+| H1 | 2 (0, 1, 2) | 1 |
+| H2 | 3 (0, 1, 2, 3) | 0 |
+| H3 | 2 (0, 1, 2) | 0 |
 
 Each sub-index score (_I_) for any given indicator (_j_) on any given day (_t_), is calculated by the function described in equation 2 based on the following parameters:
 
