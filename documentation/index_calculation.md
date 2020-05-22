@@ -63,7 +63,7 @@ Each sub-index score (_I_) for any given indicator (_j_) on any given day (_t_),
 
 This normalises the different ordinal scales to produce a sub-index score between 0 and 100 where a lack of a flag represents a half-step between points on the ordinal scale.
 
-Note that the index only reports flag values if the indicator has a non-zero value. If the indicator is reporting that there is no policy in place (zero) then the corresponding flag is left blank. For the purposes of calculating the index, this is equivalent to _I<sub>j,t</sub>_=0.
+Note that the database only contains flag values if the indicator has a non-zero value. If the there is no policy in place (ie the indicator equals zero) then the corresponding flag is left blank. For the purposes of calculating the index, this is equivalent to a sub-index score of zero (_I<sub>j,t</sub>_=0).
 
 We make the conservative assumption that an absence of data corresponds to a sub-index score (_I<sub>j,t</sub>_) of zero.
 
