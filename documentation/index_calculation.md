@@ -84,7 +84,7 @@ Here is an explicit example of the calculation:
 | H1 | 2 | 0 | | 2 | yes (1) | | 75.00 |
 | H2 | 3 | N/A | | 3 | no (0) | | 100.00 |
 | H3 | 2 | N/A | | 2 | no (0) | | 100.00 |
-| | | | | | | | |
+| **Index** | | | | | | | |
 | Government response | | | | | | | 59.29 |
 | Containment and health | | | | | | | 54.17 |
 | Stringency | | | | | | | 43.98 |
