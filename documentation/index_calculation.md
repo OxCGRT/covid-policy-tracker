@@ -4,7 +4,7 @@ The Oxford Covid-19 Government Response Tracker (OxCGRT) tracks individual polic
 
 All of our indexes are simple averages of the individual component indicators. Described in formula 1 below where _k_ is the number of component indicators in an index and _I<sub>j</sub>_ is the sub-index score for an individual indicator.
 
-![overall mean equation](https://latex.codecogs.com/png.latex?%281%29%5Cqquad%20I%3D%5Cfrac%7B1%7D%7Bk%7D%5Csum_%7Bj%3D1%7D%5E%7Bk%7DI_%7Bj%7D)
+![overall mean equation](https://latex.codecogs.com/png.latex?%281%29%5Cqquad%20index%3D%5Cfrac%7B1%7D%7Bk%7D%5Csum_%7Bj%3D1%7D%5E%7Bk%7DI_%7Bj%7D)
 
 The different indices are comprised as follows:
 
@@ -47,7 +47,7 @@ Each sub-index score (_I_) for any given indicator (_j_) on any given day (_t_),
 - the recorded policy value on the ordinal scale (_v<sub>j,t</sub>_)
 - the recorded binary flag for that indicator (_f<sub>j,t</sub>_)
 
-![sub-index score equation](https://latex.codecogs.com/png.latex?%282%29%5Cqquad%20I_%7Bj%2Ct%7D%3D100%5Cfrac%7Bv_%7Bj%2Ct%7D-0.5%28F_%7Bj%2Ct%7D-f_%7Bj%2Ct%7D%29%7D%7BN_%7Bj%7D%7D)
+![sub-index score equation](https://latex.codecogs.com/png.latex?%282%29%5Cqquad%20I_%7Bj%2Ct%7D%3D100%5Cfrac%7Bv_%7Bj%2Ct%7D-0.5%28F_%7Bj%7D-f_%7Bj%2Ct%7D%29%7D%7BN_%7Bj%7D%7D)
 
 ----------
 
