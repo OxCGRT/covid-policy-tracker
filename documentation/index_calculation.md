@@ -26,19 +26,19 @@ The codebook has details about what the different values represent. Because diff
 
 | Indicator | _N<sub>j</sub>_ | _F<sub>j</sub>_ |
 | --- | --- | --- |
-| C1 | 3 (0, 1, 2, 3) | 1 |
-| C2 | 3 (0, 1, 2, 3) | 1 |
-| C3 | 2 (0, 1, 2) | 1 |
-| C4 | 4 (0, 1, 2, 3, 4) | 1 |
-| C5 | 2 (0, 1, 2) | 1 |
-| C6 | 3 (0, 1, 2, 3) | 1 |
-| C7 | 2 (0, 1, 2) | 1 |
-| C8 | 4 (0, 1, 2, 3, 4) | 0 |
-| E1 | 2 (0, 1, 2) | 1 |
-| E2 | 2 (0, 1, 2) | 0 |
-| H1 | 2 (0, 1, 2) | 1 |
-| H2 | 3 (0, 1, 2, 3) | 0 |
-| H3 | 2 (0, 1, 2) | 0 |
+| C1 | 3 (0, 1, 2, 3) | yes |
+| C2 | 3 (0, 1, 2, 3) | yes |
+| C3 | 2 (0, 1, 2) | yes |
+| C4 | 4 (0, 1, 2, 3, 4) | yes |
+| C5 | 2 (0, 1, 2) | yes |
+| C6 | 3 (0, 1, 2, 3) | yes |
+| C7 | 2 (0, 1, 2) | yes |
+| C8 | 4 (0, 1, 2, 3, 4) | no |
+| E1 | 2 (0, 1, 2) | yes |
+| E2 | 2 (0, 1, 2) | no |
+| H1 | 2 (0, 1, 2) | yes |
+| H2 | 3 (0, 1, 2, 3) | no |
+| H3 | 2 (0, 1, 2) | no |
 
 Each sub-index score (_I_) for any given indicator (_j_) on any given day (_t_), is calculated by the function described in equation 2 based on the following parameters:
 
@@ -71,19 +71,19 @@ Here is an explicit example of the calculation:
 
 | Indicator | _v<sub>j,t</sub>_ | _f<sub>j,t</sub>_ | | _N<sub>j</sub>_ | _F<sub>j</sub>_ | | _I<sub>j,t</sub>_ |
 | --- | ---: | ---: | --- | ---: | ---: | --- | ---: |
-| C1 | `No data` | `No data` | | 3 | 1 | | 0.00 |
-| C2 | 2 | 1 | | 3 | 1 | | 66.67 |
-| C3 | 2 | 0 | | 2 | 1 | | 75.00 |
-| C4 | 2 | 0 | | 4 | 1 | | 37.50 |
-| C5 | 0 | N/A | | 2 | 1 | | 0.00 |
-| C6 | 1 | 0 | | 3 | 1 | | 16.67 |
-| C7 | 1 | 1 | | 2 | 1 | | 50.00 |
-| C8 | 3 | N/A | | 4 | 0 | | 75.00 |
-| E1 | 2 | 0 | | 2 | 1 | | 75.00 |
-| E2 | 2 | N/A | | 2 | 0 | | 100.00 |
-| H1 | 2 | 0 | | 2 | 1 | | 75.00 |
-| H2 | 3 | N/A | | 3 | 0 | | 100.00 |
-| H3 | 2 | N/A | | 2 | 0 | | 100.00 |
+| C1 | `No data` | `No data` | | 3 | yes (1) | | 0.00 |
+| C2 | 2 | 1 | | 3 | yes (1) | | 66.67 |
+| C3 | 2 | 0 | | 2 | yes (1) | | 75.00 |
+| C4 | 2 | 0 | | 4 | yes (1) | | 37.50 |
+| C5 | 0 | N/A | | 2 | yes (1) | | 0.00 |
+| C6 | 1 | 0 | | 3 | yes (1) | | 16.67 |
+| C7 | 1 | 1 | | 2 | yes (1) | | 50.00 |
+| C8 | 3 | N/A | | 4 | no (0) | | 75.00 |
+| E1 | 2 | 0 | | 2 | yes (1) | | 75.00 |
+| E2 | 2 | N/A | | 2 | no (0) | | 100.00 |
+| H1 | 2 | 0 | | 2 | yes (1) | | 75.00 |
+| H2 | 3 | N/A | | 3 | no (0) | | 100.00 |
+| H3 | 2 | N/A | | 2 | no (0) | | 100.00 |
 | | | | | | | | |
 | Government response | | | | | | | 59.29 |
 | Containment and health | | | | | | | 54.17 |
