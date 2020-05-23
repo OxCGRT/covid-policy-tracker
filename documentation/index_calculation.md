@@ -26,24 +26,24 @@ The codebook has details about what the different values represent. Because diff
 
 | Indicator | _N<sub>j</sub>_ | _F<sub>j</sub>_ |
 | --- | --- | --- |
-| C1 | 3 (0, 1, 2, 3) | yes |
-| C2 | 3 (0, 1, 2, 3) | yes |
-| C3 | 2 (0, 1, 2) | yes |
-| C4 | 4 (0, 1, 2, 3, 4) | yes |
-| C5 | 2 (0, 1, 2) | yes |
-| C6 | 3 (0, 1, 2, 3) | yes |
-| C7 | 2 (0, 1, 2) | yes |
-| C8 | 4 (0, 1, 2, 3, 4) | no |
-| E1 | 2 (0, 1, 2) | yes |
-| E2 | 2 (0, 1, 2) | no |
-| H1 | 2 (0, 1, 2) | yes |
-| H2 | 3 (0, 1, 2, 3) | no |
-| H3 | 2 (0, 1, 2) | no |
+| C1 | 3 (0, 1, 2, 3) | yes=1 |
+| C2 | 3 (0, 1, 2, 3) | yes=1 |
+| C3 | 2 (0, 1, 2) | yes=1 |
+| C4 | 4 (0, 1, 2, 3, 4) | yes=1 |
+| C5 | 2 (0, 1, 2) | yes=1 |
+| C6 | 3 (0, 1, 2, 3) | yes=1 |
+| C7 | 2 (0, 1, 2) | yes=1 |
+| C8 | 4 (0, 1, 2, 3, 4) | no=0 |
+| E1 | 2 (0, 1, 2) | yes=1 |
+| E2 | 2 (0, 1, 2) | no=0 |
+| H1 | 2 (0, 1, 2) | yes=1 |
+| H2 | 3 (0, 1, 2, 3) | no=0 |
+| H3 | 2 (0, 1, 2) | no=0 |
 
 Each sub-index score (_I_) for any given indicator (_j_) on any given day (_t_), is calculated by the function described in equation 2 based on the following parameters:
 
 - the maximum value of the indicator (_N<sub>j</sub>_)
-- whether that indicator has a flag (_F<sub>j</sub>_)
+- whether that indicator has a flag (_F<sub>j</sub>_=1 if the indicator has a flag, or 0 if the indicator does not have a flag)
 - the recorded policy value on the ordinal scale (_v<sub>j,t</sub>_)
 - the recorded binary flag for that indicator (_f<sub>j,t</sub>_)
 
@@ -61,29 +61,29 @@ Each sub-index score (_I_) for any given indicator (_j_) on any given day (_t_),
 
 ----------
 
-This normalises the different ordinal scales to produce a sub-index score between 0 and 100 where a lack of a flag represents a half-step between points on the ordinal scale.
+This normalises the different ordinal scales to produce a sub-index score between 0 and 100 where each full point on the ordinal scale is equally spaced. For indicators that do have a flag variable, if this flag is recorded as 0 (ie if the policy is geographically _targeted_ or for E1 if the support only applies to _informal sector workers_) then this is treated as a half-step between ordinal values.
 
-Note that the database only contains flag values if the indicator has a non-zero value. If the there is no policy in place (ie the indicator equals zero) then the corresponding flag is left blank. For the purposes of calculating the index, this is equivalent to a sub-index score of zero (_I<sub>j,t</sub>_=0).
+Note that the database only contains flag values if the indicator has a non-zero value. If a government has no policy for a given indicator (ie the indicator equals zero) then the corresponding flag is blank/null in the database. For the purposes of calculating the index, this is equivalent to a sub-index score of zero (_I<sub>j,t</sub>_=0).
 
-We make the conservative assumption that an absence of data corresponds to a sub-index score (_I<sub>j,t</sub>_) of zero.
+Our data is not always fully compelte and sometimes indicators are missing. We make the conservative assumption that an absence of data corresponds to a sub-index score (_I<sub>j,t</sub>_) of zero.
 
-Here is an explicit example of the calculation:
+Here is an explicit example of the calculation for a given country on a single day:
 
 | Indicator | _v<sub>j,t</sub>_ | _f<sub>j,t</sub>_ | | _N<sub>j</sub>_ | _F<sub>j</sub>_ | | _I<sub>j,t</sub>_ |
 | --- | ---: | ---: | --- | ---: | ---: | --- | ---: |
-| C1 | `No data` | `No data` | | 3 | yes (1) | | 0.00 |
-| C2 | 2 | 1 | | 3 | yes (1) | | 66.67 |
-| C3 | 2 | 0 | | 2 | yes (1) | | 75.00 |
-| C4 | 2 | 0 | | 4 | yes (1) | | 37.50 |
-| C5 | 0 | N/A | | 2 | yes (1) | | 0.00 |
-| C6 | 1 | 0 | | 3 | yes (1) | | 16.67 |
-| C7 | 1 | 1 | | 2 | yes (1) | | 50.00 |
-| C8 | 3 | N/A | | 4 | no (0) | | 75.00 |
-| E1 | 2 | 0 | | 2 | yes (1) | | 75.00 |
-| E2 | 2 | N/A | | 2 | no (0) | | 100.00 |
-| H1 | 2 | 0 | | 2 | yes (1) | | 75.00 |
-| H2 | 3 | N/A | | 3 | no (0) | | 100.00 |
-| H3 | 2 | N/A | | 2 | no (0) | | 100.00 |
+| C1 | 2 | 1 | | 3 | yes=1 | | 66.67 |
+| C2 | `no data` | `no data` | | 3 | yes=1 | | 0.00 |
+| C3 | 2 | 0 | | 2 | yes=1 | | 75.00 |
+| C4 | 2 | 0 | | 4 | yes=1 | | 37.50 |
+| C5 | 0 | `null` | | 2 | yes=1 | | 0.00 |
+| C6 | 1 | 0 | | 3 | yes=1 | | 16.67 |
+| C7 | 1 | 1 | | 2 | yes=1 | | 50.00 |
+| C8 | 3 | N/A | | 4 | no=0 | | 75.00 |
+| E1 | 2 | 0 | | 2 | yes=1 | | 75.00 |
+| E2 | 2 | N/A | | 2 | no=0 | | 100.00 |
+| H1 | 2 | 0 | | 2 | yes=1 | | 75.00 |
+| H2 | 3 | N/A | | 3 | no=0 | | 100.00 |
+| H3 | 2 | N/A | | 2 | no=0 | | 100.00 |
 | **Index** | | | | | | | |
 | Government response | | | | | | | 59.29 |
 | Containment and health | | | | | | | 54.17 |
