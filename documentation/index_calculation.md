@@ -20,11 +20,11 @@ The different indices are comprised as follows:
 
 All of the indices use ordinal indicators where policies a ranked on a simple numerical scale. The non-ordinal indicators in the OxCGRT – E3, E4, H4, H5 and M1 – are not used in our index calculations.
 
-Some indicators – C1-C7, E1 and H1 – have an additional binary flag that can be either 0 or 1. For C1-C7 and H1 this corresponds to the geographic scope of the policy. For E1, this flag corresponds to the sectoral scope of income support.
+Some indicators – C1-C7, E1 and H1 – have an additional binary flag variable that can be either 0 or 1. For C1-C7 and H1 this corresponds to the geographic scope of the policy. For E1, this flag variable corresponds to the sectoral scope of income support.
 
-The codebook has details about what the different values represent. Because different indicators _j_ have different maximum values _N<sub>j</sub>_ in their ordinal scales, each sub-index score must be calculated separately. The different indicators are:
+The codebook has details about what the different values represent. Because different indicators _j_ have different maximum values _N<sub>j</sub>_ in their ordinal scales, and only some have flag variables, each sub-index score must be calculated separately. The different indicators are:
 
-| Indicator | _N<sub>j</sub>_ | _F<sub>j</sub>_ |
+| Indicator | Max. value (_N<sub>j</sub>_) | Flag? (_F<sub>j</sub>_) |
 | --- | --- | --- |
 | C1 | 3 (0, 1, 2, 3) | yes=1 |
 | C2 | 3 (0, 1, 2, 3) | yes=1 |
@@ -43,7 +43,7 @@ The codebook has details about what the different values represent. Because diff
 Each sub-index score (_I_) for any given indicator (_j_) on any given day (_t_), is calculated by the function described in equation 2 based on the following parameters:
 
 - the maximum value of the indicator (_N<sub>j</sub>_)
-- whether that indicator has a flag (_F<sub>j</sub>_=1 if the indicator has a flag, or 0 if the indicator does not have a flag)
+- whether that indicator has a flag (_F<sub>j</sub>_=1 if the indicator has a flag variable, or 0 if the indicator does not have a flag variable)
 - the recorded policy value on the ordinal scale (_v<sub>j,t</sub>_)
 - the recorded binary flag for that indicator (_f<sub>j,t</sub>_)
 
@@ -55,8 +55,10 @@ Each sub-index score (_I_) for any given indicator (_j_) on any given day (_t_),
 
 ***is it better to split this into two equations, one for indicators with a flag and one for those without?***
 
+With flag:
 ![sub-index score equation with flag](https://latex.codecogs.com/png.latex?I_%7Bj%7D%3D%5Cfrac%7BC_%7Bj%7D-0.5%281-f_%7Bj%7D%29%7D%7BN_%7Bj%7D)
 
+Without flag:
 ![sub-index score equation without flag](https://latex.codecogs.com/png.latex?I_%7Bj%7D%3D%5Cfrac%7BC_%7Bj%7D%7D%7BN_%7Bj%7D%7D)
 
 ----------
