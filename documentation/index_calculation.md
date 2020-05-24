@@ -8,13 +8,15 @@ All of our indexes are simple averages of the individual component indicators. D
 
 The different indices are comprised as follows:
 
-| Index name | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | E1 | E2 | E3 | E4 | H1 | H2 | H3 | H4 | H5 | M1 |
+| Index name (_k_) | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | E1 | E2 | E3 | E4 | H1 | H2 | H3 | H4 | H5 | M1 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Government response index | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | `x` | `x` | `x` | | | |
-| Containment and health index | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | `x` | `x` | | | |
-| Stringency index | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | | | | | |
-| Economic support index | | | | | | | | | `x` | `x` | | | | | | | | |
-| Legacy stringency index | `x` | `x` | `?` | `?` | `x` | `?` | `?` | `x` | | | | | `x` | | | | | |
+| Government response index (13) | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | `x` | `x` | `x` | | | |
+| Containment and health index (11) | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | `x` | `x` | | | |
+| Stringency index (9) | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | | | | | |
+| Economic support index (2) | | | | | | | | | `x` | `x` | | | | | | | | |
+| Legacy stringency index (7) | `x` | `x` | `?` | `?` | `x` | `?` | `?` | `x` | | | | | `x` | | | | | |
+
+Two versions of each indicator are present in the database. A "raw" version which will return `null` values if there are gaps in the underlying indicators, and a "display" version which will extraploate to smooth over the last seven days of the index based on the most recent complete data. This is explained [below](#dealing-with-gaps-in-the-data-for-display-purposes).
 
 ## Calculating sub-index scores for each indicator
 
@@ -47,7 +49,13 @@ Each sub-index score (_I_) for any given indicator (_j_) on any given day (_t_),
 - the recorded policy value on the ordinal scale (_v<sub>j,t</sub>_)
 - the recorded binary flag for that indicator (_f<sub>j,t</sub>_)
 
+This normalises the different ordinal scales to produce a sub-index score between 0 and 100 where each full point on the ordinal scale is equally spaced. For indicators that do have a flag variable, if this flag is recorded as 0 (ie if the policy is geographically _targeted_ or for E1 if the support only applies to _informal sector workers_) then this is treated as a half-step between ordinal values.
+
+Note that the database only contains flag values if the indicator has a non-zero value. If a government has no policy for a given indicator (ie the indicator equals zero) then the corresponding flag is blank/null in the database. For the purposes of calculating the index, this is equivalent to a sub-index score of zero. In other words, _I<sub>j,t</sub>_=0 if _v<sub>j,t</sub>_=0.
+
 ![sub-index score equation](https://latex.codecogs.com/png.latex?%282%29%5Cqquad%20I_%7Bj%2Ct%7D%3D100%5Cfrac%7Bv_%7Bj%2Ct%7D-0.5%28F_%7Bj%7D-f_%7Bj%2Ct%7D%29%7D%7BN_%7Bj%7D%7D)
+
+(_Note: if v<sub>j,t</sub>=0 then the function F<sub>j</sub>-f<sub>j,t</sub> is also treated as 0, see paragraph above._)
 
 ----------
 
@@ -61,11 +69,9 @@ With flag:
 Without flag:
 ![sub-index score equation without flag](https://latex.codecogs.com/png.latex?I_%7Bj%7D%3D%5Cfrac%7BC_%7Bj%7D%7D%7BN_%7Bj%7D%7D)
 
+***I will delete these before posting, unless anyone things they are worth keeping***
+
 ----------
-
-This normalises the different ordinal scales to produce a sub-index score between 0 and 100 where each full point on the ordinal scale is equally spaced. For indicators that do have a flag variable, if this flag is recorded as 0 (ie if the policy is geographically _targeted_ or for E1 if the support only applies to _informal sector workers_) then this is treated as a half-step between ordinal values.
-
-Note that the database only contains flag values if the indicator has a non-zero value. If a government has no policy for a given indicator (ie the indicator equals zero) then the corresponding flag is blank/null in the database. For the purposes of calculating the index, this is equivalent to a sub-index score of zero (_I<sub>j,t</sub>_=0).
 
 Our data is not always fully compelte and sometimes indicators are missing. We make the conservative assumption that an absence of data corresponds to a sub-index score (_I<sub>j,t</sub>_) of zero.
 
@@ -94,7 +100,7 @@ Here is an explicit example of the calculation for a given country on a single d
 
 ## Dealing with gaps in the data for display purposes
 
-Because data are updated on twice-weekly cycles, but not every country is updated in every cycle,recent dates may be prone to missing data. If fewer than _k-1_ indicators are present for an index on any given day, the index calculation is rejected and no value is returned.
+Because data are updated on twice-weekly cycles, but not every country is updated in every cycle,recent dates may be prone to missing data. If fewer than _k-1_ indicators are present for an index on any given day, the index calculation is rejected and no value is returned. For the economic support indicator, where _k_=2, the index calculation is rejected if either of the two indicators are missing.
 
 To increase consistency of recent data points which are perhaps mid contribution, index values pertaining to the past seven days are rejected if they have fewer policy indicators than another day in the past seven days, i.e. if there is another recent data point with all _k_ indicators included, then no index will be calculated for dates with _k-1_.
 
