@@ -1,8 +1,8 @@
 # Methodology for calculating indices
 
-The Oxford Covid-19 Government Response Tracker (OxCGRT) tracks individual policy measures, we also calculate several indices to give an overall impression of government activity.
+The Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)) tracks individual policy measures across 17 indicators. We also calculate several indices to give an overall impression of government activity.
 
-All of our indexes are simple averages of the individual component indicators. Described in formula 1 below where _k_ is the number of component indicators in an index and _I<sub>j</sub>_ is the sub-index score for an individual indicator.
+All of our indices are simple averages of the individual component indicators. This is described in equation 1 below where _k_ is the number of component indicators in an index and _I<sub>j</sub>_ is the [sub-index score](#calculating-sub-index-scores-for-each-indicator) for an individual indicator.
 
 ![overall mean equation](https://latex.codecogs.com/png.latex?%281%29%5Cqquad%20index%3D%5Cfrac%7B1%7D%7Bk%7D%5Csum_%7Bj%3D1%7D%5E%7Bk%7DI_%7Bj%7D)
 
@@ -16,15 +16,17 @@ The different indices are comprised as follows:
 | Economic support index (2) | | | | | | | | | `x` | `x` | | | | | | | | |
 | Legacy stringency index (7) | `x` | `x` | `?` | `?` | `x` | `?` | `?` | `x` | | | | | `x` | | | | | |
 
-Two versions of each indicator are present in the database. A "raw" version which will return `null` values if there are gaps in the underlying indicators, and a "display" version which will extraploate to smooth over the last seven days of the index based on the most recent complete data. This is explained [below](#dealing-with-gaps-in-the-data-for-display-purposes).
+Two versions of each indicator are present in the database. A regular version which will return `null` values if there is not enough data to calculate the index, and a "display" version which will extraploate to smooth over the last seven days of the index based on the most recent complete data. This is explained [below](#dealing-with-gaps-in-the-data-for-display-purposes).
 
 ## Calculating sub-index scores for each indicator
 
-All of the indices use ordinal indicators where policies a ranked on a simple numerical scale. The non-ordinal indicators in the OxCGRT – E3, E4, H4, H5 and M1 – are not used in our index calculations.
+All of the indices use ordinal indicators where policies a ranked on a simple numerical scale. The project also records five non-ordinal indicators – E3, E4, H4, H5 and M1 – but these are not used in our index calculations.
 
 Some indicators – C1-C7, E1 and H1 – have an additional binary flag variable that can be either 0 or 1. For C1-C7 and H1 this corresponds to the geographic scope of the policy. For E1, this flag variable corresponds to the sectoral scope of income support.
 
-The codebook has details about what the different values represent. Because different indicators _j_ have different maximum values _N<sub>j</sub>_ in their ordinal scales, and only some have flag variables, each sub-index score must be calculated separately. The different indicators are:
+The [codebook](codebook.md) has details about each indicator and what the different values represent.
+
+Because different indicators (_j_) have different maximum values (_N<sub>j</sub>_) in their ordinal scales, and only some have flag variables, each sub-index score must be calculated separately. The different indicators are:
 
 | Indicator | Max. value (_N<sub>j</sub>_) | Flag? (_F<sub>j</sub>_) |
 | --- | --- | --- |
@@ -55,23 +57,7 @@ Note that the database only contains flag values if the indicator has a non-zero
 
 ![sub-index score equation](https://latex.codecogs.com/png.latex?%282%29%5Cqquad%20I_%7Bj%2Ct%7D%3D100%5Cfrac%7Bv_%7Bj%2Ct%7D-0.5%28F_%7Bj%7D-f_%7Bj%2Ct%7D%29%7D%7BN_%7Bj%7D%7D)
 
-(_Note: if v<sub>j,t</sub>=0 then the function F<sub>j</sub>-f<sub>j,t</sub> is also treated as 0, see paragraph above._)
-
-----------
-
-***QUESTION TO OxCGRT TEAM***
-
-***is it better to split this into two equations, one for indicators with a flag and one for those without?***
-
-With flag:
-![sub-index score equation with flag](https://latex.codecogs.com/png.latex?I_%7Bj%7D%3D%5Cfrac%7BC_%7Bj%7D-0.5%281-f_%7Bj%7D%29%7D%7BN_%7Bj%7D)
-
-Without flag:
-![sub-index score equation without flag](https://latex.codecogs.com/png.latex?I_%7Bj%7D%3D%5Cfrac%7BC_%7Bj%7D%7D%7BN_%7Bj%7D%7D)
-
-***I will delete these before posting, unless anyone things they are worth keeping***
-
-----------
+(_if v<sub>j,t</sub>=0 then the function F<sub>j</sub>-f<sub>j,t</sub> is also treated as 0, see paragraph above._)
 
 Our data is not always fully compelte and sometimes indicators are missing. We make the conservative assumption that an absence of data corresponds to a sub-index score (_I<sub>j,t</sub>_) of zero.
 
@@ -102,11 +88,11 @@ Here is an explicit example of the calculation for a given country on a single d
 
 Because data are updated on twice-weekly cycles, but not every country is updated in every cycle,recent dates may be prone to missing data. If fewer than _k-1_ indicators are present for an index on any given day, the index calculation is rejected and no value is returned. For the economic support indicator, where _k_=2, the index calculation is rejected if either of the two indicators are missing.
 
-To increase consistency of recent data points which are perhaps mid contribution, index values pertaining to the past seven days are rejected if they have fewer policy indicators than another day in the past seven days, i.e. if there is another recent data point with all _k_ indicators included, then no index will be calculated for dates with _k-1_.
+To increase consistency of recent data points which are perhaps mid contribution, index values pertaining to the past seven days are rejected if they have fewer policy indicators than another day in the past seven days, ie if there is another recent data point with all _k_ indicators included, then no index will be calculated for dates with _k-1_.
 
 Further, we produce two versions of each index. One with the raw calculated index values, plus we produce a "display" version which will "smooth" over gaps in the last seven days, populating each date with the last available "good" data point.
 
-For example, the date at the time of writing was 22 May. The table below gives an example of which index calculations would be rejected based on the number of policy indicators with data on each data. In this table, we will consider the government response index where _k_=13.
+For example, the date at the time of writing was 22 May. The table below gives an example of which index calculations would be rejected based on the number of policy indicators with data on each data. In this table, we will consider the overall government response index where _k_=13.
 
 | Date | No. of valid indicators | No. of indicators in index (_k_) | Raw index | "Display" index |
 | --- | :---: | :---: | ---: | ---: |
@@ -126,12 +112,12 @@ For example, the date at the time of writing was 22 May. The table below gives a
 
 ## Legacy stringency index
 
-We also report a legacy stringency index that approximates the logic of the former version of the Stringency Index, which only had seven components under our old database structure. This legacy indicator should only be used for continuity purposes.
+We also report a legacy stringency index that approximates the logic of the first version of the Stringency Index, which only had seven components under our [old database structure](../legacy_data_20200425) with the old indicators S1-S7. We generally do not recommend using this legacy index, but it may be useful for continuity purposes.
 
 The legacy indicator only uses seven indicators, and it chooses a single indicator between C3 and C4, and between C6 and C7, selecting whichever of those pairs provides a higher sub-index score. This is because C3 and C4 aim to measure the information previously measured by S3, and similarly for C6, C7 and the old S6. This method faithfully recreates the logic of the old stringency index.
 
 ![legacy stringency equation](https://latex.codecogs.com/png.latex?%283%29%5Cqquad%20SI_%7Blegacy%7D%3D%5Cfrac%7B1%7D%7B7%7D%20%5Cleft%20%28I_%7BC1%7D&plus;I_%7BC2%7D&plus;max%28I_%7BC3%7D%2CI_%7BC4%7D%29&plus;I_%7BC5%7D&plus;max%28I_%7BC6%7D%2CI_%7BC7%7D%29&plus;I_%7BC8%7D&plus;I_%7BH1%7D%20%5Cright%20%29)
 
-The individual sub-index scores are calculated through a slightly different formula to the one described in equation 2 above, which we are still using for legacy purposes for this old index. This formula is described in equation 4 below, with a weighting applied to a flagged indicator (and a seperate formula for C8, the only indicator in this index without a flagged variable).
+The individual sub-index scores for the legacy index are calculated through a slightly different formula to the one described in equation 2 above. This formula is described in equation 4 below (with a seperate formula for C8, the only indicator in this index without a flagged variable).
 
 ![legacy stringency sub-index equation](https://latex.codecogs.com/gif.latex?%284%29%5Cqquad%20I_%7Bj%2Ct%7D%3D100%5Cleft%20%28%5Cfrac%7Bv_%7Bj%2Ct%7D&plus;f_%7Bj%2Ct%7D%7D%7BN_%7Bj%7D&plus;1%7D%5Cright%29%5Cquad%5Cmid%5Cquad%20I_%7BC8%2Ct%7D%3D100%5Cleft%28%5Cfrac%7Bv_%7B%20_%7BC8%2Ct%7D%7D%7D%7BN_%7BC8%7D%7D%20%5Cright%29)
