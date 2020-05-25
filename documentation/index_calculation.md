@@ -114,7 +114,7 @@ For example, the date at the time of writing was 22 May. The table below gives a
 
 We also report a legacy stringency index that approximates the logic of the first version of the Stringency Index, which only had seven components under our [old database structure](../legacy_data_20200425) with the old indicators S1-S7. We generally do not recommend using this legacy index, but it may be useful for continuity purposes.
 
-The legacy indicator only uses seven indicators, and it chooses a single indicator between C3 and C4, and between C6 and C7, selecting whichever of those pairs provides a higher sub-index score. This is because C3 and C4 aim to measure the information previously measured by S3, and similarly for C6, C7 and the old S6. This method faithfully recreates the logic of the old stringency index.
+The legacy indicator only uses seven indicators, and it chooses a single indicator between C3 and C4, and between C6 and C7, selecting whichever of those pairs provides a higher sub-index score. This is because C3 and C4 aim to measure the information previously measured by S3, and similarly for C6, C7 and the old S6. This method, shown in equation 3, faithfully recreates the logic of the old stringency index.
 
 ![legacy stringency equation](https://latex.codecogs.com/png.latex?%283%29%5Cqquad%20SI_%7Blegacy%7D%3D%5Cfrac%7B1%7D%7B7%7D%20%5Cleft%20%28I_%7BC1%7D&plus;I_%7BC2%7D&plus;max%28I_%7BC3%7D%2CI_%7BC4%7D%29&plus;I_%7BC5%7D&plus;max%28I_%7BC6%7D%2CI_%7BC7%7D%29&plus;I_%7BC8%7D&plus;I_%7BH1%7D%20%5Cright%20%29)
 
