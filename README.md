@@ -29,8 +29,8 @@ Finally, we have a [miscellaneous indicator (M1)](documentation/codebook.md#misc
 To help make sense of the data, we have produced four indices that aggregate the data into a single number. Each of these indices report a number between 0 to 100 that reflects the level of the governments response along certain dimensions. This is a measure of how many of hte relevant indicators a government has acted upon, and to what degree. The index cannot say whether a government's policy has been implemented effectively.
 
 - overall government response index (all indicators)
-- stringency index (all C indicators, plus H1 which records public information campaigns)
 - containment and health index (all C and H indicators)
+- stringency index (all C indicators, plus H1 which records public information campaigns)
 - economic support index (all E indicators)
 
 (_Note: these only include indicators recorded on ordinal scales, so they all exclude E3, E4, H4, H5, and M1._)
