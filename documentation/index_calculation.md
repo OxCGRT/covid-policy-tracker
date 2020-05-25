@@ -8,13 +8,13 @@ All of our indices are simple averages of the individual component indicators. T
 
 The different indices are comprised as follows:
 
-| Index name (_k_) | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | E1 | E2 | E3 | E4 | H1 | H2 | H3 | H4 | H5 | M1 |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Government response index (13) | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | `x` | `x` | `x` | | | |
-| Containment and health index (11) | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | `x` | `x` | | | |
-| Stringency index (9) | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | | | | | |
-| Economic support index (2) | | | | | | | | | `x` | `x` | | | | | | | | |
-| Legacy stringency index (7) | `x` | `x` | `?` | `?` | `x` | `?` | `?` | `x` | | | | | `x` | | | | | |
+| Index name | _k_ | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | E1 | E2 | E3 | E4 | H1 | H2 | H3 | H4 | H5 | M1 |
+| --- | ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Government response index | 13 | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | `x` | `x` | `x` | | | |
+| Containment and health index | 11 | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | `x` | `x` | | | |
+| Stringency index | 9 | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | | | | | |
+| Economic support index | 2 | | | | | | | | | `x` | `x` | | | | | | | | |
+| [Legacy stringency index](#legacy-stringency-index) | 7 | `x` | `x` | `?` | `?` | `x` | `?` | `?` | `x` | | | | | `x` | | | | | |
 
 Two versions of each indicator are present in the database. A regular version which will return `null` values if there is not enough data to calculate the index, and a "display" version which will extraploate to smooth over the last seven days of the index based on the most recent complete data. This is explained [below](#dealing-with-gaps-in-the-data-for-display-purposes).
 
