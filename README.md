@@ -88,10 +88,10 @@ An individual chart of each country is in the [/images/country charts](images/co
 
 <img src="images/OxCGRT_sixin1_bycases.png" width=80%>
 
-<img src="images/OxCGRT_stringency_vs_cases.png" width=80%>
+<img src="images/OxCGRT_govresponse_vs_cases.png" width=80%>
 
 ### Global comparisons
 
-![World map of current stringency](images/OxCGRT_worldmap_stringency.png)
+![World map of current government responses](images/OxCGRT_worldmap_govresponse.png)
 
 ![World map of school closures](images/OxCGRT_worldmap_schools.png)
