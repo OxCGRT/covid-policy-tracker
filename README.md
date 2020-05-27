@@ -92,6 +92,8 @@ An individual chart of each country is in the [/images/country charts](images/co
 
 ### Global comparisons
 
+![Chart of global average of each index over time](images/OxCGRT_indices_vs_time.png)
+
 ![World map of current government responses](images/OxCGRT_worldmap_govresponse.png)
 
 ![World map of school closures](images/OxCGRT_worldmap_schools.png)
