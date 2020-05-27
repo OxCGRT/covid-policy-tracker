@@ -122,7 +122,7 @@ The legacy indicator only uses seven indicators, and it chooses a single indicat
 
 The individual sub-index scores for the legacy index are calculated through a slightly different formula to the one described in equation 2 above. This formula is described in equation 4 below (with a seperate formula for C8, the only indicator in this index without a flagged variable).
 
-![legacy stringency sub-index equation](https://latex.codecogs.com/gif.latex?%284%29%5Cqquad%20I_%7Bj%2Ct%7D%3D100%5Cleft%20%28%5Cfrac%7Bv_%7Bj%2Ct%7D&plus;f_%7Bj%2Ct%7D%7D%7BN_%7Bj%7D&plus;1%7D%5Cright%29%5Cquad%5Cmid%5Cquad%20I_%7BC8%2Ct%7D%3D100%5Cleft%28%5Cfrac%7Bv_%7B%20_%7BC8%2Ct%7D%7D%7D%7BN_%7BC8%7D%7D%20%5Cright%29)
+![legacy stringency sub-index equation](https://latex.codecogs.com/png.latex?%284%29%5Cqquad%20I_%7Bj%2Ct%7D%3D100%5Cleft%20%28%5Cfrac%7Bv_%7Bj%2Ct%7D&plus;f_%7Bj%2Ct%7D%7D%7BN_%7Bj%7D&plus;1%7D%5Cright%29%5Cquad%5Cmid%5Cquad%20I_%7BC8%2Ct%7D%3D100%5Cleft%28%5Cfrac%7Bv_%7B%20_%7BC8%2Ct%7D%7D%7D%7BN_%7BC8%7D%7D%20%5Cright%29)
 
 ## Index methodology changelog
 
