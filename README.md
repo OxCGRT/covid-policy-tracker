@@ -92,7 +92,7 @@ An individual chart of each country is in the [/images/country charts](images/co
 
 ### Global comparisons
 
-![Chart of global average of each index over time](images/OxCGRT_indices_vs_time.png)
+<img src="images/OxCGRT_indices_vs_time.png" width=80%>
 
 ![World map of current government responses](images/OxCGRT_worldmap_govresponse.png)
 
