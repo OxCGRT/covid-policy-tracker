@@ -4356,6 +4356,11 @@ Liberia,LBR,20200307,C3: Cancel public events,2,1,
 Liberia,LBR,20200307,C4: Restrictions on gatherings,3,1,
 Liberia,LBR,20200307,C8: International travel controls,3,,
 Liberia,LBR,20200310,C8: International travel controls,2,,"Prior to the March 23 closure of the airport,from 10th March the government of Liberia had implemented enhanced screening and quarantine measures to reduce the spread of COVID-19.    http://web.archive.org/web/20200602003902/https://lr.usembassy.gov/covid-19-information/    http://moh.gov.lr/wp-content/uploads/Travel-Advisory.pdf        "
+Liberia,LBR,20200310,H1: Public information campaigns,2,1,"http://moh.gov.lr/wp-content/uploads/Travel-Advisory.pdf    "
+Liberia,LBR,20200310,H2: Testing policy,2,,"http://moh.gov.lr/wp-content/uploads/Travel-Advisory.pdf"
+Liberia,LBR,20200310,H2: Testing policy,1,,"http://moh.gov.lr/wp-content/uploads/Travel-Advisory.pdf  "
+Liberia,LBR,20200310,H3: Contact tracing,2,,"http://moh.gov.lr/wp-content/uploads/Travel-Advisory.pdf"
+Liberia,LBR,20200310,H3: Contact tracing,1,,"http://moh.gov.lr/wp-content/uploads/Travel-Advisory.pdf"
 Liberia,LBR,20200311,H1: Public information campaigns,2,1,
 Liberia,LBR,20200311,H2: Testing policy,1,,
 Liberia,LBR,20200311,H3: Contact tracing,2,,
@@ -4364,8 +4369,11 @@ Liberia,LBR,20200314,H2: Testing policy,1,,"The Liberia Airport Authority (LAA) 
 Liberia,LBR,20200314,H3: Contact tracing,2,,"The Liberia Airport Authority (LAA) in collaboration with the National Public Health Institute of Liberia (NPHIL) and the Ministry of Health (MOH) has instituted mandatory screening and handwashing mechanisms for everyone accessing the airport. Start of healthcare response  http://web.archive.org/watch?v=t0MbX2Rd_5s  https://www.youtube.com/watch?v=t0MbX2Rd_5s"
 Liberia,LBR,20200316,C8: International travel controls,3,,"Liberia bans entry from countries with more than 200 cases  http://web.archive.org/web/20200508132953/https://www.garda.com/crisis24/news-alerts/324486/liberia-authorities-ban-entry-for-travelers-from-countries-with-more-than-200-covid-19-cases-march-16-update-1  http://web.archive.org/web/20200425212344/http://www.rfi.fr/en/international/20200319-liberia-takes-immediate-steps-to-curb-coronavirus-spread-first-cases-worst-ebola-outbreak-history  24th March: Ivory Coast closes border with Liberia  http://web.archive.org/web/20200508135902/https://allafrica.com/stories/202003310693.html"
 Liberia,LBR,20200316,H1: Public information campaigns,1,1,"1st case announced and president speechhttps://web.archive.org/web/20200526042029/https://www.cnbcafrica.com/news/2020/03/16/liberia-reports-first-coronavirus-case/"
+Liberia,LBR,20200316,H1: Public information campaigns,2,1,
 Liberia,LBR,20200316,H2: Testing policy,1,,"Start testing "
+Liberia,LBR,20200316,H2: Testing policy,1,,
 Liberia,LBR,20200316,H3: Contact tracing,2,,"6,000 recruits for contact tracing put into place and start right at the first case (16th March)  http://web.archive.org/web/20200508135639/https://www.telegraph.co.uk/global-health/science-and-disease/will-legacy-ebola-help-liberia-fight-coronavirus/"
+Liberia,LBR,20200316,H3: Contact tracing,2,,
 Liberia,LBR,20200317,C1: School closing,3,1,"In addition, the Ministry of Education has ordered for all schools nationwide, including universities, to suspend classes for one week starting from Tuesday, March 17. http://web.archive.org/web/20200508132953/https://www.garda.com/crisis24/news-alerts/324486/liberia-authorities-ban-entry-for-travelers-from-countries-with-more-than-200-covid-19-cases-march-16-update-1 Indeed, soon after schools across Liberia closed on March 16, when the country's first coronavirus case was confirmed, authorities launched a radio schooling initiative to bridge an education gap.  Within two weeks, the first lessons were aired on radio stations nationwide. Today, some 32 stations now broadcast several prerecorded lessons a day, each lasting half an hour, catering to different educational levels. http://web.archive.org/web/20200508120450/https://www.aljazeera.com/news/2020/04/liberia-takes-classes-airwaves-covid-19-pandemic-200415203012448.html "
 Liberia,LBR,20200317,C2: Workplace closing,3,1,
 Liberia,LBR,20200317,C2: Workplace closing,2,1,
