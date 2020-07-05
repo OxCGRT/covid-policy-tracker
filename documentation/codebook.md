@@ -65,6 +65,6 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 
 ## Codebook changelog
 
-- 05 July 2020: v2.3
+- 05 July 2020: v2.3 add better explanation of targeted/general flags in intro
 - 22 May 2020: v2.2 changed description of E1=2 from "replacing more than 50% of lost salary" to "replacing 50% or more of lost salary"
 - 11 May 2020: moved v2 codebook to GitHub
