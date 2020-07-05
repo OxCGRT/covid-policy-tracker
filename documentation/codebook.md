@@ -1,6 +1,6 @@
 # Codebook for the Oxford Covid-19 Government Response Tracker
 
-***Codebook version 2.2 <br/>22 May 2020***
+***Codebook version 2.3 <br/>05 July 2020***
 
 This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)). The dataset contains 17 indicators and a miscellaneous notes field organised into four groups:
 - [C - containment and closure policies](#containment-and-closure-policies)
@@ -12,7 +12,9 @@ Updates to this codebook are recorded in the [changelog](#codebook-changelog) be
 
 Most indicators are recorded on an ordinal scale that represents the level of strictness of the policy. Four of the indicators (E3, E4, H4 and H5) are recorded as a US dollar value of fiscal spending.
 
-Eight of the indicators (C1-C7 and H1) also have a flag for whether they are targeted to a specific geographical region (flag=0) or whether they are a "general" policy that is applied across the whole country (flag=1). One indicator (E1) has a flag to describe whether income support is for just formal sector workers (flag=0) or whether it includes informal workers as well (flag=1).
+Government coronavirus policies often vary by region within countries. We code the most stringent government policy that is in place in a country, as represented by the highest ordinal value. Sometimes the most stringent policy in a country will only apply to a small part of the population. If the most stringent policy is only present in a limited geographic area or sector (eg perhaps only one state has implemented policies at a high level), we use a binary flag variable to denote this limited scope. Eight of the indicators (C1-C7 and H1) have a flag for whether they are "targeted" to a specific geographical region (flag=0) or whether they are a "general" policy that is applied across the whole country (flag=1). One indicator (E1) has a flag to describe whether income support is for just formal sector workers (flag=0) or whether it includes informal workers as well (flag=1).
+
+As explained in our [index methodology documentation](index_methodology.md), an indicator with flag=0 is weighted lower than flag=1 when calculating overall index values. 
 
 ### Containment and closure policies
 
@@ -63,5 +65,6 @@ Eight of the indicators (C1-C7 and H1) also have a flag for whether they are tar
 
 ## Codebook changelog
 
+- 05 July 2020: v2.3
 - 22 May 2020: v2.2 changed description of E1=2 from "replacing more than 50% of lost salary" to "replacing 50% or more of lost salary"
 - 11 May 2020: moved v2 codebook to GitHub
