@@ -37,7 +37,12 @@ To help make sense of the data, we have produced four indices that aggregate the
 
 The [documentation folder](documentation/) contains an [index methodology](documentation/index_methodology.md) page explaining how the different indexes are calculated and how they are reported for days with incomplete data. This also describes the methodology for the [legacy stringency index](documentation/index_methodology.md#legacy-stringency-index) which is based on the [old](#legacy-database-structure-from-before-25-April-2020) database structure in palce prior to 25 April 2020.
 
-### Our documentation and working paper has more information
+### Subnational data
+
+xxx
+
+
+### Our documentation and working papers have more information
 
 The most up-to-date description of database components is here in the [documentation folder](documentation/) of this GitHub repo, which contains a detailed [codebook](documentation/codebook.md) and [index methodology](documentation/index_methodology.md).
 
