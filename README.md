@@ -1,3 +1,11 @@
+---
+
+**US STATE DATA<br/>06 August 2020 update**
+If you have come here looking for USA state level data. Our [/data](data/) folder has a separate [CSV](data/OxCGRT_US_states_temp.csv) with data for all US states, presented in a way that is comparable to our country-level data. We have also published individual state charts in the [/images/US states](images/US_states/) folder, and a [working paper](https://www.bsg.ox.ac.uk/research/publications/variation-us-states-responses-covid-19) with more detailed analysis.
+For more fine other data on US states, we have a separate [OxCGRT/USA-covid-policy](https://github.com/OxCGRT/USA-covid-policy) repository.
+
+---
+
 # Oxford Covid-19 Government Response Tracker (OxCGRT)
 
 The Oxford Covid-19 Government Response Tracker (OxCGRT) collects systematic information on which governments have taken which measures, and when. This can help decision-makers and citizens understand governmental responses in a consistent way, aiding efforts to fight the pandemic. The OxCGRT systematically collects information on several different common policy responses governments have taken, records these policies on a scale to reflect the extent of government action, and aggregates these scores into a suite of policy indices.
@@ -41,7 +49,7 @@ The [documentation folder](documentation/) contains an [index methodology](docum
 
 In addition to country-level data, our primary dataset additionally includes some subnational data. So far, only US state data has been incorporated into the primary dataset on this covid-policy-tracker repository.
 
-The states' data can be interpreted using the main [codebook](documentation/codebook.md), with additional guidance on subnational-specific interpretation available in the [documentation folder](documentation/subnational_interpretation.md). The state data included in our primary dataset aims to describe the overall policy environment that applies to residents of the state, and so includes policies set by the national government where those values are more stringent than state-level action. For data that focuses only on subnational policies, see our additional datasets in the [OxCGRT/US-covid-policy](https://github.com/OxCGRT/USA-covid-policy) and [OxCGRT/Brazil-covid-policy](https://github.com/OxCGRT/Brazil-covid-policy) respositories.
+The states' data can be interpreted using the main [codebook](documentation/codebook.md), with additional guidance on subnational-specific interpretation available in the [documentation folder](documentation/subnational_interpretation.md). The state data included in our primary dataset aims to describe the overall policy environment that applies to residents of the state, and so includes policies set by the national government where those values are more stringent than state-level action. For data that focuses only on subnational policies, see our additional datasets in the [OxCGRT/USA-covid-policy](https://github.com/OxCGRT/USA-covid-policy) and [OxCGRT/Brazil-covid-policy](https://github.com/OxCGRT/Brazil-covid-policy) respositories.
 
 ### Our documentation and working papers have more information
 
