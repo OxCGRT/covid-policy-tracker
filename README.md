@@ -1,5 +1,6 @@
 **US STATE DATA<br/>06 August 2020 update**
-If you have come here looking for USA state level data. Our [/data](data/) folder has a separate [CSV](data/OxCGRT_US_states_temp.csv) with data for all US states, presented in a way that is comparable to our country-level data. We have also published individual state charts in the [/images/US states](images/US_states/) folder, and a [working paper](https://www.bsg.ox.ac.uk/research/publications/variation-us-states-responses-covid-19) with more detailed analysis.
+
+Today (6 August) we have published USA state level data. Our [/data](data/) folder has a separate [CSV](data/OxCGRT_US_states_temp.csv) with data for all US states, presented in a way that is comparable to our country-level data. We have also published individual state charts in the [/images/US states](images/US_states/) folder, and a [working paper](https://www.bsg.ox.ac.uk/research/publications/variation-us-states-responses-covid-19) with more detailed analysis.
 For more fine other data on US states, we have a separate [OxCGRT/USA-covid-policy](https://github.com/OxCGRT/USA-covid-policy) repository.
 
 ---
