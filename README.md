@@ -45,7 +45,7 @@ In addition to country-level data, this primary dataset additionally includes so
 
 The most up-to-date description of database components is here in the [documentation folder](documentation/) of this GitHub repo, which contains a detailed [codebook](documentation/codebook.md) and [index methodology](documentation/index_methodology.md).
 
-We have also published a national [working paper](https://www.bsg.ox.ac.uk/research/publications/variation-government-responses-covid-19) with our national methodology, data collection protocols, and description of the individual indicators. There is an analogous US state [working paper](https://www.bsg.ox.ac.uk/research/publications/variation-USstate-responses-covid-19) that describes the subnational US methodology, data collection protocols, and indicator descriptions.
+We have also published a national [working paper](https://www.bsg.ox.ac.uk/research/publications/variation-government-responses-covid-19) with our national methodology, data collection protocols, and description of the individual indicators. 
 
 ### Legacy database structure (from before 25 April 2020)
 
@@ -63,7 +63,6 @@ The [/data](data/) folder in this repo contains recent exports from the OxCGRT d
 - The CSV file [/data/OxCGRT_latest_withnotes.csv](data/OxCGRT_latest_withnotes.csv) is a full export from the database in "country-day" format _with_ a column of notes from our data collectors for each indicator. This is also updated every hour from the main database. Please note that some of the comments contain commas and other characters interpreted as a delimiter, and so may cause problems when parsing this CSV file.
 - The CSV file [/data/OxCGRT_latest_allchanges.csv](data/OxCGRT_latest_allchanges.csv) is a full export from the database with a list of every _change_ to the database. Every time a policy value changes, or every time a note is added to an indicator, it is represented with it's own new row.
 - The [/data/timeseries](data/timeseries/) folder contains individual timeseries for each indicator (except for the non-ordinal indicators E3, E4, H4, H5 and M1) in CSV format, as well as a combined Excel file with a tab for each indicator. This is updated periodically – usually daily – and the date will be listed in the commit description and at the bottom of each sheet.
-- The CSV file [/data/OxCGRT_US_states_temp.csv](data/OxCGRT_US_states_temp.csv) is a full export from the database presented in "state-day" format, with a column of notes from our data collectors for each indicator. This is updated manually on a weekly basis. Please note that some of the comments contain commas and other characters interpreted as a delimiter, and so may cause problems when parsing this CSV file.
 
 ### Getting data through our API
 You can also get OxCGRT through our API. Documentation for this is [published here](https://covidtracker.bsg.ox.ac.uk/about-api).
