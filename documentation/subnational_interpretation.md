@@ -1,8 +1,11 @@
 # Interpretation for subnational data 
 
+***version 1.0 <br/>06 August 2020***
+
 This document describes how national and subnational policies are reported in the [/data](../data/) folder in our primary OxCGRT dataset [(OxCGRT/covid-policy-tracker)](https://github.com/OxCGRT/covid-policy-tracker), and how this differs from secondary subnational-only data products found in other repositories.
 
 ## Relationship to national policies in this repo
+
 In the primary OxCGRT dataset described in this repository, we represent the overall policy environment that applies to residents of the given jurisdiction. Subnational units coded in this dataset therefore account for those policies 'inherited' from higher levels of government where applicable. 
 
 To do this, we record policies made at the state level and below (eg we also include decisions of county or city governments), and this is termed "STATE_ALL". We then also record policies made by the national government, and this is termed NAT_GOV. The subnational data reported in our primary dataset is a combination of the two. We first start with STATE_ALL indicators, and then replace an indicator with the NAT_GOV counterpart if both of the following conditions are true:
@@ -26,5 +29,9 @@ In many countries, the national government sets international travel restriction
 However, in our primary dataset in this [OxCGRT/covid-policy-tracker](https://github.com/OxCGRT/covid-policy-tracker) repository, we would report the national governemnt's border controls against each state, as the policy is in force in those state.
 
 ## Further interpretation
+
 Indicator meanings and interpretation of targeted/general distinctions for subnational data products are consistent with those in the existing OxCGRT [codebook](documentation/codebook.md). 
 
+## Changelog of subnational guidance
+
+- 06 August 2020: published v1 to GitHub
