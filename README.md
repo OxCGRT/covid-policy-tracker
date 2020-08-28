@@ -1,4 +1,4 @@
-**US STATE DATA<br/>25 August 2020 update**
+**UPDATE:** SUBNATIONAL DATA<br/>**25 August 2020 update**
 
 This coming Thursday evening UK time (**27 August**) we will integrate sub-national data into our two main CSVs: [data/OxCGRT_latest.csv](data/OxCGRT_latest.csv) and [data/OxCGRT_latest_withnotes.csv](OxCGRT_latest_withnotes.csv).
 
@@ -33,7 +33,7 @@ __Cite as:__ Thomas Hale, Sam Webster, Anna Petherick, Toby Phillips, and Beatri
 
 ## The database
 
-OxCGRT collects publicly available information on 17 indicators of government response. This information is collected by a team of over 100 volunteers from the Oxford community and is updated continuously.
+OxCGRT collects publicly available information on 17 indicators of government response. This information is collected by a team of over 200 volunteers from the Oxford community and is updated continuously.
 
 We also include statistics on the number of reported Covid-19 cases and deaths in each country. These are taken from the European Centre for Disease Prevention and Control ([ECDC](https://www.ecdc.europa.eu/en)) for most countries, and from the [JHU CSSE data repository](https://github.com/CSSEGISandData/COVID-19) for US states and the Chinese special administrative regions of Hong Kong and Macau.
 
@@ -60,9 +60,9 @@ The [documentation folder](documentation/) contains an [index methodology](docum
 
 ### Subnational data
 
-In addition to country-level data, our primary dataset additionally includes some subnational data. So far, only US state data has been incorporated into the primary dataset on this covid-policy-tracker repository.
+In addition to country-level data, our primary dataset additionally includes some subnational data. So far we have incorporated data for US states and UK devolved nations into the primary dataset on this covid-policy-tracker repository. These subnational entities are included in our [/data/OxCGRT_latest.csv](data/OxCGRT_latest.csv) and [/data/OxCGRT_latest_withnotes.csv](data/OxCGRT_latest_withnotes.csv). But no other CSVs at this stage.
 
-The states' data can be interpreted using the main [codebook](documentation/codebook.md), with additional guidance on subnational-specific interpretation available in the [documentation folder](documentation/subnational_interpretation.md). The state data included in our primary dataset aims to describe the overall policy environment that applies to residents of the state, and so includes policies set by the national government where those values are more stringent than state-level action. For data that focuses only on subnational policies, see our additional datasets in the [OxCGRT/USA-covid-policy](https://github.com/OxCGRT/USA-covid-policy) and [OxCGRT/Brazil-covid-policy](https://github.com/OxCGRT/Brazil-covid-policy) respositories.
+Subnational data can be interpreted using the main [codebook](documentation/codebook.md), with additional guidance on subnational-specific interpretation available in the [documentation folder](documentation/subnational_interpretation.md). The state data included in our primary dataset aims to describe the overall policy environment that applies to residents of the state, and so includes policies set by the national government where those values are more stringent than state-level action. For data that focuses only on subnational policies, see our additional datasets in the [OxCGRT/USA-covid-policy](https://github.com/OxCGRT/USA-covid-policy) and [OxCGRT/Brazil-covid-policy](https://github.com/OxCGRT/Brazil-covid-policy) respositories.
 
 ### Our documentation and working papers have more information
 
@@ -82,11 +82,11 @@ The OxCGRT is updated continuously in real time. There are numerous ways you can
 ![Data link to OxCGRT](https://github.com/OxCGRT/covid-policy-tracker/workflows/Data%20link%20to%20OxCGRT/badge.svg) <-- status of connection to OxCGRT database
 
 The [/data](data/) folder in this repo contains recent exports from the OxCGRT database. You are welcome to build applications that draw directly from this repository.
-- The CSV file [/data/OxCGRT_latest.csv](data/OxCGRT_latest.csv) reports country-level data presented in "country-day" format, with each a list of all indicators for each country as a single row each day. This CSV is updated every hour from the main database, and the badge above shows whether this data link is functioning correctly.
-- The CSV file [/data/OxCGRT_latest_withnotes.csv](data/OxCGRT_latest_withnotes.csv) reports country-level data in "country-day" format _with_ a column of notes from our data collectors for each indicator. This is also updated every hour from the main database. Please note that some of the comments contain commas and other characters interpreted as a delimiter, and so may cause problems when parsing this CSV file.
-- The CSV file [/data/OxCGRT_latest_allchanges.csv](data/OxCGRT_latest_allchanges.csv) reports country-level data with a list of every _change_ to the database. Every time a policy value changes, or every time a note is added to an indicator, it is represented with it's own new row.
-- The [/data/timeseries](data/timeseries/) folder reports country-level data as individual timeseries for each indicator (except for the non-ordinal indicators E3, E4, H4, H5 and M1) in CSV format, as well as a combined Excel file with a tab for each indicator. This is updated periodically – usually daily – and the date will be listed in the commit description and at the bottom of each sheet.
-- The CSV file [/data/OxCGRT_US_states_temp.csv](data/OxCGRT_US_states_temp.csv) is a temporary CSV that presents _only US state-level data_ in "state-day" format, with a column of notes from our data collectors for each indicator. This is updated manually. **In the near-term, this data will be integrated into the other files listed above, and this separate CSV will be removed.** Please note that some of the comments contain commas and other characters interpreted as a delimiter, and so may cause problems when parsing this CSV file.
+- The CSV file [/data/OxCGRT_latest.csv](data/OxCGRT_latest.csv) reports country- and state-level data presented in "country-day" format (or "state-day" as the case may be), with a list of all indicators for each country as a single row each day. This CSV is updated every hour from the main database, and the badge above shows whether this data link is functioning correctly.
+- The CSV file [/data/OxCGRT_latest_withnotes.csv](data/OxCGRT_latest_withnotes.csv) reports country- and state-level data in "country-day" format _with_ a column of notes from our data collectors for each indicator. This is also updated every hour from the main database. Please note that some of the comments contain commas and other characters interpreted as a delimiter, and so may cause problems when parsing this CSV file.
+- The CSV file [/data/OxCGRT_latest_allchanges.csv](data/OxCGRT_latest_allchanges.csv) reports country-level data with a list of every _change_ to the database. Every time a policy value changes, or every time a note is added to an indicator, it is represented with it's own new row. (This does not include subnational data.)
+- The [/data/timeseries](data/timeseries/) folder reports country-level data as individual timeseries for each indicator (except for the non-ordinal indicators E3, E4, H4, H5 and M1) in CSV format, as well as a combined Excel file with a tab for each indicator. This is updated periodically – usually daily – and the date will be listed in the commit description and at the bottom of each sheet. (This does not include subnational data.)
+- The CSV file [/data/OxCGRT_US_states_temp.csv](data/OxCGRT_US_states_temp.csv) is a temporary CSV that presents _only US state-level data_ in "state-day" format, with a column of notes from our data collectors for each indicator. This is updated manually. **This has now been integrated into the two primary CSVs at the top of this list, and this temporary CSV will be deleted from the repo in September 2020.** 
 
 ### Getting data through our API
 You can also get OxCGRT through our API. Documentation for this is [published here](https://covidtracker.bsg.ox.ac.uk/about-api).
