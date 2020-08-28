@@ -56,6 +56,9 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 | H3 | `H3_Contact tracing` | Record government policy on contact tracing after a positive diagnosis <br/><br/>Note: we are looking for policies that would identify all people potentially exposed to Covid-19; voluntary bluetooth apps are unlikely to achieve this | Ordinal scale | 0 - no contact tracing <br/>1 - limited contact tracing; not done for all cases <br/>2 - comprehensive contact tracing; done for all identified cases |
 | H4 | `H4_Emergency investment in healthcare` | Announced short term spending on healthcare system, eg hospitals, masks, etc <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD <br/>0 - no new spending that day <br/>Blank - no data |
 | H5 | `H5_Investment in vaccines` | Announced public spending on Covid-19 vaccine development <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD <br/>0 - no new spending that day <br/>Blank - no data |
+| H6 | `H6_Facial coverings` | Record policies on the use of facial coverings outside the home | Ordinal scale | 0 - no policy <br/>1 - recommended <br/>2 - required in some specified shared/public spaces outside the home with other people present, or some situations when social distancing not possible <br/>3 - required in all shared/public spaces outside the home with other people present or all situations when social distancing not possible <br/>4 - required outside the home at all times regardless of location or presence of other people <br/>Blank - no data |
+| | `H6_Flag` | | Binary flag for geographic scope | 0 - targeted <br/>1- general <br/>Blank - no data |
+
 
 ### Miscellaneous policies
 
