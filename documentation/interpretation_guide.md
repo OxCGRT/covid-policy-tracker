@@ -64,7 +64,7 @@ Link to [codebook](codebook.md)
 ### C7- Restrictions on Internal Movement
 
 - **For subnational (state-level) data:** C7 is used to record state-level border closures where a state restricts entry from other states from another state, as well as recording restrictions on movement within the state.
-*Some examples that could indicate a 1:* 
+- *Some examples that could indicate a 1:* 
     - Voluntary quarantines, non-intrusive checks at the state border (ex: asking where you will be quarantining but not following up extensively), asking residents of one specific city to not cross the border with a neighboring city
 - *Some examples that could indicate a 2:* 
     - Closing interstate highways/waterways, prohibiting or banning travel from certain regions, requirement of negative test result,  intensive checks on quarantine, requiring quarantine in a hotel or other standardized state-run facility
@@ -145,4 +145,4 @@ There are a few general rules our coders follow while coding:
 - **Implementation not announcement:** We start coding a policy from the day the policy was implemented in practice, not the day it was announced.
 - **We report the most stringent government policy** with the highest ordinal value. If the most stringent policy is only present in a limited geographic area or sector, we use a binary flag variable to describe this scope and reflect whether the policy is targeted or general [the binary flag model is described in detail here in the [codebook](codebook.md)
 - **Notes and Web Archived links:** For every change we make in the database, we add a note, with a website link to where the information was found. In order to save the webpage that we gained the information from, we webarchive the link. This saves the page on the date that it was accessed to prevent it being lost. These may look like this http://web.archive.org/web/20200517163106/https://covid19.govt.nz/, or http://archive.vn/XifX8. 
- - The methodology for calculating the 4 indices can be found in the documentation here: Link to [index methodology](index_methodology.md)
+ - The [index methodology](index_methodology.md)can be found here 
