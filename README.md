@@ -39,7 +39,7 @@ We also include statistics on the number of reported Covid-19 cases and deaths i
 
 ### Individual policy measures
 
-Full descriptions of the policy indicators and their meaning can be found in our [codebook](documentation/codebook.md).
+Full descriptions of the policy indicators and their meaning can be found in our [codebook](documentation/codebook.md). For more detailed guidance about the codebook and how we interpret the indicators, see the [Coding Interpretation Guide](coding_interpretation_guide.md). This ensures consistency, and standardizes coding across the database.
 
 Eight of the policy indicators (C1-C8) record information on [_containment and closure_ policies](documentation/codebook.md#containment-and-closure-policies), such as school closures and restrictions in movement. Four of the indicators (E1-E4) record [_economic_ policies](documentation/codebook.md#economic-policies) such as income support to citizens or provision of foreign aid. And five indicators (H1-H5) record [_health system_ policies](documentation/codebook.md#health-system-policies) such as the Covid-19 testing regime or emergency investments into healthcare.
 
