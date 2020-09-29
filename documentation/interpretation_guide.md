@@ -1,5 +1,5 @@
 # OxCGRT Coding Interpretation Guide
-***Version 1.0 <br/>Date: 28 September, 2020***
+***Version 1.0 <br/>Date: 29 September, 2020***
 
 This guide details the resolutions of frequently asked codebook interpretation queries, in order to ensure consistency, and standardize coding across the database. Queries related specifically to subnational data are labelled as such.
 
