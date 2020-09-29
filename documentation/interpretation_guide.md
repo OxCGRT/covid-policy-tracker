@@ -48,8 +48,10 @@ Link to [codebook](codebook.md)
 
 - *Some examples that could indicate a 0 (no policy):*
     - Public transport is open but with social distancing and mask wearing requirements.
+    
 - *Some examples that could indicate a 1 (recommended):* 
     - Encouraging public transport usage only by essential workers, and discouraging use by members of public, closing major routes, closing all but specific service routes (ex: services for persons with disabilities and the elderly), number of services running is significantly reduced. If an increased number of buses have been put on the roads in order to dilute capacity, and enable greater social distancing, the rationale of the C5 indicator would capture this by coding ‘recommended’, as the spirit of the indicator is to reflect reduced capacity in any transportation unit, and the intention of limiting the numbers of people present.
+    
 - *Some examples that could indicate a 2 (required):*
     - The general public are prohibited from public transport (exceptions allowed for essential workers or some other specific category), total shutdowns of services to align with other movement restrictions.
 - If closures of transport seem to be primarily the result of decreasing demand rather than deliberate government policy to prevent spreading, this is judged by our coders on a case-by-case basis, but if there are substantial changes to schedules we would consider coding a 1.
@@ -64,8 +66,10 @@ Link to [codebook](codebook.md)
 ### C7- Restrictions on Internal Movement
 
 - **For subnational (state-level) data:** C7 is used to record state-level border closures where a state restricts entry from other states from another state, as well as recording restrictions on movement within the state.
+
 - *Some examples that could indicate a 1:* 
     - Voluntary quarantines, non-intrusive checks at the state border (ex: asking where you will be quarantining but not following up extensively), asking residents of one specific city to not cross the border with a neighboring city
+    
 - *Some examples that could indicate a 2:* 
     - Closing interstate highways/waterways, prohibiting or banning travel from certain regions, requirement of negative test result,  intensive checks on quarantine, requiring quarantine in a hotel or other standardized state-run facility
 If there are restrictions for the circulation of private cars based on certain criteria (e.g. ending of the license number) to reduce the number of vehicles on the streets, we also report it as restriction of internal movement.
@@ -83,7 +87,9 @@ If there are restrictions for the circulation of private cars based on certain c
 - Formal sector workers are people who are employed with contracts, and pay taxes. Informal workers may be roadside vendors, work on markets, and do not have a formal contract for their work. 
 - If benefits in kind are being given (e.g. dry rations), this is recorded as a 0 with a note. It is not recorded as a non-zero value as it is not money being given or salaries replaced.
 - Edge cases and marginal examples
+
     - *Widening eligibility for unemployment benefit:* For example, if a nation or state had worked within the existing unemployment scheme to offer expanded eligibility during the COVID-affected period, for example giving benefits to those who wouldn’t normally be paid leave. This expands unemployment benefits to a wider group , and would therefore be recorded as the appropriate non-zero value depending on the value/coverage.
+    
     - *Expedited access to unemployment benefit:* If a state takes policy action to make it faster and easier to access nation or  state/federal unemployment benefits during the COVID-affected period, but doesn’t expand eligibility criteria, this is only recorded as a note. The underlying policy hasn’t changed or expanded to reach more people.
 
 
@@ -108,6 +114,7 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
     - If the government implements a statewide/nationwide plan to fund and procure local testing facilities, with the intention of widespread public accessibility, we report a - 2 (all symptomatic eligible)
 - We do not record testing policy as generally available (3) unless it is country wide and there is also evidence of capacity to meet this. If countries are reporting severe shortage of tests, we assume the low capacity is rationed/prioritised for symptomatic people or high-risk people (and therefore not generally available). 
 - The main purpose for H2 is to record PCR testing (tests that detect people with a current active infection). Antibody tests (for people who have been infected in the past) are not usually reported under H2. The only rare case where we would report other types of tests was where, say, widespread antibody testing was used to identify individuals for follow-up PCR tests. As this served the same function as a PCR test, and advanced the goal of determining current infection. These exceptions will be explained in a note.
+
 - *Some examples that could indicate a 1:*
     - Declaring COVID testing capacity before first case
     - Announcing the first identified case in a country and that testing is available for that first case and others (if needed)
@@ -126,6 +133,7 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
 ### H3 - Contact tracing
 
 - We are only interested in manual contact tracing that is intended to reach all people known to an newly-diagnosed case. Contact tracing apps do not achieve this goal, and the presence of a contact tracing app in a country would not be recorded here under H3 (although it may be recorded in a note). The difference between the levels here is considering whether this top-notch manual contact tracing is done for some COVID-19 cases (1) or for all cases (2).
+
 - *Some examples that could indicate a 1*:
     - Declaring that a country has COVID-19 contact tracing capacity before its first case
     - Reporting first case and saying that the government is tracing contacts of that first case (if the above hasn’t occurred)
