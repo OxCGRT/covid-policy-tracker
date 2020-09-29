@@ -5,6 +5,8 @@ This guide details the resolutions of frequently asked codebook interpretation q
 
 Link to [codebook](codebook.md)
 
+Updates to this coding interpretation are recorded in the [changelog](#Interpretation-Guide-changelog) below.
+
 ## Guidance by codebook indicator
 
 ### C1 - School Closures
@@ -142,3 +144,8 @@ There are a few general rules our coders follow while coding:
 - **We report the most stringent government policy** with the highest ordinal value. If the most stringent policy is only present in a limited geographic area or sector, we use a binary flag variable to describe this scope and reflect whether the policy is targeted or general [the binary flag model is described in detail here in the [codebook](codebook.md)
 - **Notes and Web Archived links:** For every change we make in the database, we add a note, with a website link to where the information was found. In order to save the webpage that we gained the information from, we webarchive the link. This saves the page on the date that it was accessed to prevent it being lost. These may look like this http://web.archive.org/web/20200517163106/https://covid19.govt.nz/, or http://archive.vn/XifX8. 
  - The index methodology can be found [here](index_methodology.md)  detailing how the different indices are calculated
+ 
+ 
+ 
+ ## Interpretation Guide changelog
+
