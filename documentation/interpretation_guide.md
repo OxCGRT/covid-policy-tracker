@@ -108,18 +108,17 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
     - If the government implements a statewide/nationwide plan to fund and procure local testing facilities, with the intention of widespread public accessibility, we report a - 2 (all symptomatic eligible)
 - We do not record testing policy as generally available (3) unless it is country wide and there is also evidence of capacity to meet this. If countries are reporting severe shortage of tests, we assume the low capacity is rationed/prioritised for symptomatic people or high-risk people (and therefore not generally available). 
 - The main purpose for H2 is to record PCR testing (tests that detect people with a current active infection). Antibody tests (for people who have been infected in the past) are not usually reported under H2. The only rare case where we would report other types of tests was where, say, widespread antibody testing was used to identify individuals for follow-up PCR tests. As this served the same function as a PCR test, and advanced the goal of determining current infection. These exceptions will be explained in a note.
--    *Some examples that could indicate a 1:*
+- *Some examples that could indicate a 1:*
     - Declaring COVID testing capacity before first case
     - Announcing the first identified case in a country and that testing is available for that first case and others (if needed)
     - A policy announced to begin scaling up testing capacity (if the above have not already occurred)
     - Announcing partnerships with private pharmacies/other partnerships (if the above have not already occurred)
 
-
--    *Some examples that could indicate a 2:*
+- *Some examples that could indicate a 2:*
     - Announcement of a broader plan that includes funding and mobilizing resources to support local testing
     - Testing announced as available for all symptomatic people or all people in suspicion of being in contact with a case
 
--    *Some examples that could indicate a 3*:
+- *Some examples that could indicate a 3*:
     - Widespread testing capacity reported for whoever wants it (ie not just in one big city) and good evidence that there is capacity on the ground to meet this
     Announcing that anyone interested in getting a test will receive one
 
