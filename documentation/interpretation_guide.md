@@ -1,9 +1,7 @@
 # OxCGRT Coding Interpretation Guide
 ***Version 1.0 <br/>Date: 29 September, 2020***
 
-This guide details the resolutions of frequently asked codebook interpretation queries, in order to ensure consistency, and standardize coding across the database. Queries related specifically to subnational data are labelled as such.
-
-Link to [codebook](codebook.md)
+This guide details the resolutions of frequently asked [codebook](codebook.md) interpretation queries, where indicators may be interpreted in different ways. This is in order to ensure consistency, and standardize coding across the database. Queries related specifically to subnational data are labelled as such.
 
 Updates to this coding interpretation are recorded in the [changelog](#Interpretation-Guide-changelog) below.
 
@@ -147,5 +145,5 @@ There are a few general rules our coders follow while coding:
  
  
  
- ## Interpretation Guide changelog
+ ## Interpretation Guide Changelog
 
