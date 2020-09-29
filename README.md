@@ -66,7 +66,7 @@ Subnational data can be interpreted using the main [codebook](documentation/code
 
 ### Our documentation and working papers have more information
 
-The most up-to-date description of database components is here in the [documentation folder](documentation/) of this GitHub repo, which contains a detailed [codebook](documentation/codebook.md), [index methodology](documentation/index_methodology.md), and notes on [subnational interpretation](documentation/subnational_interpretation.md).
+The most up-to-date description of database components is here in the [documentation folder](documentation/) of this GitHub repo, which contains a detailed [codebook](documentation/codebook.md), [index methodology](documentation/index_methodology.md), a [Coding Interpretation Guide](coding_interpretation_guide.md), and notes on [subnational interpretation](documentation/subnational_interpretation.md).
 
 We have also published a national [working paper](https://www.bsg.ox.ac.uk/research/publications/variation-government-responses-covid-19) with our national methodology, data collection protocols, and description of the individual indicators. 
 
