@@ -8,6 +8,8 @@ This document is the authoritative codebook for the Oxford Covid-19 Government R
 - [H - health system policies](#health-system-policies)
 - [M - miscellaneous policies](#miscellaneous-policies)
 
+For more detailed guidance about the codebook and how we interpret the indicators, see the [Coding Interpretation Guide](coding_interpretation_guide.md). This ensures consistency, and standardizes coding across the database.
+
 Updates to this codebook are recorded in the [changelog](#codebook-changelog) below.
 
 Most indicators are recorded on an ordinal scale that represents the level of strictness of the policy. Four of the indicators (E3, E4, H4 and H5) are recorded as a US dollar value of fiscal spending.
