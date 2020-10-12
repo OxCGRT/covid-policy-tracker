@@ -39,7 +39,7 @@ We also include statistics on the number of reported Covid-19 cases and deaths i
 
 ### Individual policy measures
 
-Full descriptions of the policy indicators and their meaning can be found in our [codebook](documentation/codebook.md). For more detailed guidance about the codebook and how we interpret the indicators, see the [coding interpretation guide](coding_interpretation_guide.md). This ensures consistency, and standardizes coding across the database.
+Full descriptions of the policy indicators and their meaning can be found in our [codebook](documentation/codebook.md). For more detailed guidance about the codebook and how we interpret the indicators, see the [coding interpretation guide](documentation/coding_interpretation_guide.md). This ensures consistency, and standardizes coding across the database.
 
 Eight of the policy indicators (C1-C8) record information on [_containment and closure_ policies](documentation/codebook.md#containment-and-closure-policies), such as school closures and restrictions in movement. Four of the indicators (E1-E4) record [_economic_ policies](documentation/codebook.md#economic-policies) such as income support to citizens or provision of foreign aid. And five indicators (H1-H5) record [_health system_ policies](documentation/codebook.md#health-system-policies) such as the Covid-19 testing regime or emergency investments into healthcare.
 
@@ -66,7 +66,7 @@ Subnational data can be interpreted using the main [codebook](documentation/code
 
 ### Our documentation and working papers have more information
 
-The most up-to-date description of database components is here in the [documentation folder](documentation/) of this GitHub repo, which contains a detailed [codebook](documentation/codebook.md), [index methodology](documentation/index_methodology.md), a [coding interpretation guide](coding_interpretation_guide.md), and notes on [subnational interpretation](documentation/subnational_interpretation.md).
+The most up-to-date description of database components is here in the [documentation folder](documentation/) of this GitHub repo, which contains a detailed [codebook](documentation/codebook.md), [index methodology](documentation/index_methodology.md), a [coding interpretation guide](documentation/coding_interpretation_guide.md), and notes on [subnational interpretation](documentation/subnational_interpretation.md).
 
 We have also published a national [working paper](https://www.bsg.ox.ac.uk/research/publications/variation-government-responses-covid-19) with our national methodology, data collection protocols, and description of the individual indicators. 
 
