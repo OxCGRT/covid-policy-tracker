@@ -1,8 +1,8 @@
 # Methodology for calculating indices
 
-***Index methodology version 3.1 <br/>25 May 2020***
+***Index methodology version 3.1 <br/>22 October 2020***
 
-The Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)) tracks individual policy measures across 17 indicators. We also calculate several indices to give an overall impression of government activity, and this page describes how these indices are calculated. Changes to this methodology are recorded in the [changelog](#index-methodology-changelog) below.
+The Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)) tracks individual policy measures across 18 indicators. We also calculate several indices to give an overall impression of government activity, and this page describes how these indices are calculated. Changes to this methodology are recorded in the [changelog](#index-methodology-changelog) below.
 
 All of our indices are simple averages of the individual component indicators. This is described in equation 1 below where _k_ is the number of component indicators in an index and _I<sub>j</sub>_ is the [sub-index score](#calculating-sub-index-scores-for-each-indicator) for an individual indicator.
 
@@ -10,13 +10,13 @@ All of our indices are simple averages of the individual component indicators. T
 
 The different indices are comprised as follows:
 
-| Index name | _k_ | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | E1 | E2 | E3 | E4 | H1 | H2 | H3 | H4 | H5 | M1 |
-| --- | ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Government response index | 13 | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | `x` | `x` | `x` | | | |
-| Containment and health index | 11 | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | `x` | `x` | | | |
-| Stringency index | 9 | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | | | | | |
-| Economic support index | 2 | | | | | | | | | `x` | `x` | | | | | | | | |
-| [Legacy stringency index](#legacy-stringency-index) | 7 | `x` | `x` | `?` | `?` | `x` | `?` | `?` | `x` | | | | | `x` | | | | | |
+| Index name | _k_ | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | E1 | E2 | E3 | E4 | H1 | H2 | H3 | H4 | H5 | H6 |M1 |
+| --- | ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |--- |
+| Government response index | 14 | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | `x` | `x` | `x` | | | 'x' | |
+| Containment and health index | 12 | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | `x` | `x` | | |'x' | |
+| Stringency index | 9 | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | | | | | | |
+| Economic support index | 2 | | | | | | | | | `x` | `x` | | | | | | | | | |
+| [Legacy stringency index](#legacy-stringency-index) | 7 | `x` | `x` | `?` | `?` | `x` | `?` | `?` | `x` | | | | | `x` | | | | | | |
 
 Two versions of each indicator are present in the database. A regular version which will return `null` values if there is not enough data to calculate the index, and a "display" version which will extraploate to smooth over the last seven days of the index based on the most recent complete data. This is explained [below](#dealing-with-gaps-in-the-data-for-display-purposes).
 
@@ -24,7 +24,7 @@ Two versions of each indicator are present in the database. A regular version wh
 
 All of the indices use ordinal indicators where policies a ranked on a simple numerical scale. The project also records five non-ordinal indicators – E3, E4, H4, H5 and M1 – but these are not used in our index calculations.
 
-Some indicators – C1-C7, E1 and H1 – have an additional binary flag variable that can be either 0 or 1. For C1-C7 and H1 this corresponds to the geographic scope of the policy. For E1, this flag variable corresponds to the sectoral scope of income support.
+Some indicators – C1-C7, E1, H1 and H6 – have an additional binary flag variable that can be either 0 or 1. For C1-C7, H1 and H6 this corresponds to the geographic scope of the policy. For E1, this flag variable corresponds to the sectoral scope of income support.
 
 The [codebook](codebook.md) has details about each indicator and what the different values represent.
 
@@ -45,6 +45,7 @@ Because different indicators (_j_) have different maximum values (_N<sub>j</sub>
 | H1 | 2 (0, 1, 2) | yes=1 |
 | H2 | 3 (0, 1, 2, 3) | no=0 |
 | H3 | 2 (0, 1, 2) | no=0 |
+| H6 | 4 (0, 1, 2, 3, 4) | yes=1 |
 
 Each sub-index score (_I_) for any given indicator (_j_) on any given day (_t_), is calculated by the function described in equation 2 based on the following parameters:
 
@@ -80,9 +81,10 @@ Here is an explicit example of the calculation for a given country on a single d
 | H1 | 2 | 0 | | 2 | yes=1 | | 75.00 |
 | H2 | 3 | N/A | | 3 | no=0 | | 100.00 |
 | H3 | 2 | N/A | | 2 | no=0 | | 100.00 |
+| H6 | 2 | 0 | | 4 | yes=1 | | 37.50 |
 | **Index** | | | | | | | |
-| Government response | | | | | | | 59.29 |
-| Containment and health | | | | | | | 54.17 |
+| Government response | | | | | | | 57.74 |
+| Containment and health | | | | | | | 52.78 |
 | Stringency | | | | | | | 43.98 |
 | Economic support | | | | | | | 87.50 |
 
@@ -94,23 +96,23 @@ To increase consistency of recent data points which are perhaps mid contribution
 
 Further, we produce two versions of each index. One with the raw calculated index values, plus we produce a "display" version which will "smooth" over gaps in the last seven days, populating each date with the last available "good" data point.
 
-For example, the date at the time of writing was 22 May. The table below gives an example of which index calculations would be rejected based on the number of policy indicators with data on each data. In this table, we will consider the overall government response index where _k_=13.
+For example, the date at the time of writing was 22 October. The table below gives an example of which index calculations would be rejected based on the number of policy indicators with data on each data. In this table, we will consider the overall government response index where _k_=13.
 
 | Date | No. of valid indicators | No. of indicators in index (_k_) | Raw index | "Display" index |
 | --- | :---: | :---: | ---: | ---: |
-| 10/05/2020 | 11 | 13 | `null` | `null` |
-| 11/05/2020 | 12 | 13 | 60 | 60 |
-| 12/05/2020 | 10 | 13 | `null` | `null` |
-| 13/05/2020 | 13 | 13 | 65 | 65 |
-| 14/05/2020 | 10 | 13 | `null` | `null` |
-| 15/05/2020 | 10 | 13 | `null` | `null` |
-| 16/05/2020 | 10 | 13 | `null` | 65 |
-| 17/05/2020 | 13 | 13 | 70 | 70 |
-| 18/05/2020 | 13 | 13 | 75 | 75 |
-| 19/05/2020 | 12 | 13 | `null` | 75 |
-| 20/05/2020 | 12 | 13 | `null` | 75 |
-| 21/05/2020 | 6 | 13 | `null` | 75 |
-| 22/05/2020 (today) | 4 | 13 | `null` | 75 |
+| 10/10/2020 | 12 | 14 | `null` | `null` |
+| 11/10/2020 | 13 | 14 | 60 | 60 |
+| 12/10/2020 | 11 | 14 | `null` | `null` |
+| 13/10/2020 | 14 | 14 | 65 | 65 |
+| 14/10/2020 | 11 | 14 | `null` | `null` |
+| 15/10/2020 | 11 | 14 | `null` | `null` |
+| 16/10/2020 | 11 | 14 | `null` | 65 |
+| 17/10/2020 | 14 | 14 | 70 | 70 |
+| 18/10/2020 | 14 | 14 | 75 | 75 |
+| 19/10/2020 | 13 | 14 | `null` | 75 |
+| 20/10/2020 | 13 | 14 | `null` | 75 |
+| 21/10/2020 | 7 | 14 | `null` | 75 |
+| 22/10/2020 (today) | 5 | 14 | `null` | 75 |
 
 ## Legacy stringency index
 
@@ -126,4 +128,5 @@ The individual sub-index scores for the legacy index are calculated through a sl
 
 ## Index methodology changelog
 
+- 22 October 2020: added H6 Facial Coverings indicator
 - 25 May 2020: implemented v3 of index methodology. Altered sub-index forumula, created new indices (overall government response, containment & health, and economic support) and moved documentation to GitHub here
