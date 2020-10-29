@@ -1,5 +1,5 @@
 # OxCGRT Coding Interpretation Guide
-***Version 1.0 <br/>Date: 01 October, 2020***
+***Version 1.1 <br/>Date: 29 October, 2020***
 
 This guide details the resolutions of frequently asked [codebook](codebook.md) interpretation queries, where indicators may be interpreted in different ways. This is in order to ensure consistency, and standardize coding across the database. Queries related specifically to subnational data are labelled as such.
 
@@ -9,7 +9,15 @@ Updates to this coding interpretation are recorded in the [changelog](#Interpret
 
 ### C1 - School Closures
 
-- School closures and university closures are captured in C1. 
+- In October we expanded the definition of C1. Below are examples of how to code each level as per the new guidance.
+    - **3G**: State order closing K-12 and university levels OR state order + indirect university closures (ex: gatherings) 
+    - **3T**: All K-12 and universities are closed in some parts of the state/country
+    - **2G**: One level is generally fully closed or open across the state/country
+    - **2T**: One level is fully closed only in certain areas in the state/country. 
+    - **1G**: All schools/districts open across the state/country, but with alterations for social distancing or other public health precautions that result in significant differences as compared to usual, non-Covid-19 operations OR a state or nationwide wide recommendation to close
+    - **1T**: All schools/districts open across the state/country, but with some sub-state jurisdictions having alterations for social distancing or other public health precautions that result in significant differences as compared to usual, non-Covid-19 operations OR a targeted recommendation (not requirement) to close.
+    - **0**: Widespread in-person teaching across all levels that is comparable to a non-COVID teaching experience
+- School closures *and* university closures are captured in C1. 
 - Different governments use different wording (e.g. soft-closing, recommend, strongly recommend, recommend without restricting civil liberty), so we standardize what these mean in practice. If the situation is that all schools are closed, or policies in place make it impossible for them to open and meet these requirements, then that would count as a full closure. 
 - Childcare, nurseries, language courses, and driving schools, do not count as educational closures. These are recorded as workplaces under C2
 - If schools are closed, and this same closure policy then rolls into school holidays, we keep the code the same, for example ‘all levels of education remain closed’. This coding would only go down only once students actually return, when schools reopen
@@ -37,6 +45,8 @@ Updates to this coding interpretation are recorded in the [changelog](#Interpret
 - When private gatherings of only 10 or less are permitted (e.g. C4=4), this restriction would prevent public events from taking place, so they are recorded as required to cancel.
 - When all public gatherings are cancelled, but people can still go to church, we record this as a 2 (all gatherings cancelled), but make a note about the exception for religious gatherings. 
 - There is no explicit cut off point for a ‘mass gathering’. If really large events, such as political protests, can go ahead, but with strict social distancing and hygiene measures in place, this could be reported as 'recommended'. 
+- If a venue is able to open, but with a specified % of original capacity, this can be coded as 1G. This logic is in line with the C1 and C5 logic where operations able to go ahead but with strict social distancing and hygiene measures in place
+- If public events are banned, but one large event was able to go ahead with stringent social distancing measures as a one off (e.g. the F1 Grand Prix), keep the 2 coding and add a detailed note. This is consistent with the logic where if people are able to attend religious gatherings, but in general all other events were cancelled we do not change the code, but record this with a detailed note. This captures the dominant trend in place in a country or state.
 
 ### C4- Restrictions on gatherings 
 
@@ -73,24 +83,32 @@ If there are restrictions for the circulation of private cars based on certain c
 
 ### C8-  International Travel Controls
 
+- This indicator does not have a binary flag variable to reflect geographic variation in policies. This implies that this policy applies generally across the whole jurisdiction. Therefore, we generally code the level of policy that applies everywhere across the jurisdiction- the highest common value of policy nationwide or statewide. We do not code any policies of a higher value that are only available in limited areas.  *For example* if one airport is screening passenger arrivals, but the majority of them are not, this would not be coded as a 1. All airports across the country would need to be screening before this policy could be seen to apply generally and be coded.
 - If visitors are meant to self quarantine/isolate after travelling to certain areas, but there are no enforcement or tracking measures in place, we record the official policy accordingly, and make a note that the situation on the ground may not reflect this.
 - If a country is still repatriating citizens from overseas, but otherwise has closed borders, this still counts as a full border closure (4). This indicator focuses largely on requirements for foriegn passengers, in the sense that even during “total closure”, countries will still let their citizens cross the border to return home (although may subject them to quarantine).
 - **For subnational (state-level) data:** As international travel is usually an issue for the federal government, subnational governments will rarely implement relevant policies for C8. The sorts of state-level activity that would be recorded under C8 include when individual airports proactively screen passengers, or if states created their own mandatory quarantines for international travelers.
+- If a country’s borders are completely closed, but due to a civil war, or other non-covid related reasons, this should still be coded as a 4. While this is not a covid specific policy, in practice the border is still closed so we want to best represent the lived reality of people living there, in order to understand the effect this could have on COVID-19.
 
 
 ### E1- Income Support
 
+-  This indicator does not have a binary flag variable to reflect geographic variation in policies. This implies that this policy applies generally across the whole jurisdiction. Therefore, we generally code the level of policy that applies everywhere across the jurisdiction- the highest common value of policy nationwide or statewide. We do not code any policies of a higher value that are only available in limited areas.  *For example*  if income support is only being provided by some cities, and not across the whole country or state, this cannot be coded. It is only recorded when the support recorded applies nationally or statewide.
 - Formal sector workers are people who are employed with contracts, and pay taxes. Informal workers may be roadside vendors, work on markets, and do not have a formal contract for their work. 
 - If benefits in kind are being given (e.g. dry rations), this is recorded as a 0 with a note. It is not recorded as a non-zero value as it is not money being given or salaries replaced.
 - Edge cases and marginal examples
     - *Widening eligibility for unemployment benefit:* For example, if a nation or state had worked within the existing unemployment scheme to offer expanded eligibility during the COVID-affected period, for example giving benefits to those who wouldn’t normally be paid leave. This expands unemployment benefits to a wider group , and would therefore be recorded as the appropriate non-zero value depending on the value/coverage.
     - *Expedited access to unemployment benefit:* If a state takes policy action to make it faster and easier to access nation or  state/federal unemployment benefits during the COVID-affected period, but doesn’t expand eligibility criteria, this is only recorded as a note. The underlying policy hasn’t changed or expanded to reach more people.
 
+### E2- Debt/contract relief for households
+- This indicator does not have a binary flag variable to reflect geographic variation in policies. This implies that this policy applies generally across the whole jurisdiction. Therefore, we generally code the level of policy that applies everywhere across the jurisdiction- the highest common value of policy nationwide or statewide. We do not code any policies of a higher value that are only available in limited areas.  *For example*  if debt relief is only being provided by some cities, and not across the whole country or state, this cannot be coded. It is only recorded when the support recorded applies nationally or statewide.
 
 ### E3- Fiscal Measures
 
 - If the specific monetary value is undisclosed or unclear, we make a note recording the announcement, but don’t record the monetary value. 
 Sometimes governments make ambiguous funding announcements (where it is not clear what the money is for), or they announce multiple programmes under a single number (eg, fiscal stimulus, plus hospital funding, plus vaccine investment, plus support for other countries, in one number). In these cases, the spending is recorded in this E3 category, and not in the other monetary categories (E4, H4, and H5).
+- If the state is providing support to specific groups, for example funding children’s school meals, handing out staple goods, or providing grants to single parents, this should be coded as a note only for E3. As these forms of support are related to social welfare, they do not fit in E1 which covers income support and a replacement of lost salaries. E1 should be mostly about income support and income replacement, not general social programs, so it is more suitable to record such measures in a note for E3.
+- If specific numbers of spending announced are available, but not a specific date on which this policy was brought into effect, record the numbers and the exchange rate on the first day of the month mentioned, and make it clear in the note that this may not have been the exact day that spending was announced.
+
 
 ### E4- Providing Support to other countries
 
@@ -103,6 +121,8 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
 
 ### H2 - Testing Policy
 
+- If there is a policy which says that everyone who is symptomatic could walk in and get a test, but this could not be met if everyone symptomatic walked into the clinic at once, this suggests there is not the capacity to meet this. While we are coding government policies, capacity issues affect implementation. This therefore requires judgment, about how aspirational a policy is versus how practical it is to see if it is able to meet its propositions. Therefore as well as the policy announced, evidence should be provided demonstrating that there is capacity on the ground to meet this testing policy, mirroring the capacity logic used for H3.
+- This indicator does not have a binary flag variable to reflect geographic variation in policies. This implies that this policy applies generally across the whole jurisdiction. Therefore, we generally code the level of policy that applies everywhere across the jurisdiction- the highest common value of policy nationwide or statewide. We do not code any policies of a higher value that are only available in limited areas. *For example* if there is not testing available to anyone symptomatic across the whole country or state, but only in certain areas, this cannot be coded as a 2 as this does not apply generally. Therefore the highest common value nationwide or statewide is a 1, and this is coded. 
 - In some countries, most testing is coordinated by private companies, with little oversight or coordination from the government (eg in the USA). In this cases, we report as follows:
     - When the state/nation is clearly putting resources towards making testing available, we record this as a 1 (only symptomatic and eligible)
     - If the government implements a statewide/nationwide plan to fund and procure local testing facilities, with the intention of widespread public accessibility, we report a - 2 (all symptomatic eligible)
@@ -132,6 +152,18 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
 - *Some examples that could indicate a 2*:
     - Declaring increased resources to contact tracing capacity and the intention to do contact tracing for all identified cases, PLUS evidence that this is actually happening on the ground and there is capacity to do so.
     - We will sometimes downgrade a country from a 2 to a 1 if there is evidence that their contact tracing resources have been overwhelmed. In this cases the country’s official policy is often still to say that they conduct ‘comprehensive’ contact tracing. But if there are very high daily case numbers, and credible reports of newly-diagnosed cases whose recent contacts were not traced, we will not report this as a 2.
+    
+ ### H4 - Emergency investment in healthcare
+ - If specific numbers of spending announced are available, but not a specific date on which this policy was brought into effect, record the numbers and the exchange rate on the first day of the month mentioned, and make it clear in the note that this may not have been the exact day that spending was announced.
+
+ ### H6 - Facial coverings
+ - The difference between the 3 and the 4 levels here is that at 4, a mask is required at all times when leaving the house with no exception. Even if people are in a street and more than the recommended social distance from other people, a mask is still required. 
+- *Some examples that could indicate a 2*
+     -  In England it is compulsory to wear masks in shops and some other specific locations (not all)
+- *Some examples that could indicate a 3*
+     - In New York it is compulsory to wear a mask on crowded street/ shared space, but not empty street, and at all times in an indoor setting where they at not at home, even if social distancing possible
+- *Some examples that could indicate a 4*
+     - In Spain it is compulsory to wear a mask outside at all times
 
 
 ## General Interpretation Guidance 
@@ -145,4 +177,5 @@ There are a few general rules our coders follow while coding:
 
 
  ## Interpretation guide changelog
+- 29 October 2020: v1.1 added in new guidance for C1, C3, C8, E1, E3, H2, added E2,H4 and H6 sections
 - 01 October 2020: v1.0 created the interpretation guide
