@@ -1,18 +1,20 @@
 # Codebook for the Oxford Covid-19 Government Response Tracker
 
-***Codebook version 2.3 <br/>05 July 2020***
+***Codebook version 2.4 <br/>22 October 2020***
 
-This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)). The dataset contains 17 indicators and a miscellaneous notes field organised into four groups:
+This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)). The dataset contains 18 indicators and a miscellaneous notes field organised into four groups:
 - [C - containment and closure policies](#containment-and-closure-policies)
 - [E - economic policies](#economic-policies)
 - [H - health system policies](#health-system-policies)
 - [M - miscellaneous policies](#miscellaneous-policies)
 
+For more detailed guidance about the codebook and how we interpret the indicators, see the [coding interpretation guide](coding_interpretation_guide.md). This ensures consistency, and standardizes coding across the database.
+
 Updates to this codebook are recorded in the [changelog](#codebook-changelog) below.
 
 Most indicators are recorded on an ordinal scale that represents the level of strictness of the policy. Four of the indicators (E3, E4, H4 and H5) are recorded as a US dollar value of fiscal spending.
 
-Government coronavirus policies often vary by region within countries. We code the most stringent government policy that is in place in a country, as represented by the highest ordinal value. Sometimes the most stringent policy in a country will only apply to a small part of the population. If the most stringent policy is only present in a limited geographic area or sector (eg perhaps only one state has implemented policies at a high level), we use a binary flag variable to denote this limited scope. Eight of the indicators (C1-C7 and H1) have a flag for whether they are "targeted" to a specific geographical region (flag=0) or whether they are a "general" policy that is applied across the whole country (flag=1). One indicator (E1) has a flag to describe whether income support is for just formal sector workers (flag=0) or whether it includes informal workers as well (flag=1).
+Government coronavirus policies often vary by region within countries. We code the most stringent government policy that is in place in a country, as represented by the highest ordinal value. Sometimes the most stringent policy in a country will only apply to a small part of the population. If the most stringent policy is only present in a limited geographic area or sector (eg perhaps only one state has implemented policies at a high level), we use a binary flag variable to denote this limited scope. Nine of the indicators (C1-C7, H1 and H6) have a flag for whether they are "targeted" to a specific geographical region (flag=0) or whether they are a "general" policy that is applied across the whole country (flag=1). One indicator (E1) has a flag to describe whether income support is for just formal sector workers (flag=0) or whether it includes informal workers as well (flag=1).
 
 As explained in our [index methodology documentation](index_methodology.md), an indicator with flag=0 is weighted lower than flag=1 when calculating overall index values. 
 
@@ -56,6 +58,7 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 | H3 | `H3_Contact tracing` | Record government policy on contact tracing after a positive diagnosis <br/><br/>Note: we are looking for policies that would identify all people potentially exposed to Covid-19; voluntary bluetooth apps are unlikely to achieve this | Ordinal scale | 0 - no contact tracing <br/>1 - limited contact tracing; not done for all cases <br/>2 - comprehensive contact tracing; done for all identified cases |
 | H4 | `H4_Emergency investment in healthcare` | Announced short term spending on healthcare system, eg hospitals, masks, etc <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD <br/>0 - no new spending that day <br/>Blank - no data |
 | H5 | `H5_Investment in vaccines` | Announced public spending on Covid-19 vaccine development <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD <br/>0 - no new spending that day <br/>Blank - no data |
+| H6 | `H6_Facial Coverings` | Record policies on the use of facial coverings outside the home <br/> | Ordinal scale | 0 - No policy <br/>1 - Recommended <br/>2 - Required in some specified shared/public spaces outside the home with other people present, or some situations when social distancing not possible <br/>3 - Required in all shared/public spaces outside the home with other people present or all situations when social distancing not possible <br/>4 - Required outside the home at all times regardless of location or presence of other people |
 
 ### Miscellaneous policies
 
@@ -65,6 +68,7 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 
 ## Codebook changelog
 
+- 22 October 2020 v2.4 added H6 Facial Coverings indicator
 - 05 July 2020: v2.3 add better explanation of targeted/general flags in intro
 - 22 May 2020: v2.2 changed description of E1=2 from "replacing more than 50% of lost salary" to "replacing 50% or more of lost salary"
 - 11 May 2020: moved v2 codebook to GitHub

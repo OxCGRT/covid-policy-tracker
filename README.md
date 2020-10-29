@@ -1,20 +1,6 @@
-**UPDATE:** SUBNATIONAL DATA<br/>**25 August 2020 update**
+**UPDATE:** H6 mask indicator<br/>**22 October 2020 update**
 
-This coming Thursday evening UK time (**27 August**) we will integrate sub-national data into our two main CSVs: [data/OxCGRT_latest.csv](data/OxCGRT_latest.csv) and [data/OxCGRT_latest_withnotes.csv](OxCGRT_latest_withnotes.csv).
-
-This may affect how you use our data. For example, for any given date, there will be 53 entries where `CountryCode==USA` (the existing national entry will now be accompanied by 50 states, Washington DC, and the US Virgin Islands). This may break your workflow if you assume there will be a single entry for each date with `CountryCode==USA`.
-
-To distinguish between these rows in the dataset, there will be two new variables: `RegionName` and `RegionCode`. If you wish to select just for national-level data, the simplest way would be to exclude any rows where `RegionCode` contains any text (in other words: filter just for rows where `RegionCode` is null).
-
-Once this update is complete, we will delete the temporary CSV ([data/OxCGRT_US_states_temp.csv](data/OxCGRT_US_states_temp.csv)) with US state data that was uploaded on 06 August 2020.
-
-<br/>
-<br/>
-
-Previous update **06 August 2020**
-
-Today (6 August) we have published USA state level data. Our [/data](data/) folder has a separate [CSV](data/OxCGRT_US_states_temp.csv) with data for all US states, presented in a way that is comparable to our country-level data. We have also published individual state charts in the [/images/US states](images/US_states/) folder, and a [working paper](https://www.bsg.ox.ac.uk/research/publications/variation-us-states-responses-covid-19) with more detailed analysis.
-For additional data on US states, we have a separate [OxCGRT/USA-covid-policy](https://github.com/OxCGRT/USA-covid-policy) repository.
+We have released a new indicator for policies that require the use of facial coverings and masks. You can read more about indicator H6 in our [codebook](documentation/codebook.md).
 
 ---
 ---
@@ -33,15 +19,15 @@ __Cite as:__ Thomas Hale, Sam Webster, Anna Petherick, Toby Phillips, and Beatri
 
 ## The database
 
-OxCGRT collects publicly available information on 17 indicators of government response. This information is collected by a team of over 200 volunteers from the Oxford community and is updated continuously.
+OxCGRT collects publicly available information on 18 indicators of government response. This information is collected by a team of over 200 volunteers from the Oxford community and is updated continuously.
 
 We also include statistics on the number of reported Covid-19 cases and deaths in each country. These are taken from the European Centre for Disease Prevention and Control ([ECDC](https://www.ecdc.europa.eu/en)) for most countries, and from the [JHU CSSE data repository](https://github.com/CSSEGISandData/COVID-19) for US states and the Chinese special administrative regions of Hong Kong and Macau.
 
 ### Individual policy measures
 
-Full descriptions of the policy indicators and their meaning can be found in our [codebook](documentation/codebook.md).
+Full descriptions of the policy indicators and their meaning can be found in our [codebook](documentation/codebook.md). For more detailed guidance about the codebook and how we interpret the indicators, see the [coding interpretation guide](documentation/interpretation_guide.md). This ensures consistency, and standardizes coding across the database.
 
-Eight of the policy indicators (C1-C8) record information on [_containment and closure_ policies](documentation/codebook.md#containment-and-closure-policies), such as school closures and restrictions in movement. Four of the indicators (E1-E4) record [_economic_ policies](documentation/codebook.md#economic-policies) such as income support to citizens or provision of foreign aid. And five indicators (H1-H5) record [_health system_ policies](documentation/codebook.md#health-system-policies) such as the Covid-19 testing regime or emergency investments into healthcare.
+Eight of the policy indicators (C1-C8) record information on [_containment and closure_ policies](documentation/codebook.md#containment-and-closure-policies), such as school closures and restrictions in movement. Four of the indicators (E1-E4) record [_economic_ policies](documentation/codebook.md#economic-policies) such as income support to citizens or provision of foreign aid. And six indicators (H1-H6) record [_health system_ policies](documentation/codebook.md#health-system-policies) such as the Covid-19 testing regime or emergency investments into healthcare.
 
 Finally, we have a [miscellaneous indicator (M1)](documentation/codebook.md#miscellaneous-policies) for notes that do not fit elsewhere.
 
@@ -66,7 +52,7 @@ Subnational data can be interpreted using the main [codebook](documentation/code
 
 ### Our documentation and working papers have more information
 
-The most up-to-date description of database components is here in the [documentation folder](documentation/) of this GitHub repo, which contains a detailed [codebook](documentation/codebook.md), [index methodology](documentation/index_methodology.md), and notes on [subnational interpretation](documentation/subnational_interpretation.md).
+The most up-to-date description of database components is here in the [documentation folder](documentation/) of this GitHub repo, which contains a detailed [codebook](documentation/codebook.md), [index methodology](documentation/index_methodology.md), a [coding interpretation guide](documentation/interpretation_guide.md), and notes on [subnational interpretation](documentation/subnational_interpretation.md).
 
 We have also published a national [working paper](https://www.bsg.ox.ac.uk/research/publications/variation-government-responses-covid-19) with our national methodology, data collection protocols, and description of the individual indicators. 
 
