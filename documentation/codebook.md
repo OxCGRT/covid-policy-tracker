@@ -1,6 +1,6 @@
 # Codebook for the Oxford Covid-19 Government Response Tracker
 
-***Codebook version 2.4 <br/>22 October 2020***
+***Codebook version 2.5 <br/>04 November 2020***
 
 This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)). The dataset contains 18 indicators and a miscellaneous notes field organised into four groups:
 - [C - containment and closure policies](#containment-and-closure-policies)
@@ -22,7 +22,7 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 
 | ID | Name | Description | Measurement | Coding |
 | --- | --- | --- | --- | --- |
-| C1 | `C1_School closing` | Record closings of schools and universities | Ordinal scale | 0 - no measures <br/>1 - recommend closing <br/>2 - require closing (only some levels or categories, eg just high school, or just public schools) <br/>3 - require closing all levels <br/>Blank - no data |
+| C1 | `C1_School closing` | Record closings of schools and universities | Ordinal scale | 0 - no measures <br/>1 - recommend closing or all schools open with alterations resulting in significant differences compared to non-Covid-19 operations <br/>2 - require closing (only some levels or categories, eg just high school, or just public schools) <br/>3 - require closing all levels <br/>Blank - no data |
 | | `C1_Flag` | | Binary flag for geographic scope | 0 - targeted <br/>1- general <br/>Blank - no data |
 | C2 | `C2_Workplace closing` | Record closings of workplaces | Ordinal scale | 0 - no measures <br/>1 - recommend closing (or recommend work from home) <br/>2 - require closing (or work from home) for some sectors or categories of workers <br/>3 - require closing (or work from home) for all-but-essential workplaces (eg grocery stores, doctors) <br/>Blank - no data |
 | | `C2_Flag` | | Binary flag for geographic scope | 0 - targeted <br/>1- general <br/>Blank - no data |
@@ -59,6 +59,7 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 | H4 | `H4_Emergency investment in healthcare` | Announced short term spending on healthcare system, eg hospitals, masks, etc <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD <br/>0 - no new spending that day <br/>Blank - no data |
 | H5 | `H5_Investment in vaccines` | Announced public spending on Covid-19 vaccine development <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD <br/>0 - no new spending that day <br/>Blank - no data |
 | H6 | `H6_Facial Coverings` | Record policies on the use of facial coverings outside the home <br/> | Ordinal scale | 0 - No policy <br/>1 - Recommended <br/>2 - Required in some specified shared/public spaces outside the home with other people present, or some situations when social distancing not possible <br/>3 - Required in all shared/public spaces outside the home with other people present or all situations when social distancing not possible <br/>4 - Required outside the home at all times regardless of location or presence of other people |
+| | `H6_Flag` | | Binary flag for geographic scope |  0 - targeted <br/>1- general <br/>Blank - no data |
 
 ### Miscellaneous policies
 
@@ -68,6 +69,7 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 
 ## Codebook changelog
 
+- 04 November 2020 v2.5 added C1 expanded definition of '1' and added targeted/general flag to H6 indicator
 - 22 October 2020 v2.4 added H6 Facial Coverings indicator
 - 05 July 2020: v2.3 add better explanation of targeted/general flags in intro
 - 22 May 2020: v2.2 changed description of E1=2 from "replacing more than 50% of lost salary" to "replacing 50% or more of lost salary"
