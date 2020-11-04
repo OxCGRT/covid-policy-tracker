@@ -1,6 +1,6 @@
 # Codebook for the Oxford Covid-19 Government Response Tracker
 
-***Codebook version 2.5 <br/>29 October 2020***
+***Codebook version 2.5 <br/>04 November 2020***
 
 This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)). The dataset contains 18 indicators and a miscellaneous notes field organised into four groups:
 - [C - containment and closure policies](#containment-and-closure-policies)
@@ -69,7 +69,7 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 
 ## Codebook changelog
 
-- 29 October 2020 v2.5 added C1 expanded definition of '1' and added targeted/general flag to H6 indicator
+- 04 November 2020 v2.5 added C1 expanded definition of '1' and added targeted/general flag to H6 indicator
 - 22 October 2020 v2.4 added H6 Facial Coverings indicator
 - 05 July 2020: v2.3 add better explanation of targeted/general flags in intro
 - 22 May 2020: v2.2 changed description of E1=2 from "replacing more than 50% of lost salary" to "replacing 50% or more of lost salary"
