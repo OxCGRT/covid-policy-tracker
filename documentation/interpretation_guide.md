@@ -1,5 +1,5 @@
 # OxCGRT Coding Interpretation Guide
-***Version 1.1 <br/>Date: 29 October, 2020***
+***Version 1.1 <br/>Date: 04 November, 2020***
 
 This guide details the resolutions of frequently asked [codebook](codebook.md) interpretation queries, where indicators may be interpreted in different ways. This is in order to ensure consistency, and standardize coding across the database. Queries related specifically to subnational data are labelled as such.
 
@@ -173,5 +173,5 @@ There are a few general rules our coders follow while coding:
 
 
  ## Interpretation guide changelog
-- 29 October 2020: v1.1 added in new guidance for C1, C3, C8, E1, E3, H2, added E2,H4 and H6 sections
+- 04 November 2020: v1.1 added in new guidance for C1, C3, C8, E1, E3, H2, added E2,H4 and H6 sections
 - 01 October 2020: v1.0 created the interpretation guide
