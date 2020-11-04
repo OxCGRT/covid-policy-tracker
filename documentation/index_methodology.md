@@ -1,6 +1,6 @@
 # Methodology for calculating indices
 
-***Index methodology version 3.2 <br/>29 October 2020***
+***Index methodology version 3.2 <br/>04 November 2020***
 
 The Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)) tracks individual policy measures across 18 indicators. We also calculate several indices to give an overall impression of government activity, and this page describes how these indices are calculated. Changes to this methodology are recorded in the [changelog](#index-methodology-changelog) below.
 
