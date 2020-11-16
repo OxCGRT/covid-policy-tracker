@@ -12,7 +12,7 @@ jobs:
                         - uses: r-lib/actions/setup-r@master
                           with: 
                                   r-version: '3.5.3' # The R version to be installed 
-                        - name: Install dependencies        
+                        - name: Install package dependencies        
                           run: |
                              source <(curl -s https://raw.githubusercontent.com/saptahash/test_repo/master/mainrepo/sysrequirements.sh)
                         - name: Run data update codes
