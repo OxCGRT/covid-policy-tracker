@@ -1,4 +1,4 @@
-name: An R workflow to automate main repo analysis
+name: An R workflow to automate main repo updates
 on: push
 #        schedule:
 #                - cron: '30 1 * * *'
