@@ -1,4 +1,4 @@
-name: An R workflow to automate main repo images updates
+name: An R workflow to automate main repo images and timeseries updates
 on: push
 #        schedule:
 #                - cron: '30 1 * * *'
