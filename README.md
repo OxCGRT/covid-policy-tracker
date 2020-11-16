@@ -110,7 +110,7 @@ An individual chart of each country is in the [/images/country charts](images/co
 <img src="images/OxCGRT_indices_vs_time.png" width=80%>
 
 #### Map of government responses to COVID-19
-<img src="images/OxCGRT_worldmap_govresponse.png" width 80%>
+<img src="images/OxCGRT_worldmap_govresponse.png" width=80%>
 
 #### Map of school closures in responses to COVID-19
-![World map of school closures](images/OxCGRT_worldmap_schools.png)
+<img src="images/OxCGRT_worldmap_schools.png" width=80%>
