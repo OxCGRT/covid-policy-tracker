@@ -5,7 +5,7 @@ on: push
 
 jobs: 
         build:
-                name: R github actions
+                name: R github actions script
                 runs-on: ubuntu-latest
                 steps: 
                         - uses: actions/checkout@master
