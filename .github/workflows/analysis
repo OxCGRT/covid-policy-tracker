@@ -1,0 +1,34 @@
+name: An R workflow to automate main repo analysis
+on: push
+#        schedule:
+#                - cron: '30 1 * * *'
+
+jobs: 
+        build:
+                name: R github actions
+                runs-on: ubuntu-latest
+                steps: 
+                        - uses: actions/checkout@master
+                        - uses: r-lib/actions/setup-r@master
+                          with: 
+                                  r-version: '3.5.3' # The R version to be installed 
+                        - name: Install dependencies        
+                          run: |
+                             source <(curl -s https://raw.githubusercontent.com/saptahash/test_repo/master/mainrepo/sysrequirements.sh)
+                        - name: Run data update codes
+                          run: | 
+                            cd risk_of_openness_index
+                            echo 'Starting data prep code'
+                            Rscript -e 'devtools::source_url("https://raw.githubusercontent.com/saptahash/test_repo/master/mainrepo/githubroutine.r")'
+                        - name: Commit changes
+                          run: |
+                            ls
+                            echo 'Committing output'
+                            git config --local user.email "action@github.com"
+                            git config --local user.name "GitHub Action"
+                            git add .
+                            git diff-index --quiet HEAD || git commit -m "Adding latest timeseries csv and images for risk index" -a
+                        - name: Push changes
+                          uses: ad-m/github-push-action@master
+                          with:
+                            github_token: ${{ secrets.GITHUB_TOKEN }}
