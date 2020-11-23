@@ -5,7 +5,7 @@ on: push
 
 jobs: 
         build:
-                name: R github actions script
+                name: R github actions script for covid-tracker
                 runs-on: ubuntu-latest
                 steps: 
                         - uses: actions/checkout@master
