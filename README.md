@@ -1,6 +1,9 @@
-**UPDATE:** H6 mask indicator<br/>**22 October 2020 update**
+**UPDATE:** "Combined" CSV, Brazil data, mailing list<br/>**24 November 2020 update**
 
-We have released a new indicator for policies that require the use of facial coverings and masks. You can read more about indicator H6 in our [codebook](documentation/codebook.md).
+- We have published a new format for our indicators ([/data/OxCGRT_latest_combined.csv](data/OxCGRT_latest_combined.csv)) which combines our ordinal measures of policy strictness with their geographical scope. This is described [below](#getting-data-from-this-github-repository).
+- Our main datasets in this repository also include Brazilian state data.
+- We are creating a mailing list to provide technical users with slightly more detailed release notes, and advance warning of changes to database structure. You can register for these email updates here: http://eepurl.com/hiMsdL
+
 
 ---
 ---
@@ -69,13 +72,16 @@ The OxCGRT is updated continuously in real time. There are numerous ways you can
 
 The [/data](data/) folder in this repo contains recent exports from the OxCGRT database. You are welcome to build applications that draw directly from this repository.
 - The CSV file [/data/OxCGRT_latest.csv](data/OxCGRT_latest.csv) reports country- and state-level data presented in "country-day" format (or "state-day" as the case may be), with a list of all indicators for each country as a single row each day. This CSV is updated every hour from the main database, and the badge above shows whether this data link is functioning correctly.
+- The CSV file [/data/OxCGRT_latest_combined.csv](data/OxCGRT_latest_combined.csv) reports country- and state-level data in "country-day" format, but gives a single "combined" value for each indicator. As described in the [codebook](documentation/codebook.md), many of our indicators are recorded across two variables: one that records the _strictness_ of the policy, and one that records its _scope_.
+  - This is reported as a combination of the policy level (a number) and the scope flag (a letter: `T` for targetted policies or `G` for general policie; or `F`/`A` flags for indicator E1). For instance, for `C3_Cancel public events` we would have `0`, `1T` (recommend cancelling in some areas), `1G` (recommend cancelling everywhere), `2T` (require cancelling in some areas), `2G` (require cancelling everywhere).
+  - We also include a numerical combination, using the same methodology to [calculate compenents for our indices](documentation/index_methodology.md): a targeted policy is considered a half-step lower than a general jurisdiction-wide policy. For instance, for `C3_Cancel public events` we would have `0`, `0.5` (recommend cancelling in some areas), `1` (recommend cancelling everywhere), `1.5` (require cancelling in some areas), `2` (require cancelling everywhere).
 - The CSV file [/data/OxCGRT_latest_withnotes.csv](data/OxCGRT_latest_withnotes.csv) reports country- and state-level data in "country-day" format _with_ a column of notes from our data collectors for each indicator. This is also updated every hour from the main database. Please note that some of the comments contain commas and other characters interpreted as a delimiter, and so may cause problems when parsing this CSV file.
 - The CSV file [/data/OxCGRT_latest_allchanges.csv](data/OxCGRT_latest_allchanges.csv) reports country-level data with a list of every _change_ to the database. Every time a policy value changes, or every time a note is added to an indicator, it is represented with it's own new row. (This does not include subnational data.)
 - The [/data/timeseries](data/timeseries/) folder reports country-level data as individual timeseries for each indicator (except for the non-ordinal indicators E3, E4, H4, H5 and M1) in CSV format, as well as a combined Excel file with a tab for each indicator. This is updated periodically – usually daily – and the date will be listed in the commit description and at the bottom of each sheet. (This does not include subnational data.)
-- The CSV file [/data/OxCGRT_US_states_temp.csv](data/OxCGRT_US_states_temp.csv) is a temporary CSV that presents _only US state-level data_ in "state-day" format, with a column of notes from our data collectors for each indicator. This is updated manually. **This has now been integrated into the two primary CSVs at the top of this list, and this temporary CSV will be deleted from the repo in September 2020.** 
+- The CSV file [/data/OxCGRT_US_states_temp.csv](data/OxCGRT_US_states_temp.csv) is a temporary CSV that presents _only US state-level data_ in "state-day" format, with a column of notes from our data collectors for each indicator. This is updated manually.
 
 ### Getting data through our API
-You can also get OxCGRT through our API. Documentation for this is [published here](https://covidtracker.bsg.ox.ac.uk/about-api).
+You can also get some OxCGRT national-level data through our API. Documentation for this is [published here](https://covidtracker.bsg.ox.ac.uk/about-api).
 
 ### Data quality
 
@@ -108,6 +114,6 @@ An individual chart of each country is in the [/images/country charts](images/co
 
 <img src="images/OxCGRT_indices_vs_time.png" width=80%>
 
-![World map of current government responses](images/OxCGRT_worldmap_govresponse.png)
+<img src="images/OxCGRT_worldmap_govresponse.png" width=80% height=60%>
 
-![World map of school closures](images/OxCGRT_worldmap_schools.png)
+<img src="images/OxCGRT_worldmap_schools.png" width=80% height=60%>
