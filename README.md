@@ -1,4 +1,4 @@
-**UPDATE:** "Combined" CSV, Brazil data, mailing list<br/>**30 December 2020 update**
+**UPDATE:** "Combined" CSV, Brazil data, mailing list<br/>**03 December 2020 update**
 
 - We have published a new format for our indicators ([/data/OxCGRT_latest_combined.csv](data/OxCGRT_latest_combined.csv)) which combines our ordinal measures of policy strictness with their geographical scope. This is described [below](#getting-data-from-this-github-repository).
 - Our main datasets in this repository also include Brazilian state data.
