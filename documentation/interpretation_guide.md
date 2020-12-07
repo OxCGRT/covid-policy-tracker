@@ -1,5 +1,5 @@
 # OxCGRT Coding Interpretation Guide
-***Version 1.1 <br/>Date: 04 November, 2020***
+***Version 1.2 <br/>Date: 08 December, 2020***
 
 This guide details the resolutions of frequently asked [codebook](codebook.md) interpretation queries, where indicators may be interpreted in different ways. This is in order to ensure consistency, and standardize coding across the database. Queries related specifically to subnational data are labelled as such.
 
@@ -157,6 +157,18 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
      - In New York it is compulsory to wear a mask on crowded street/ shared space, but not empty street, and at all times in an indoor setting where they at not at home, even if social distancing possible
 - *Some examples that could indicate a 4*
      - In Spain it is compulsory to wear a mask outside at all times
+     
+ ### H7 Vaccination policy
+- Geographic coverage needs to be national before this is coded, as we code the lowest common value if there is geographic variation
+- The availability of vaccines is defined here in three ways:
+ - 1. There is a de jure policy to vaccinate a population group
+ - 2. There are enough vaccine doses on order and reasonably expected to be delivered, in order to vaccinate 20% of the target population 
+ - 3. There is de facto capacity and evidence that this can be met on the ground
+- Elderly groups are as they are defined locally for the specific country being coded
+- Key workers are broadly defined according to local conditions, and may also be described as essential, frontline, and high risk employees.
+- Broad groups may include a large group of adults, for example those aged 50-65
+- A cost to the individual can also be a partial cost. No cost to individual may also include a very small nominal payment
+- Vaccines are defined as having passed Phase 3 clinical trials and approved by the government for use
 
 
 ## General Interpretation Guidance 
@@ -170,5 +182,6 @@ There are a few general rules our coders follow while collecting data:
 
 
  ## Interpretation guide changelog
+- 08 December 2020: V1.2 added in new guidance for H7
 - 04 November 2020: v1.1 added in new guidance for C1, C3, C8, E1, E3, H2, added E2,H4 and H6 sections
 - 01 October 2020: v1.0 created the interpretation guide
