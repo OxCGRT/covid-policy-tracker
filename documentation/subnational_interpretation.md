@@ -15,7 +15,7 @@ The resulting observations are marked with a_TOTAL suffix. For example, observat
 
 Subnational data in this repo use this method to account for interaction of state and national policies. 
 
-_Note: NAT_GOV and STATE_WIDE are not reported in our primary dataset, and NAT_GOV is different to the national country-level data reported in our primary dataset. Our primary dataset reports on the entire policy environment in a country, and so includes decisions of national governments, state governments, and local governments all in one.
+_Note: NAT_GOV and STATE_WIDE are not reported in our primary dataset, and NAT_GOV is different to the national country-level data reported in our primary dataset. Our primary dataset reports on the entire policy environment in a country, and so includes decisions of national governments, state governments, and local governments all in one._
 
 ## More detailed data is published in subnational repositories
 
@@ -27,7 +27,7 @@ Unlike our primary dataset in this repository, these two subnational-only data p
 
 In many countries, the national government sets international travel restrictions that apply country-wide (indicator C8). This would not be registered in the C8 indicator of a state's policy (unless they took additional measures beyond that of the national government), and so our secondary datasets would not report any international travel controls for STATE_WIDE.
 
-However, in our primary dataset in this [OxCGRT/covid-policy-tracker](https://github.com/OxCGRT/covid-policy-tracker) repository, we would report the national government's border controls against each state, as the policy is in force in those state.
+However, in our primary dataset in this [OxCGRT/covid-policy-tracker](https://github.com/OxCGRT/covid-policy-tracker) repository, we would report the national government's border controls against each state as part of STATE_TOTAL, as the policy is in force in those state.
 
 ## Further interpretation
 
