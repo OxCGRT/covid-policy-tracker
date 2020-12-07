@@ -1,7 +1,8 @@
-**UPDATE:** "Combined" CSV, Brazil data, mailing list<br/>**24 November 2020 update**
+**UPDATE:** "Combined" CSV, Brazil data, mailing list<br/>**29 November 2020 update**
 
-- We have published a new format for our indicators ([/data/OxCGRT_latest_combined.csv](data/OxCGRT_latest_combined.csv)) which combines our ordinal measures of policy strictness with their geographical scope. This is described [below](#getting-data-from-this-github-repository).
-- Our main datasets in this repository also include Brazilian state data.
+<!---- We have published a new format for our indicators ([/data/OxCGRT_latest_combined.csv](data/OxCGRT_latest_combined.csv)) which combines our ordinal measures of policy strictness with their geographical scope. This is described [below](#getting-data-from-this-github-repository).--->
+<!---- Our main datasets in this repository also include Brazilian state data.--->
+- We have changed our data source for cases and deaths from the European Centre for Disease Prevention and Control ([ECDC](https://www.ecdc.europa.eu/en)) to the [JHU CSSE data repository](https://github.com/CSSEGISandData/COVID-19) for all countries and the US States. Data sources for the UK nations and Brazil states remain unaltered. 
 - We are creating a mailing list to provide technical users with slightly more detailed release notes, and advance warning of changes to database structure. You can register for these email updates here: http://eepurl.com/hiMsdL
 
 
@@ -24,7 +25,7 @@ __Cite as:__ Thomas Hale, Sam Webster, Anna Petherick, Toby Phillips, and Beatri
 
 OxCGRT collects publicly available information on 18 indicators of government response. This information is collected by a team of over 200 volunteers from the Oxford community and is updated continuously.
 
-We also include statistics on the number of reported Covid-19 cases and deaths in each country. These are taken from the European Centre for Disease Prevention and Control ([ECDC](https://www.ecdc.europa.eu/en)) for most countries, and from the [JHU CSSE data repository](https://github.com/CSSEGISandData/COVID-19) for US states and the Chinese special administrative regions of Hong Kong and Macau.
+We also include statistics on the number of reported Covid-19 cases and deaths in each country. These are taken from the [JHU CSSE data repository](https://github.com/CSSEGISandData/COVID-19) for all countries and the US States. 
 
 ### Individual policy measures
 
