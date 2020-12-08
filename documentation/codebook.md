@@ -60,6 +60,8 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 | H5 | `H5_Investment in vaccines` | Announced public spending on Covid-19 vaccine development <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD <br/>0 - no new spending that day <br/>Blank - no data |
 | H6 | `H6_Facial Coverings` | Record policies on the use of facial coverings outside the home <br/> | Ordinal scale | 0 - No policy <br/>1 - Recommended <br/>2 - Required in some specified shared/public spaces outside the home with other people present, or some situations when social distancing not possible <br/>3 - Required in all shared/public spaces outside the home with other people present or all situations when social distancing not possible <br/>4 - Required outside the home at all times regardless of location or presence of other people |
 | | `H6_Flag` | | Binary flag for geographic scope |  0 - targeted <br/>1- general <br/>Blank - no data |
+| H7 | `H7_Vaccination Policy` | Record policies for vaccine delivery for different groups <br/> | Ordinal scale | 0 - No availability <br/>1 - Availability for ONE of following: key workers/ clinically vulnerable groups / elderly groups <br/>2 - Availability for TWO of following: key workers/ clinically vulnerable groups / elderly groups <br/>3 - Availability for ALL of following: key workers/ clinically vulnerable groups / elderly groups <br/>4 - Availability for all three plus partial additional availability (select broad groups/ages) <br/>5 - Universal availability | 
+ | | `H7_Flag` | | Binary flag for funding scope |  0 - At cost to individual (or funded by NGO,insurance, or partially government funded) <br/>1- No or minimal cost to individual (government funded or subsidised) <br/>Blank - no data |
 
 ### Miscellaneous policies
 
@@ -68,7 +70,7 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 | M1 | `M1_Wildcard` | Record policy announcements that do not fit anywhere else | Free text notes field | Note unusual or interesting interventions that are worth flagging  |
 
 ## Codebook changelog
-
+- 08 December 2020 v 2.6 added H7 defintion to table
 - 04 November 2020 v2.5 added C1 expanded definition of '1' and added targeted/general flag to H6 indicator
 - 22 October 2020 v2.4 added H6 Facial Coverings indicator
 - 05 July 2020: v2.3 add better explanation of targeted/general flags in intro
