@@ -166,7 +166,7 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
  - 3. There is de facto capacity and evidence that this can be met on the ground
 - Elderly groups are as they are defined locally for the specific country being coded
 - Key workers are broadly defined according to local conditions, and may also be described as essential, frontline, and high risk employees.
-- Broad groups may include a large group of adults, for example all those aged over 50
+- Broad groups may include a large group of adults (eg. all those aged over 40), or other broadly defined population groups (eg. students)
 - A policy recorded as “no cost to individual” may also include a very small nominal cost to the individual, such as the small pharmaceutical co-payments (eg. $5) in some public health systems
 - Vaccines are defined as having passed Phase 3 clinical trials and approved by the government for use
 
