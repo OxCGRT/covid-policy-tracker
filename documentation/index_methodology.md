@@ -1,6 +1,6 @@
 # Methodology for calculating indices
 
-***Index methodology version 3.3 <br/>08 December 2020***
+***Index methodology version 3.3 <br/>09 December 2020***
 
 The Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)) tracks individual policy measures across 19 indicators. We also calculate several indices to give an overall impression of government activity, and this page describes how these indices are calculated. Changes to this methodology are recorded in the [changelog](#index-methodology-changelog) below.
 
@@ -130,7 +130,7 @@ The individual sub-index scores for the legacy index are calculated through a sl
 
 ## Index methodology changelog
 
-- 08 December 2020: added H7 Vaccination Policy and edited format of x for H7 column for Government response index and Containment health index rows to 'x'
+- 09 December 2020: added H7 Vaccination Policy and edited format of x for H7 column for Government response index and Containment health index rows to 'x'
 - 29 October 2020: edited format of x for H6 column for Government response index and Containment and health index rows to `x`
 - 22 October 2020: added H6 Facial Coverings indicator
 - 25 May 2020: implemented v3 of index methodology. Altered sub-index forumula, created new indices (overall government response, containment & health, and economic support) and moved documentation to GitHub here
