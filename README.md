@@ -1,4 +1,4 @@
-**UPDATE:** "Added H7 Vaccination Policy <br/>**08 December 2020 update**
+**UPDATE:** Added H7 Vaccination Policy <br/>**08 December 2020 update**
 
 <!---- We have published a new format for our indicators ([/data/OxCGRT_latest_combined.csv](data/OxCGRT_latest_combined.csv)) which combines our ordinal measures of policy strictness with their geographical scope. This is described [below](#getting-data-from-this-github-repository).--->
 <!---- Our main datasets in this repository also include Brazilian state data.--->
