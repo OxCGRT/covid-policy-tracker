@@ -1,6 +1,6 @@
 # Codebook for the Oxford Covid-19 Government Response Tracker
 
-***Codebook version 2.6 <br/>08 December 2020***
+***Codebook version 2.6 <br/>09 December 2020***
 
 This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)). The dataset contains 19 indicators and a miscellaneous notes field organised into four groups:
 - [C - containment and closure policies](#containment-and-closure-policies)
@@ -14,7 +14,7 @@ Updates to this codebook are recorded in the [changelog](#codebook-changelog) be
 
 Most indicators are recorded on an ordinal scale that represents the level of strictness of the policy. Four of the indicators (E3, E4, H4 and H5) are recorded as a US dollar value of fiscal spending.
 
-Government coronavirus policies often vary by region within countries. We code the most stringent government policy that is in place in a country, as represented by the highest ordinal value. Sometimes the most stringent policy in a country will only apply to a small part of the population. If the most stringent policy is only present in a limited geographic area or sector (eg perhaps only one state has implemented policies at a high level), we use a binary flag variable to denote this limited scope. Nine of the indicators (C1-C7, H1 and H6) have a flag for whether they are "targeted" to a specific geographical region (flag=0) or whether they are a "general" policy that is applied across the whole country (flag=1).(E1) has a flag to describe whether income support is for just formal sector workers (flag=0) or whether it includes informal workers as well (flag=1). (H7) has a flag to describe whether Vaccine policy is funded at cost to the individual (flag=0_ or by government (flag=1).
+Government coronavirus policies often vary by region within countries. We code the most stringent government policy that is in place in a country, as represented by the highest ordinal value. Sometimes the most stringent policy in a country will only apply to a small part of the population. If the most stringent policy is only present in a limited geographic area or sector (eg perhaps only one state has implemented policies at a high level), we use a binary flag variable to denote this limited scope. Nine of the indicators (C1-C7, H1 and H6) have a flag for whether they are "targeted" to a specific geographical region (flag=0) or whether they are a "general" policy that is applied across the whole country (flag=1. )E1 has a flag to describe whether income support is for just formal sector workers (flag=0) or whether it includes informal workers as well (flag=1). H7 has a flag to describe whether Vaccine policy is funded at cost to the individual (flag=0) or by government (flag=1).
 
 As explained in our [index methodology documentation](index_methodology.md), an indicator with flag=0 is weighted lower than flag=1 when calculating overall index values. 
 
@@ -71,7 +71,7 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 
 ## Codebook changelog
 
-- 08 December 2020 v2.6 added H7 Vaccination policy indicator
+- 09 December 2020 v2.6 added H7 Vaccination policy indicator
 - 04 November 2020 v2.5 added C1 expanded definition of '1' and added targeted/general flag to H6 indicator
 - 22 October 2020 v2.4 added H6 Facial Coverings indicator
 - 05 July 2020: v2.3 add better explanation of targeted/general flags in intro
