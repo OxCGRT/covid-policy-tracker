@@ -1,7 +1,8 @@
-**UPDATE:** "Combined" CSV, Brazil data, mailing list<br/>**29 November 2020 update**
+**UPDATE:** Added H7 Vaccination Policy <br/>**08 December 2020 update**
 
 <!---- We have published a new format for our indicators ([/data/OxCGRT_latest_combined.csv](data/OxCGRT_latest_combined.csv)) which combines our ordinal measures of policy strictness with their geographical scope. This is described [below](#getting-data-from-this-github-repository).--->
 <!---- Our main datasets in this repository also include Brazilian state data.--->
+- we have published a new indicator for vaccine policy, H7
 - We have changed our data source for cases and deaths from the European Centre for Disease Prevention and Control ([ECDC](https://www.ecdc.europa.eu/en)) to the [JHU CSSE data repository](https://github.com/CSSEGISandData/COVID-19) for all countries and the US States. Data sources for the UK nations and Brazil states remain unaltered. 
 - We are creating a mailing list to provide technical users with slightly more detailed release notes, and advance warning of changes to database structure. You can register for these email updates here: http://eepurl.com/hiMsdL
 
@@ -23,7 +24,7 @@ __Cite as:__ Thomas Hale, Sam Webster, Anna Petherick, Toby Phillips, and Beatri
 
 ## The database
 
-OxCGRT collects publicly available information on 18 indicators of government response. This information is collected by a team of over 200 volunteers from the Oxford community and is updated continuously.
+OxCGRT collects publicly available information on 19 indicators of government response. This information is collected by a team of over 200 volunteers from the Oxford community and is updated continuously.
 
 We also include statistics on the number of reported Covid-19 cases and deaths in each country. These are taken from the [JHU CSSE data repository](https://github.com/CSSEGISandData/COVID-19) for all countries and the US States. 
 
@@ -31,7 +32,7 @@ We also include statistics on the number of reported Covid-19 cases and deaths i
 
 Full descriptions of the policy indicators and their meaning can be found in our [codebook](documentation/codebook.md). For more detailed guidance about the codebook and how we interpret the indicators, see the [coding interpretation guide](documentation/interpretation_guide.md). This ensures consistency, and standardizes coding across the database.
 
-Eight of the policy indicators (C1-C8) record information on [_containment and closure_ policies](documentation/codebook.md#containment-and-closure-policies), such as school closures and restrictions in movement. Four of the indicators (E1-E4) record [_economic_ policies](documentation/codebook.md#economic-policies) such as income support to citizens or provision of foreign aid. And six indicators (H1-H6) record [_health system_ policies](documentation/codebook.md#health-system-policies) such as the Covid-19 testing regime or emergency investments into healthcare.
+Eight of the policy indicators (C1-C8) record information on [_containment and closure_ policies](documentation/codebook.md#containment-and-closure-policies), such as school closures and restrictions in movement. Four of the indicators (E1-E4) record [_economic_ policies](documentation/codebook.md#economic-policies) such as income support to citizens or provision of foreign aid. And seven indicators (H1-H7) record [_health system_ policies](documentation/codebook.md#health-system-policies) such as the Covid-19 testing regime or emergency investments into healthcare.
 
 Finally, we have a [miscellaneous indicator (M1)](documentation/codebook.md#miscellaneous-policies) for notes that do not fit elsewhere.
 
