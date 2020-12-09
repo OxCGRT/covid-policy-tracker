@@ -46,7 +46,7 @@ Because different indicators (_j_) have different maximum values (_N<sub>j</sub>
 | H2 | 3 (0, 1, 2, 3) | no=0 |
 | H3 | 2 (0, 1, 2) | no=0 |
 | H6 | 4 (0, 1, 2, 3, 4) | yes=1 |
-| H6 | 5 (0, 1, 2, 3, 4, 5) | yes=1 |
+| H7 | 5 (0, 1, 2, 3, 4, 5) | yes=1 |
 
 Each sub-index score (_I_) for any given indicator (_j_) on any given day (_t_), is calculated by the function described in equation 2 based on the following parameters:
 
