@@ -83,10 +83,10 @@ Here is an explicit example of the calculation for a given country on a single d
 | H2 | 3 | N/A | | 3 | no=0 | | 100.00 |
 | H3 | 2 | N/A | | 2 | no=0 | | 100.00 |
 | H6 | 2 | 0 | | 4 | yes=1 | | 37.50 |
-| H7 | `no data` | `no data` | | 5 | yes=1 | | 0.00 |
+| H7 | 2 | 1 | | 5 | yes=1 | | 40.00|
 | **Index** | | | | | | | |
-| Government response | | | | | | | 57.74 |
-| Containment and health | | | | | | | 52.78 |
+| Government response | | | | | | | 56.55 |
+| Containment and health | | | | | | | 51.80 |
 | Stringency | | | | | | | 43.98 |
 | Economic support | | | | | | | 87.50 |
 
