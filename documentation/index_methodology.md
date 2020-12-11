@@ -24,7 +24,7 @@ Two versions of each indicator are present in the database. A regular version wh
 
 All of the indices use ordinal indicators where policies a ranked on a simple numerical scale. The project also records five non-ordinal indicators – E3, E4, H4, H5 and M1 – but these are not used in our index calculations.
 
-Some indicators – C1-C7, E1, H1, H6 and H7 – have an additional binary flag variable that can be either 0 or 1. For C1-C7, H1 and H6 this corresponds to the geographic scope of the policy. For E1, this flag variable corresponds to the sectoral scope of income support. Fo H7, this flag variable corresponds to whether the individual or government is funding the vaccination.
+Some indicators – C1-C7, E1, H1, H6 and H7 – have an additional binary flag variable that can be either 0 or 1. For C1-C7, H1 and H6 this corresponds to the geographic scope of the policy. For E1, this flag variable corresponds to the sectoral scope of income support. For H7, this flag variable corresponds to whether the individual or government is funding the vaccination.
 
 The [codebook](codebook.md) has details about each indicator and what the different values represent.
 
@@ -83,10 +83,10 @@ Here is an explicit example of the calculation for a given country on a single d
 | H2 | 3 | N/A | | 3 | no=0 | | 100.00 |
 | H3 | 2 | N/A | | 2 | no=0 | | 100.00 |
 | H6 | 2 | 0 | | 4 | yes=1 | | 37.50 |
-| H7 | `no data` | `no data` | | 5 | yes=1 | | 0.00 |
+| H7 | 2 | 1 | | 5 | yes=1 | | 40.00|
 | **Index** | | | | | | | |
-| Government response | | | | | | | 57.74 |
-| Containment and health | | | | | | | 52.78 |
+| Government response | | | | | | | 56.55 |
+| Containment and health | | | | | | | 51.80 |
 | Stringency | | | | | | | 43.98 |
 | Economic support | | | | | | | 87.50 |
 

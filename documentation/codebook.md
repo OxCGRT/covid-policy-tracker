@@ -8,7 +8,7 @@ This document is the authoritative codebook for the Oxford Covid-19 Government R
 - [H - health system policies](#health-system-policies)
 - [M - miscellaneous policies](#miscellaneous-policies)
 
-For more detailed guidance about the codebook and how we interpret the indicators, see the [coding interpretation guide](coding_interpretation_guide.md). This ensures consistency, and standardizes coding across the database.
+For more detailed guidance about the codebook and how we interpret the indicators, see the [coding interpretation guide](interpretation_guide.md). This ensures consistency, and standardizes coding across the database.
 
 Updates to this codebook are recorded in the [changelog](#codebook-changelog) below.
 
@@ -61,7 +61,7 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 | H6 | `H6_Facial Coverings` | Record policies on the use of facial coverings outside the home <br/> | Ordinal scale | 0 - No policy <br/>1 - Recommended <br/>2 - Required in some specified shared/public spaces outside the home with other people present, or some situations when social distancing not possible <br/>3 - Required in all shared/public spaces outside the home with other people present or all situations when social distancing not possible <br/>4 - Required outside the home at all times regardless of location or presence of other people |
 | | `H6_Flag` | | Binary flag for geographic scope |  0 - targeted <br/>1- general <br/>Blank - no data |
 | H7 | `H7_Vaccination Policy` | Record policies for vaccine delivery for different groups <br/> | Ordinal scale | 0 - No availability <br/>1 - Availability for ONE of following: key workers/ clinically vulnerable groups / elderly groups <br/>2 - Availability for TWO of following: key workers/ clinically vulnerable groups / elderly groups <br/>3 - Availability for ALL of following: key workers/ clinically vulnerable groups / elderly groups <br/>4 - Availability for all three plus partial additional availability (select broad groups/ages) <br/>5 - Universal availability | 
-| | `H7_Flag` | | Binary flag for funding scope |  0 - At cost to individual (or funded by NGO, insurance, or partially government funded) <br/>1- No or minimal cost to individual (government funded or subsidised) <br/>Blank - no data |
+| | `H7_Flag` | | Binary flag for cost |  0 - At cost to individual (or funded by NGO, insurance, or partially government funded) <br/>1- No or minimal cost to individual (government funded or subsidised) <br/>Blank - no data |
 
 
 ### Miscellaneous policies
