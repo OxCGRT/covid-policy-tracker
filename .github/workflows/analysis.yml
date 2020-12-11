@@ -18,7 +18,7 @@ jobs:
                         - name: Run data update codes
                           run: | 
                             echo 'Starting data prep code'
-                            Rscript -e 'devtools::source_url("https://raw.githubusercontent.com/saptahash/test_repo/master/mainrepo/githubroutine.r")'
+                            Rscript -e 'source("https://raw.githubusercontent.com/saptahash/test_repo/master/mainrepo/githubroutine.r")'
                         - name: Commit changes
                           run: |
                             ls
