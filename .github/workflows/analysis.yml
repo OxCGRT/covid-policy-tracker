@@ -1,4 +1,4 @@
-name: An R workflow to automate main repo graphs and timeseries csv
+name: An R workflow to automate daily updates of main repo graphs and timeseries csv
 on: push
 #        schedule:
 #                - cron: '30 1 * * *'
