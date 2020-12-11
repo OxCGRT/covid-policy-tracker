@@ -8,7 +8,7 @@ This document is the authoritative codebook for the Oxford Covid-19 Government R
 - [H - health system policies](#health-system-policies)
 - [M - miscellaneous policies](#miscellaneous-policies)
 
-For more detailed guidance about the codebook and how we interpret the indicators, see the [coding interpretation_guide](interpretation_guide.md). This ensures consistency, and standardizes coding across the database.
+For more detailed guidance about the codebook and how we interpret the indicators, see the [coding interpretation guide](interpretation_guide.md). This ensures consistency, and standardizes coding across the database.
 
 Updates to this codebook are recorded in the [changelog](#codebook-changelog) below.
 
