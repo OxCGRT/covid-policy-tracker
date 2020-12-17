@@ -1,5 +1,5 @@
 # OxCGRT Coding Interpretation Guide
-***Version 1.2 <br/>Date: 09 December, 2020***
+***Version 1.3 <br/>Date: 17 December, 2020***
 
 This guide details the resolutions of frequently asked [codebook](codebook.md) interpretation queries, where indicators may be interpreted in different ways. This is in order to ensure consistency, and standardize coding across the database. Queries related specifically to subnational data are labelled as such.
 
@@ -160,10 +160,10 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
      
  ### H7 Vaccination policy
 - Geographic coverage needs to be national before this is coded, as we code the lowest common value if there is geographic variation
-- The availability of vaccines is defined here in three ways:
+- These three criteria regarding availability MUST be met to code a non-zero value
  - 1. There is a de jure policy to vaccinate a population group
  - 2. There are enough vaccine doses on order and reasonably expected to be delivered, in order to vaccinate 20% of the target population 
- - 3. There is de facto capacity and evidence that this can be met on the ground
+ - 3. There is de facto capacity and evidence that this is being met on the ground. For example, vaccines are actually being administered.
 - Elderly groups are as they are defined locally for the specific country being coded
 - Key workers are broadly defined according to local conditions, and may also be described as essential, frontline, and high risk employees.
 - Broad groups may include a large group of adults (eg. all those aged over 40), or other broadly defined population groups (eg. students)
@@ -182,6 +182,7 @@ There are a few general rules our coders follow while collecting data:
 
 
  ## Interpretation guide changelog
+- 17 December 2020: V1.3 added in detail regarding availability for H7
 - 09 December 2020: V1.2 added in new guidance for H7
 - 04 November 2020: v1.1 added in new guidance for C1, C3, C8, E1, E3, H2, added E2,H4 and H6 sections
 - 01 October 2020: v1.0 created the interpretation guide
