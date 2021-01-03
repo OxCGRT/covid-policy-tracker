@@ -12,6 +12,7 @@ jobs:
           fetch-depth: 1
       - name: Download raw csv from OxCGRT database
         run: |
+          cd master
           curl 'https://oxcgrtportal.azurewebsites.net/api/CSVDownload?type=Compressed' -s -f -o 'data/OxCGRT_latest.csv'
           curl 'https://oxcgrtportal.azurewebsites.net/api/CSVDownload' -s -f -o 'data/OxCGRT_latest_withnotes.csv'
           curl 'https://oxcgrtportal.azurewebsites.net/api/CSVDownload?type=changes_responses' -s -f -o 'data/OxCGRT_latest_responses.csv'
@@ -19,12 +20,15 @@ jobs:
           curl 'https://oxcgrtportal.azurewebsites.net/api/CSVDownload?type=combined' -s -f -o 'data/OxCGRT_latest_combined.csv'
       - name: Commit changes
         run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .
-          git diff-index --quiet HEAD || git commit -m "Pull latest OxCGRT data" -a
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.head_ref }}
+         cd master
+         git config --local user.email "action@github.com"
+         git config --local user.name "GitHub Action"
+         git add .
+         git diff-index --quiet HEAD || git commit -m "OxCGRT Data Update" -a
+         git push origin master:master
+
+#      - name: Push changes
+#        uses: ad-m/github-push-action@master
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          branch: master
