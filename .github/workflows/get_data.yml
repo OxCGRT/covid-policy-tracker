@@ -1,7 +1,7 @@
 name: Data link to OxCGRT
-on: push
-#  schedule:
-#    - cron: '*/60 * * * *'
+on:
+  schedule:
+    - cron: '*/60 * * * *'
 
 jobs:
   build:
