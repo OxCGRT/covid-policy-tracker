@@ -26,8 +26,9 @@ jobs:
                             git config --local user.email "action@github.com"
                             git config --local user.name "GitHub Action"
                             git add .
-                            git diff-index --quiet HEAD || git commit -m "Adding latest timeseries csv and images" -a
-                        - name: Push changes
-                          uses: ad-m/github-push-action@master
-                          with:
-                            github_token: ${{ secrets.GITHUB_TOKEN }}
+                            git diff-index --quiet HEAD || git commit -m "OxCGRT Graphs and timeseries Update" -a
+                            git push origin master:master                        
+#                        - name: Push changes
+#                          uses: ad-m/github-push-action@master
+#                          with:
+#                            github_token: ${{ secrets.GITHUB_TOKEN }}
