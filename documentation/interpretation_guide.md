@@ -66,6 +66,7 @@ Updates to this coding interpretation are recorded in the [changelog](#Interpret
 
 ### C7- Restrictions on Internal Movement
 
+- Unless made explicit in a policy, a stay at home order (C6) should not be interpreted as a requirement not to travel (C7), as domestic travel could still be permitted. If there was an explicit restriction on travel (eg. stay-at-home and only allowed within 5km radius for exercise or groceries) then this could also be coded under C7.
 - **For subnational (state-level) data:** C7 is used to record state-level border closures where a state restricts entry from other states from another state, as well as recording restrictions on movement within the state.
 - *Some examples that could indicate a 1:* 
     - Voluntary quarantines, non-intrusive checks at the state border (ex: asking where you will be quarantining but not following up extensively), asking residents of one specific city to not cross the border with a neighboring city  
@@ -81,6 +82,9 @@ If there are restrictions for the circulation of private cars based on certain c
 - If a country/territory is still repatriating citizens from overseas, but otherwise has closed borders, this still counts as a full border closure (4). This indicator focuses largely on requirements for foriegn passengers, in the sense that even during “total closure”, countries will still let their citizens cross the border to return home (although may subject them to quarantine).
 - **For subnational (state-level) data:** As international travel is usually an issue for the federal government, subnational governments will rarely implement relevant policies for C8. The sorts of state-level activity that would be recorded under C8 include when individual airports proactively screen passengers, or if states created their own mandatory quarantines for international travelers.
 - If country/territory borders are completely closed, but it is because of a civil war, or other non-covid related reasons, this will still be reported as a 4. While this is not a covid-specific policy, in practice the border is still closed so we want to best represent the lived reality of people living there, in order to understand the effect this could have on COVID-19.
+- A requirement for a negative PCR test before entering a country is recorded under 1- screening, as all passengers could circumvent the requirement to undergo a two week quarantine by testing negative.
+- C8 refers to incoming international travellers. Bans on people travelling internationally due to stay at home requirements are not recorded here.
+- If land borders are closed, but international flights are permitted, then still we record C8 based on whether there is a total ban on entry from some countries, and if not, based on screening or quarantine requirements. If residents of the closed border countries could still get on a flight, then this does not constitute a full ban. If the policy would prevent *most* people from a certain country from entering, representing a ban on entry from that country, then this could be considered an edge case for recording a 3 - ban on entry from some countries.
 
 
 ### E1- Income Support
@@ -88,12 +92,15 @@ If there are restrictions for the circulation of private cars based on certain c
 -  This indicator does not have a binary flag variable to reflect geographic variation in policies. Therefore, we generally record the level of policy that applies everywhere across the jurisdiction - the highest common value of policy nationwide or statewide. We do not report any policies of a higher value that are only available in limited areas.  *For example*  if income support is only being provided by some cities, and not across the whole country/territory or state, we would not report it. It is only recorded when the support recorded applies nationally or statewide.
 - Formal sector workers are people who are employed with contracts, and pay taxes. Informal workers may be roadside vendors, work on markets, and do not have a formal contract for their work. 
 - If benefits in kind are being given (e.g. dry rations, or school meals), this is recorded as a 0 with a note. It is not recorded as a non-zero value as it is not money being given or salaries replaced.
+-  Financial support given to private sector employers to ensure that people returning to a country or state are still paid while completing the mandatory 14 day self-isolation requirement, is too niche to credit the entire state/country/province for. It is only recorded if ALL the employees in the formal sector who cannot work are being covered. 
+-  A one time grant, for example just for those working in state institutions is recorded as a note, but is not universal enough in scope to record in E1. 
 - Edge cases and marginal examples
     - *Widening eligibility for unemployment benefit:* For example, if a nation or state had worked within the existing unemployment scheme to offer expanded eligibility during the COVID-affected period, for example giving benefits to those who wouldn’t normally be paid leave. This expands unemployment benefits to a wider group , and would therefore be recorded as the appropriate non-zero value depending on the value/coverage.
     - *Expedited access to unemployment benefit:* If a state takes policy action to make it faster and easier to access nation or  state/federal unemployment benefits during the COVID-affected period, but doesn’t expand eligibility criteria, this is only recorded as a note. The underlying policy hasn’t changed or expanded to reach more people.
 
 ### E2- Debt/contract relief for households
 - This indicator does not have a binary flag variable to reflect geographic variation in policies. Therefore, we generally record the level of policy that applies everywhere across the jurisdiction - the highest common value of policy nationwide or statewide. Any policies of a higher value that are only available in limited areas are not recorded.  *For example*  if debt relief is only being provided by some cities, and not across the whole country/territory or state, we would not report it. It is only recorded when the support recorded applies nationally or statewide.
+- Debt relief for business and corporations is not recorded here, as E2 only records debt relief to private households.
 
 ### E3- Fiscal Measures
 
@@ -106,6 +113,7 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
 ### E4- Providing Support to other countries
 
 - We only record money here that a country/territory DONATES to another country/territory, not that is received. We do not record in-kind support, for example donations of medical equipment, as a monetary equivalent; but we would still record a note of the in-kind support.
+- We record donations to international organisations, such as  WHO, WFP, as long as the country being recorded is the donor and it is to a specific relief fund specifically related to COVID. Donations to a generic WHO fund which might not be used specifically for COVID related issues is not specific enough to record.
 
 ### H1- Public Information Campaigns
 
@@ -146,6 +154,9 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
     - Declaring increased resources to contact tracing capacity and the intention to do contact tracing for all identified cases, PLUS evidence that this is actually happening on the ground and there is capacity to do so.
     - We will sometimes downgrade a country/territory from a 2 to a 1 if there is evidence that their contact tracing resources have been overwhelmed. In this cases the official policy of the country/territory is often still to say that they conduct ‘comprehensive’ contact tracing. But if there are very high daily case numbers, and credible reports of newly-diagnosed cases whose recent contacts were not traced, we will not report this as a 2.
     
+ ### H5 - Investment in vaccines
+- This indicator record spending on vaccines procurement as well as vaccine development spending- therefore covering all vaccine related spending
+    
  ### H4 - Emergency investment in healthcare
  - If specific numbers of spending announced are available, but not a specific date on which this policy was brought into effect, we record the numbers and the exchange rate when mentioned, and explain in the note that this may not have been the exact day that spending began.
 
@@ -179,10 +190,12 @@ There are a few general rules our coders follow while collecting data:
 - **We report the most stringent government policy** with the highest ordinal value. If the most stringent policy is only present in a limited geographic area or sector, we use a binary flag variable to describe this scope and reflect whether the policy is targeted or general the binary flag model is described in detail here in the [codebook](codebook.md)
 - **Notes and Web Archived links:** For every change we make in the database, we add a note, with a website link to where the information was found. In order to save the webpage that we gained the information from, we webarchive the link. This saves the page on the date that it was accessed to prevent it being lost. These may look like this http://web.archive.org/web/20200517163106/https://covid19.govt.nz/, or http://archive.vn/XifX8. 
  - The index methodology can be found [here](index_methodology.md)  detailing how the different indices are calculated
+ - If there are stricter restrictions on a weekend, we record these stricter policies for just the Saturday and Sunday dates, and the less stringent ones on weekdays, so each data point accurately reflects the situation in that country on that given day
+ - If coding a country with a contested government or multiple ruling parties, we follow the guidance to code the dominant tendency, and record the policies of the more formalised government, or the one which governs the larger proportion of the population
 
 
  ## Interpretation guide changelog
-- 14 January 2021: V1.4 replaced 'country' with 'country/territory'
+- 14 January 2021: V1.4 replaced 'country' with 'country/territory', and additions to C7, C8, E1, E2, E4, H5, and General Interpretation Guidance
 - 17 December 2020: V1.3 added in detail regarding availability for H7
 - 09 December 2020: V1.2 added in new guidance for H7
 - 04 November 2020: v1.1 added in new guidance for C1, C3, C8, E1, E3, H2, added E2,H4 and H6 sections
