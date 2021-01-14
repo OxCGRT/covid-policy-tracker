@@ -1,5 +1,5 @@
 # OxCGRT Coding Interpretation Guide
-***Version 1.3 <br/>Date: 17 December, 2020***
+***Version 1.4 <br/>Date: 14 January 2021***
 
 This guide details the resolutions of frequently asked [codebook](codebook.md) interpretation queries, where indicators may be interpreted in different ways. This is in order to ensure consistency, and standardize coding across the database. Queries related specifically to subnational data are labelled as such.
 
@@ -20,7 +20,7 @@ Updates to this coding interpretation are recorded in the [changelog](#Interpret
 - If teachers are back in school to prepare for the new school year, but no students are allowed back, this would not alter the coding, as no students are present in person for education.
 - If the situation is that schools are in theory allowed to open, but all schools remain closed, or policies in place make it impossible for them to open and meet these requirements, then that would count as a full closure.
 - If individual school districts have the authority to decide closures/openings, we generally record policies conservatively with a ’targeted’ flag, as recording ‘general’ policies would require a high level of confidence that all schools in a jurisdiction are closed. If the state/nation is transitioning from a period of state or nationally induced total closure (3G) to giving individual districts the authority to choose, and some districts still follow the stricter policy, this would usually be represented as 3T. 
-- We take account of summer school openings. If schools have been closed (3) but then some summer school is allowed, the value would change (likely 3T if some school districts remain totally closed, or a 2G if summer school has a ‘general’ countrywide scope). 
+- We take account of summer school openings. If schools have been closed (3) but then some summer school is allowed, the value would change (likely 3T if some school districts remain totally closed, or a 2G if summer school has a ‘general’ country/territory wide scope). 
 
 ###  C2- Workplace closing
 
@@ -39,7 +39,7 @@ Updates to this coding interpretation are recorded in the [changelog](#Interpret
 - When all public gatherings are cancelled, but people can still go to church, we record this as a 2 (all gatherings cancelled), but make a note about the exception for religious gatherings. 
 - There is no explicit cut off point for a ‘mass gathering’. If really large events, such as political protests, can go ahead, but with strict social distancing and hygiene measures in place, this could be reported as 'recommended'. 
 - If a venue for public events is able to open (eg. a concert hall), but with a specified percentage of original capacity, this is reported at the 1 level. 
-- If public events are banned, but one large event was able to go ahead with stringent social distancing measures as a one off (e.g. the F1 Grand Prix), this is recorded as a 2. This is consistent with the logic where if people are able to attend religious gatherings, but in general all other events were cancelled we do not change the code, but record this with a detailed note. This captures the dominant trend in place in a country or state.
+- If public events are banned, but one large event was able to go ahead with stringent social distancing measures as a one off (e.g. the F1 Grand Prix), this is recorded as a 2. This is consistent with the logic where if people are able to attend religious gatherings, but in general all other events were cancelled we do not change the code, but record this with a detailed note. This captures the dominant trend in place in a country/territory or state.
 
 ### C4- Restrictions on gatherings 
 
@@ -76,16 +76,16 @@ If there are restrictions for the circulation of private cars based on certain c
 
 ### C8-  International Travel Controls
 
-- This indicator does not have a binary flag variable to reflect geographic variation in policies. Therefore, we generally record the level of policy that applies everywhere across the jurisdiction - the highest common value of policy nationwide or statewide. We do not report any policies of a higher value that are only available in limited areas.  *For example* if one airport is screening passenger arrivals, but the majority of them are not, this would not be recorded as a 1. All airports across the country would need to be screening before this policy could be seen to apply generally and be recorded.
+- This indicator does not have a binary flag variable to reflect geographic variation in policies. Therefore, we generally record the level of policy that applies everywhere across the jurisdiction - the highest common value of policy nationwide or statewide. We do not report any policies of a higher value that are only available in limited areas.  *For example* if one airport is screening passenger arrivals, but the majority of them are not, this would not be recorded as a 1. All airports across the country/territory would need to be screening before this policy could be seen to apply generally and be recorded.
 - If visitors are meant to self quarantine/isolate after travelling to certain areas, but there are no enforcement or tracking measures in place, we record the official policy accordingly, and make a note that the situation on the ground may not reflect this.
-- If a country is still repatriating citizens from overseas, but otherwise has closed borders, this still counts as a full border closure (4). This indicator focuses largely on requirements for foriegn passengers, in the sense that even during “total closure”, countries will still let their citizens cross the border to return home (although may subject them to quarantine).
+- If a country/territory is still repatriating citizens from overseas, but otherwise has closed borders, this still counts as a full border closure (4). This indicator focuses largely on requirements for foriegn passengers, in the sense that even during “total closure”, countries will still let their citizens cross the border to return home (although may subject them to quarantine).
 - **For subnational (state-level) data:** As international travel is usually an issue for the federal government, subnational governments will rarely implement relevant policies for C8. The sorts of state-level activity that would be recorded under C8 include when individual airports proactively screen passengers, or if states created their own mandatory quarantines for international travelers.
-- If a country’s borders are completely closed, but it is because of a civil war, or other non-covid related reasons, this will still be reported as a 4. While this is not a covid-specific policy, in practice the border is still closed so we want to best represent the lived reality of people living there, in order to understand the effect this could have on COVID-19.
+- If country/territory borders are completely closed, but it is because of a civil war, or other non-covid related reasons, this will still be reported as a 4. While this is not a covid-specific policy, in practice the border is still closed so we want to best represent the lived reality of people living there, in order to understand the effect this could have on COVID-19.
 
 
 ### E1- Income Support
 
--  This indicator does not have a binary flag variable to reflect geographic variation in policies. Therefore, we generally record the level of policy that applies everywhere across the jurisdiction - the highest common value of policy nationwide or statewide. We do not report any policies of a higher value that are only available in limited areas.  *For example*  if income support is only being provided by some cities, and not across the whole country or state, we would not report it. It is only recorded when the support recorded applies nationally or statewide.
+-  This indicator does not have a binary flag variable to reflect geographic variation in policies. Therefore, we generally record the level of policy that applies everywhere across the jurisdiction - the highest common value of policy nationwide or statewide. We do not report any policies of a higher value that are only available in limited areas.  *For example*  if income support is only being provided by some cities, and not across the whole country/territory or state, we would not report it. It is only recorded when the support recorded applies nationally or statewide.
 - Formal sector workers are people who are employed with contracts, and pay taxes. Informal workers may be roadside vendors, work on markets, and do not have a formal contract for their work. 
 - If benefits in kind are being given (e.g. dry rations, or school meals), this is recorded as a 0 with a note. It is not recorded as a non-zero value as it is not money being given or salaries replaced.
 - Edge cases and marginal examples
@@ -93,7 +93,7 @@ If there are restrictions for the circulation of private cars based on certain c
     - *Expedited access to unemployment benefit:* If a state takes policy action to make it faster and easier to access nation or  state/federal unemployment benefits during the COVID-affected period, but doesn’t expand eligibility criteria, this is only recorded as a note. The underlying policy hasn’t changed or expanded to reach more people.
 
 ### E2- Debt/contract relief for households
-- This indicator does not have a binary flag variable to reflect geographic variation in policies. Therefore, we generally record the level of policy that applies everywhere across the jurisdiction - the highest common value of policy nationwide or statewide. Any policies of a higher value that are only available in limited areas are not recorded.  *For example*  if debt relief is only being provided by some cities, and not across the whole country or state, we would not report it. It is only recorded when the support recorded applies nationally or statewide.
+- This indicator does not have a binary flag variable to reflect geographic variation in policies. Therefore, we generally record the level of policy that applies everywhere across the jurisdiction - the highest common value of policy nationwide or statewide. Any policies of a higher value that are only available in limited areas are not recorded.  *For example*  if debt relief is only being provided by some cities, and not across the whole country/territory or state, we would not report it. It is only recorded when the support recorded applies nationally or statewide.
 
 ### E3- Fiscal Measures
 
@@ -105,7 +105,7 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
 
 ### E4- Providing Support to other countries
 
-- We only record money here that a country DONATES to another country, not that is received. We do not record in-kind support, for example donations of medical equipment, as a monetary equivalent; but we would still record a note of the in-kind support.
+- We only record money here that a country/territory DONATES to another country/territory, not that is received. We do not record in-kind support, for example donations of medical equipment, as a monetary equivalent; but we would still record a note of the in-kind support.
 
 ### H1- Public Information Campaigns
 
@@ -115,15 +115,15 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
 ### H2 - Testing Policy
 
 - While government policies are recorded, capacity issues affect implementation. This therefore requires judgment, about how aspirational a policy is versus how practical it is to see if it is able to meet its propositions. We will sometimes record a lower code than the official announced policy, but will provide sources that demonstrate that there is not capacity on the ground to meet this testing policy.
-- This indicator does not have a binary flag variable to reflect geographic variation in policies. Therefore,  the level of policy that applies everywhere across the jurisdiction is recorded - the highest common value of policy nationwide or statewide. We do not record any policies of a higher value that are only available in limited areas. *For example* if there is not testing available to anyone symptomatic across the whole country or state, but only in certain areas, this would not be reported as a 2 as this does not apply generally. Therefore the highest common value nationwide or statewide is a 1, and this is what we record. 
+- This indicator does not have a binary flag variable to reflect geographic variation in policies. Therefore,  the level of policy that applies everywhere across the jurisdiction is recorded - the highest common value of policy nationwide or statewide. We do not record any policies of a higher value that are only available in limited areas. *For example* if there is not testing available to anyone symptomatic across the whole country/territory or state, but only in certain areas, this would not be reported as a 2 as this does not apply generally. Therefore the highest common value nationwide or statewide is a 1, and this is what we record. 
 - In some countries, most testing is coordinated by private companies, with little oversight or coordination from the government (eg in the USA). In this cases, we report as follows:
     - When the state/nation is clearly putting resources towards making testing available, we record this as a 1 (only symptomatic and eligible)
     - If the government implements a statewide/nationwide plan to fund and procure local testing facilities, with the intention of widespread public accessibility, we report a - 2 (all symptomatic eligible)
-- We do not record testing policy as generally available (3) unless it is country wide and there is also evidence of capacity to meet this. If countries are reporting severe shortage of tests, we assume the low capacity is rationed/prioritised for symptomatic people or high-risk people (and therefore not generally available). 
+- We do not record testing policy as generally available (3) unless it is country/territory wide and there is also evidence of capacity to meet this. If countries are reporting severe shortage of tests, we assume the low capacity is rationed/prioritised for symptomatic people or high-risk people (and therefore not generally available). 
 - The main purpose for H2 is to record PCR testing (tests that detect people with a current active infection). Antibody tests (for people who have been infected in the past) are not usually reported under H2. The only rare case where we would report other types of tests was where, say, widespread antibody testing was used to identify individuals for follow-up PCR tests. As this served the same function as a PCR test, and advanced the goal of determining current infection. These exceptions will be explained in a note.
 - *Some examples that could indicate a 1:*
     - Declaring COVID testing capacity before first case
-    - Announcing the first identified case in a country and that testing is available for that first case and others (if needed)
+    - Announcing the first identified case in a country/territory and that testing is available for that first case and others (if needed)
     - A policy announced to begin scaling up testing capacity (if the above have not already occurred)
     - Announcing partnerships with private pharmacies/other partnerships (if the above have not already occurred)
 - *Some examples that could indicate a 2:*
@@ -136,15 +136,15 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
 
 ### H3 - Contact tracing
 
-- We are only interested in manual contact tracing that is intended to reach all people known to an newly-diagnosed case. Contact tracing apps do not achieve this goal, and the presence of a contact tracing app in a country would not be recorded here under H3 (although it may be recorded in a note). The difference between the levels here is considering whether this top-notch manual contact tracing is done for some COVID-19 cases (1) or for all cases (2).
+- We are only interested in manual contact tracing that is intended to reach all people known to an newly-diagnosed case. Contact tracing apps do not achieve this goal, and the presence of a contact tracing app in a country/territory would not be recorded here under H3 (although it may be recorded in a note). The difference between the levels here is considering whether this top-notch manual contact tracing is done for some COVID-19 cases (1) or for all cases (2).
 - *Some examples that could indicate a 1*:
-    - Declaring that a country has COVID-19 contact tracing capacity before its first case
+    - Declaring that a country/territory has COVID-19 contact tracing capacity before its first case
     - Reporting first case and saying that the government is tracing contacts of that first case (if the above hasn’t occurred)
     - A policy to resource and recruit contact tracing capacity
     - Announcement of first case is insufficient to assume contact tracing.
 - *Some examples that could indicate a 2*:
     - Declaring increased resources to contact tracing capacity and the intention to do contact tracing for all identified cases, PLUS evidence that this is actually happening on the ground and there is capacity to do so.
-    - We will sometimes downgrade a country from a 2 to a 1 if there is evidence that their contact tracing resources have been overwhelmed. In this cases the country’s official policy is often still to say that they conduct ‘comprehensive’ contact tracing. But if there are very high daily case numbers, and credible reports of newly-diagnosed cases whose recent contacts were not traced, we will not report this as a 2.
+    - We will sometimes downgrade a country/territory from a 2 to a 1 if there is evidence that their contact tracing resources have been overwhelmed. In this cases the official policy of the country/territory is often still to say that they conduct ‘comprehensive’ contact tracing. But if there are very high daily case numbers, and credible reports of newly-diagnosed cases whose recent contacts were not traced, we will not report this as a 2.
     
  ### H4 - Emergency investment in healthcare
  - If specific numbers of spending announced are available, but not a specific date on which this policy was brought into effect, we record the numbers and the exchange rate when mentioned, and explain in the note that this may not have been the exact day that spending began.
@@ -164,7 +164,7 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
  - 1. There is a de jure policy to vaccinate a population group
  - 2. There are enough vaccine doses on order and reasonably expected to be delivered, in order to vaccinate 20% of the target population 
  - 3. There is de facto capacity and evidence that this is being met on the ground. For example, vaccines are actually being administered.
-- Elderly groups are as they are defined locally for the specific country being coded
+- Elderly groups are as they are defined locally for the specific country/territory being coded
 - Key workers are broadly defined according to local conditions, and may also be described as essential, frontline, and high risk employees.
 - Broad groups may include a large group of adults (eg. all those aged over 40), or other broadly defined population groups (eg. students)
 - A policy recorded as “no cost to individual” may also include a very small nominal cost to the individual, such as the small pharmaceutical co-payments (eg. $5) in some public health systems
@@ -182,6 +182,7 @@ There are a few general rules our coders follow while collecting data:
 
 
  ## Interpretation guide changelog
+- 14 January 2021: V1.4 replaced 'country' with 'country/territory'
 - 17 December 2020: V1.3 added in detail regarding availability for H7
 - 09 December 2020: V1.2 added in new guidance for H7
 - 04 November 2020: v1.1 added in new guidance for C1, C3, C8, E1, E3, H2, added E2,H4 and H6 sections
