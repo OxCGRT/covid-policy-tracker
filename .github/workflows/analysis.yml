@@ -1,4 +1,4 @@
-name: An R workflow to automate main repo graphs and csv daily updates
+name: An R workflow to automate daily updates of main repo graphs and timeseries csv
 on:
         schedule:
                 - cron: '30 1 * * *'
@@ -18,7 +18,7 @@ jobs:
                         - name: Run data update codes
                           run: | 
                             echo 'Starting data prep code'
-                            Rscript -e 'devtools::source_url("https://raw.githubusercontent.com/saptahash/test_repo/master/mainrepo/githubroutine.r")'
+                            Rscript -e 'source("https://raw.githubusercontent.com/saptahash/test_repo/master/mainrepo/githubroutine.r")'
                         - name: Commit changes
                           run: |
                             ls
@@ -26,8 +26,9 @@ jobs:
                             git config --local user.email "action@github.com"
                             git config --local user.name "GitHub Action"
                             git add .
-                            git diff-index --quiet HEAD || git commit -m "Adding latest timeseries csv and images" -a
-                        - name: Push changes
-                          uses: ad-m/github-push-action@master
-                          with:
-                            github_token: ${{ secrets.GITHUB_TOKEN }}
+                            git diff-index --quiet HEAD || git commit -m "OxCGRT Graphs and timeseries Update" -a
+                            git push origin master:master                        
+#                        - name: Push changes
+#                          uses: ad-m/github-push-action@master
+#                          with:
+#                            github_token: ${{ secrets.GITHUB_TOKEN }}
