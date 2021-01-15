@@ -43,7 +43,7 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 | ID | Name | Description | Measurement | Coding |
 | --- | --- | --- | --- | --- |
 | E1 | `E1_Income support` <br/>(for households) | Record if the government is providing direct cash payments to people who lose their jobs or cannot work. <br/><br/>Note: only includes payments to firms if explicitly linked to payroll/salaries | Ordinal scale | 0 - no income support <br/>1 - government is replacing less than 50% of lost salary (or if a flat sum, it is less than 50% median salary) <br/>2 - government is replacing 50% or more of lost salary (or if a flat sum, it is greater than 50% median salary) <br/>Blank - no data |
-| | `E1_Flag` | | Binary flag for sectoral scope | 0 - formal sector workers only <br/>1 - transfers to informal sector workers too <br/>Blank - no data |
+| | `E1_Flag` | | Binary flag for sectoral scope | 0 - formal sector workers only or informal sector workers only <br/>1 - transfers to informal sector workers too <br/>Blank - no data |
 | E2 | `E2_Debt/contract relief` <br/>(for households) | Record if the government is freezing financial obligations for households (eg stopping loan repayments, preventing services like water from stopping, or banning evictions) | Ordinal scale | 0 - no debt/contract relief <br/>1 - narrow relief, specific to one kind of contract <br/>2 - broad debt/contract relief |
 | E3 | `E3_Fiscal measures` | Announced economic stimulus spending <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD of fiscal stimuli, includes any spending or tax cuts NOT included in E4, H4 or H5 <br/>0 - no new spending that day <br/>Blank - no data |
 | E4 | `E4_International support` | Announced offers of Covid-19 related aid spending to other countries <br/><br/>Note: only record amount additional to previously announced spending | USD | Record monetary value in USD <br/>0 - no new spending that day <br/>Blank - no data |
@@ -72,7 +72,7 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 
 ## Codebook changelog
 
-- 14 January 2021 v2.7 changed 'country' to 'country/territory' and removed 'private' from C4 definition
+- 14 January 2021 v2.7 changed 'country' to 'country/territory' and removed 'private' from C4 definition, replaced E1 flag 'formal sector workers only' to 'formal sector workers only or informal sector workers only'
 - 09 December 2020 v2.6 added H7 Vaccination policy indicator
 - 04 November 2020 v2.5 added C1 expanded definition of '1' and added targeted/general flag to H6 indicator
 - 22 October 2020 v2.4 added H6 Facial Coverings indicator
