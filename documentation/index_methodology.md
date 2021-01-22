@@ -1,6 +1,6 @@
 # Methodology for calculating indices
 
-***Index methodology version 3.3 <br/>09 December 2020***
+***Index methodology version 3.4 <br/>14 January 20210***
 
 The Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)) tracks individual policy measures across 19 indicators. We also calculate several indices to give an overall impression of government activity, and this page describes how these indices are calculated. Changes to this methodology are recorded in the [changelog](#index-methodology-changelog) below.
 
@@ -65,7 +65,7 @@ Note that the database only contains flag values if the indicator has a non-zero
 
 Our data is not always fully compelte and sometimes indicators are missing. We make the conservative assumption that an absence of data corresponds to a sub-index score (_I<sub>j,t</sub>_) of zero.
 
-Here is an explicit example of the calculation for a given country on a single day:
+Here is an explicit example of the calculation for a given country/territory on a single day:
 
 | Indicator | _v<sub>j,t</sub>_ | _f<sub>j,t</sub>_ | | _N<sub>j</sub>_ | _F<sub>j</sub>_ | | _I<sub>j,t</sub>_ |
 | --- | ---: | ---: | --- | ---: | ---: | --- | ---: |
@@ -92,7 +92,7 @@ Here is an explicit example of the calculation for a given country on a single d
 
 ## Dealing with gaps in the data for display purposes
 
-Because data are updated on twice-weekly cycles, but not every country is updated in every cycle,recent dates may be prone to missing data. If fewer than _k-1_ indicators are present for an index on any given day, the index calculation is rejected and no value is returned. For the economic support indicator, where _k_=2, the index calculation is rejected if either of the two indicators are missing.
+Because data are updated on twice-weekly cycles, but not every country/territory is updated in every cycle,recent dates may be prone to missing data. If fewer than _k-1_ indicators are present for an index on any given day, the index calculation is rejected and no value is returned. For the economic support indicator, where _k_=2, the index calculation is rejected if either of the two indicators are missing.
 
 To increase consistency of recent data points which are perhaps mid contribution, index values pertaining to the past seven days are rejected if they have fewer policy indicators than another day in the past seven days, ie if there is another recent data point with all _k_ indicators included, then no index will be calculated for dates with _k-1_.
 
@@ -130,6 +130,7 @@ The individual sub-index scores for the legacy index are calculated through a sl
 
 ## Index methodology changelog
 
+- 14 January 2021: replaced 'country' with 'country/territory'
 - 09 December 2020: added H7 Vaccination Policy and edited format of x for H7 column for Government response index and Containment health index rows to 'x'
 - 29 October 2020: edited format of x for H6 column for Government response index and Containment and health index rows to `x`
 - 22 October 2020: added H6 Facial Coverings indicator
