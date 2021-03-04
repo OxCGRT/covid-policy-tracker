@@ -1,7 +1,7 @@
 name: An R workflow to automate daily updates of main repo graphs and timeseries csv
-on:
-        schedule:
-                - cron: '*/60 0-1 * * *'
+on: push
+#        schedule:
+#                - cron: '*/60 0-1 * * *'
 
 jobs: 
         build:
