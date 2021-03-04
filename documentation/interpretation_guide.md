@@ -1,5 +1,5 @@
 # OxCGRT Coding Interpretation Guide
-***Version 1.4 <br/>Date: 14 January 2021***
+***Version 1.5 <br/>Date: 4 March 2021***
 
 This guide details the resolutions of frequently asked [codebook](codebook.md) interpretation queries, where indicators may be interpreted in different ways. This is in order to ensure consistency, and standardize coding across the database. Queries related specifically to subnational data are labelled as such.
 
@@ -21,13 +21,14 @@ Updates to this coding interpretation are recorded in the [changelog](#Interpret
 - If the situation is that schools are in theory allowed to open, but all schools remain closed, or policies in place make it impossible for them to open and meet these requirements, then that would count as a full closure.
 - If individual school districts have the authority to decide closures/openings, we generally record policies conservatively with a ’targeted’ flag, as recording ‘general’ policies would require a high level of confidence that all schools in a jurisdiction are closed. If the state/nation is transitioning from a period of state or nationally induced total closure (3G) to giving individual districts the authority to choose, and some districts still follow the stricter policy, this would usually be represented as 3T. 
 - We take account of summer school openings. If schools have been closed (3) but then some summer school is allowed, the value would change (likely 3T if some school districts remain totally closed, or a 2G if summer school has a ‘general’ country/territory wide scope). 
+- If a narrowly defined list of university courses which rely on essential in- person teaching, for example medical programs, are able to operate and this is permitted in policy as an exemption, but all other in-person university teaching is cancelled, this may be seen as closure of universities, and is coded as such.
 
 ###  C2- Workplace closing
 
 - When non-essential workplaces are meant to be closed but many people are still going to work regardless, we report the official government policy. In these cases we make a note that people may not be complying with the policy.
 - If workplaces can reopen under sanitation and social distancing requirements – e.g. up to 30% of capacity, and only outdoor seats – this is a 1 (recommend closing). Restrictions are still in place, and the 1 (recommend) captures the extent of these. 
 - Voluntary closures are not the same thing as closures mandated by government policy. If a workplace voluntarily closes their business or makes their staff work from home – even if that employer is the government – this does not count under C2.  
-- For essential business closures, sometimes the official list of 'essential activities' is very long to the point the policy could be reasonably interpreted as a 2. In these cases, it is up to the coder’s best judgement on a case-by-case basis. Below are some examples of how we have made decisions in the past. We try to be mindful of governments who declare every business ‘essential’ or other political phrasing.
+- If a government publishes a list of essential business as defined locally, we defer to this list. For essential business closures where the official list of 'essential activities' is very long, particularly expansive or contains unusual inclusions, to the point the policy could be reasonably interpreted as a 2, it is up to the coder’s best judgement on a case-by-case basis, and this is recorded in detail in the note. We try to be mindful of governments who declare every business ‘essential’ or other political phrasing. In the absence of a list we code based on the below list of essential businesses.
 - Businesses usually considered to be essential are: Healthcare, groceries, take-out food, hardware stores, plumbers/electricians, legal services, education preparations (teachers planning courses), limited business operations support (tiny staff capacity to ensure remote working can continue).
 - Some businesses that are not essential: In-person retail, personal grooming (salons, spas, barbers etc), dine-in restaurants, movie theaters, entertainment/theme parks, nightclubs.
 - For phased reopening of businesses, if there are new workplaces being added to the list of places allowed to open every week, but some places remain closed, we report 2 for the period, adding notes explaining which sectors/businesses are allowed to open each week. If some sectors remain closed, the coding would remain a 2 (some sectors required to close).
@@ -35,7 +36,7 @@ Updates to this coding interpretation are recorded in the [changelog](#Interpret
 
 ### C3- Cancel Public Events
 
-- When private gatherings of only 10 or less are permitted (e.g. C4=4), this restriction would prevent public events from taking place, so they are recorded as required to cancel.
+- When private gatherings of only 10 or less are permitted (e.g. C4=4), this restriction would prevent public events from taking place, so they are recorded as required to cancel, unless there is a specific policy in place permitting public gatherings to go ahead.
 - When all public gatherings are cancelled, but people can still go to church, we record this as a 2 (all gatherings cancelled), but make a note about the exception for religious gatherings. 
 - There is no explicit cut off point for a ‘mass gathering’. If really large events, such as political protests, can go ahead, but with strict social distancing and hygiene measures in place, this could be reported as 'recommended'. 
 - If a venue for public events is able to open (eg. a concert hall), but with a specified percentage of original capacity, this is reported at the 1 level. 
@@ -180,6 +181,9 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
 - Broad groups may include a large group of adults (eg. all those aged over 40), or other broadly defined population groups (eg. students)
 - A policy recorded as “no cost to individual” may also include a very small nominal cost to the individual, such as the small pharmaceutical co-payments (eg. $5) in some public health systems
 - Vaccines are defined as having passed Phase 3 clinical trials and approved by the government for use in that country, region, or territory
+- The ‘clinically vulnerable groups’ category does not record the elderly as they are recorded in the ‘elderly’ category.
+- Protections for residents of Long Term Care Facilities (LTCFs) are coded under the ‘Elderly’ category as the majority of people living in such homes are elderly residents.
+- When there is a vaccine shortage and there are not enough doses to vaccinate the target population, this is coded back down to a 0.
 
 
 ## General Interpretation Guidance 
@@ -195,6 +199,7 @@ There are a few general rules our coders follow while collecting data:
 
 
  ## Interpretation guide changelog
+- 04 March 2021: V1.5 added in new guidance for C1, C2, C3, H7
 - 14 January 2021: V1.4 replaced 'country' with 'country/territory', and additions to C7, C8, E1, E2, E4, H5, and General Interpretation Guidance
 - 17 December 2020: V1.3 added in detail regarding availability for H7
 - 09 December 2020: V1.2 added in new guidance for H7
