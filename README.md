@@ -1,11 +1,12 @@
 **UPDATE:**
 
-<!---- We have updated our citation for the project
+
 <!---- We have published a new format for our indicators ([/data/OxCGRT_latest_combined.csv](data/OxCGRT_latest_combined.csv)) which combines our ordinal measures of policy strictness with their geographical scope. This is described [below](#getting-data-from-this-github-repository).--->
 <!---- Our main datasets in this repository also include Brazilian state data.--->
 <!-- - we have published a new indicator for vaccine policy, H7
 - We have changed our data source for cases and deaths from the European Centre for Disease Prevention and Control ([ECDC](https://www.ecdc.europa.eu/en)) to the [JHU CSSE data repository](https://github.com/CSSEGISandData/COVID-19) for all countries and the US States. Data sources for the UK nations and Brazil states remain unaltered. -->
 - We are creating a mailing list to provide technical users with slightly more detailed release notes, and advance warning of changes to database structure. You can register for these email updates here: http://eepurl.com/hiMsdL
+- We have updated our citation for the project
 
 
 ---
