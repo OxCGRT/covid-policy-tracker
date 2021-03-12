@@ -1,6 +1,6 @@
 # Methodology for calculating indices
 
-***Index methodology version 3.4 <br/>14 January 20210***
+***Index methodology version 3.5 <br/>15 March 2021***
 
 The Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)) tracks individual policy measures across 19 indicators. We also calculate several indices to give an overall impression of government activity, and this page describes how these indices are calculated. Changes to this methodology are recorded in the [changelog](#index-methodology-changelog) below.
 
@@ -12,8 +12,8 @@ The different indices are comprised as follows:
 
 | Index name | _k_ | C1 | C2 | C3 | C4 | C5 | C6 | C7 | C8 | E1 | E2 | E3 | E4 | H1 | H2 | H3 | H4 | H5 | H6 | H7 | M1 |
 | --- | ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |--- |--- |
-| Government response index | 15 | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | `x` | `x` | `x` | | | `x` | `x` | |
-| Containment and health index | 13 | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | `x` | `x` | | |`x` | `x` | |
+| Government response index | 16 | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | `x` | `x` | `x` | | | `x` | `x` | |
+| Containment and health index | 14 | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | `x` | `x` | | |`x` | `x` | |
 | Stringency index | 9 | `x` | `x` | `x` | `x` | `x` | `x` | `x` | `x` | | | | | `x` | | | | | | |
 | Economic support index | 2 | | | | | | | | | `x` | `x` | | | | | | | | | |
 | [Legacy stringency index](#legacy-stringency-index) | 7 | `x` | `x` | `?` | `?` | `x` | `?` | `?` | `x` | | | | | `x` | | | | | | |
@@ -130,6 +130,7 @@ The individual sub-index scores for the legacy index are calculated through a sl
 
 ## Index methodology changelog
 
+- 15 March 2021: added H8 Protection of elderly people and edited format of x for H7 column for Government response index and Containment health index rows to 'x'
 - 14 January 2021: replaced 'country' with 'country/territory'
 - 09 December 2020: added H7 Vaccination Policy and edited format of x for H7 column for Government response index and Containment health index rows to 'x'
 - 29 October 2020: edited format of x for H6 column for Government response index and Containment and health index rows to `x`
