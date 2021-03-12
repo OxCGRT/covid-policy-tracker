@@ -1,8 +1,8 @@
 # Codebook for the Oxford Covid-19 Government Response Tracker
 
-***Codebook version 2.8 <br/>05 March 2021***
+***Codebook version 2.9 <br/>18 March 2021***
 
-This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)). The dataset contains 19 indicators and a miscellaneous notes field organised into four groups:
+This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)). The dataset contains 20 indicators and a miscellaneous notes field organised into four groups:
 - [C - containment and closure policies](#containment-and-closure-policies)
 - [E - economic policies](#economic-policies)
 - [H - health system policies](#health-system-policies)
@@ -14,7 +14,7 @@ Updates to this codebook are recorded in the [changelog](#codebook-changelog) be
 
 Most indicators are recorded on an ordinal scale that represents the level of strictness of the policy. Four of the indicators (E3, E4, H4 and H5) are recorded as a US dollar value of fiscal spending.
 
-Government coronavirus policies often vary by region within countries. We code the most stringent government policy that is in place in a country/territory, as represented by the highest ordinal value. Sometimes the most stringent policy in a country/territory will only apply to a small part of the population. If the most stringent policy is only present in a limited geographic area or sector (eg perhaps only one state has implemented policies at a high level), we use a binary flag variable to denote this limited scope. Nine of the indicators (C1-C7, H1 and H6) have a flag for whether they are "targeted" to a specific geographical region (flag=0) or whether they are a "general" policy that is applied across the whole country/territory (flag=1).) E1 has a flag to describe whether income support is for just formal sector workers (flag=0) or whether it includes informal workers as well (flag=1). H7 has a flag to describe whether vaccine policy is funded at cost to the individual (flag=0) or by government (flag=1).
+Government coronavirus policies often vary by region within countries. We code the most stringent government policy that is in place in a country/territory, as represented by the highest ordinal value. Sometimes the most stringent policy in a country/territory will only apply to a small part of the population. If the most stringent policy is only present in a limited geographic area or sector (eg perhaps only one state has implemented policies at a high level), we use a binary flag variable to denote this limited scope. Ten of the indicators (C1-C7, H1, H6 and H8) have a flag for whether they are "targeted" to a specific geographical region (flag=0) or whether they are a "general" policy that is applied across the whole country/territory (flag=1).) E1 has a flag to describe whether income support is for just formal sector workers (flag=0) or whether it includes informal workers as well (flag=1). H7 has a flag to describe whether vaccine policy is funded at cost to the individual (flag=0) or by government (flag=1).
 
 As explained in our [index methodology documentation](index_methodology.md), an indicator with flag=0 is weighted lower than flag=1 when calculating overall index values. 
 
@@ -62,6 +62,8 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 | | `H6_Flag` | | Binary flag for geographic scope |  0 - targeted <br/>1- general <br/>Blank - no data |
 | H7 | `H7_Vaccination Policy` | Record policies for vaccine delivery for different groups <br/> | Ordinal scale | 0 - No availability <br/>1 - Availability for ONE of following: key workers/ clinically vulnerable groups (non elderly) / elderly groups <br/>2 - Availability for TWO of following: key workers/ clinically vulnerable groups (non elderly) / elderly groups <br/>3 - Availability for ALL of following: key workers/ clinically vulnerable groups (non elderly) / elderly groups <br/>4 - Availability for all three plus partial additional availability (select broad groups/ages) <br/>5 - Universal availability | 
 | | `H7_Flag` | | Binary flag for cost |  0 - At cost to individual (or funded by NGO, insurance, or partially government funded) <br/>1- No or minimal cost to individual (government funded or subsidised) <br/>Blank - no data |
+| H8 | `H8_Protection of elderly people` | Record policies for protecting elderly people (as defined locally) in Long Term Care Facilities and/or the community and home setting | Ordinal scale | 0 - no measures <br/>1 - recommended isolation, hygiene, and visitor restriction measures in LTCFs and/or elderly  people to stay at home <br/>2 - narrow restrictions for isolation, hygiene in LTCFs, some limitations on external visitors and/or restrictions protecting elderly people at home <br/>3 - extensive restrictions for isolation and hygiene in LTCFs, all non-essential external visitors prohibited, and/or all elderly people required to stay at home and not leave the home with minimal exceptions, and receive no external visitors <br/>Blank - no data | 
+| | `H8_Flag` | | Binary flag for geographic scope | 0 - targeted <br/>1- general <br/>Blank - no data |
 
 
 ### Miscellaneous policies
@@ -72,6 +74,7 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 
 ## Codebook changelog
 
+- 18 March 2021 v2.9 added H8 'Protection of elderly people' indicator
 - 05 March 2021 v2.8 added 'non elderly' to definition of Clinically vulnerable groups' for H7
 - 14 January 2021 v2.7 changed 'country' to 'country/territory' and removed 'private' from C4 definition, replaced E1 flag 'formal sector workers only' to 'formal sector workers only or informal sector workers only', and 'informal workers too' to 'all workers'
 - 09 December 2020 v2.6 added H7 Vaccination policy indicator
