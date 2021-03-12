@@ -191,7 +191,13 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
  - Long Term Care Facilities (LTCF) here are used only to refer to institutions for elderly people. Policies for other vulnerable groups are not recorded here- this indicator does not cover vulnerable populations other than specifically elderly people, and does not cover prison populations .
  - The provision of guidance and specific information campaign material for LTCFs for elderly people is coded as a 1. Public officials urging caution regarding the protection of elderly  people can also be coded here, for example on social media platforms- in the same way as the H1 indicator.
  - If the C6 indicator is 2 or a 3, this can count as a 2 or a 3 for H8, because as the elderly are a subset of the general population, orders for all to stay at home therefore require elderly people to stay at home.
- - If there are both policies recommending or requiring elderly people to stay at home, and also policies in place regarding Long Term Care Facilities , the most stringent policy is coded. While the priority is to record policies in LTCFs, if these are not in place, policies regarding stay at home requirements specifically for elderly people are equally valid.
+ - If there are both policies recommending or requiring elderly people to stay at home, and also policies in place regarding Long Term Care Facilities , the most stringent policy is coded. While the priority is to record policies in LTCFs, if these are not in place, policies regarding stay at home requirements specifically for elderly people are equally valid. 
+- *Some examples that could indicate a 1:*
+  - In Santa Catarina, Brazil (SC), the state government issued a Decree recommending elderly people to stay home and only go outside for necessary activities
+- *Some examples that could indicate a 2:*
+   - In New Zealand, staff and visitors were “to stay away from aged care facilities” if they felt ill, and to be symptom free from any flu and cold for 48 hours before visiting 
+- *Some examples that could indicate a 3*:
+    - Under its Emergency Powers Act, the Finnish government used its emergency powers to ban visitors from care institutions, health care units and hospitals, with some family exceptions on a case-by-case basis
 
 
 
@@ -206,12 +212,7 @@ There are a few general rules our coders follow while collecting data:
  - The index methodology can be found [here](index_methodology.md)  detailing how the different indices are calculated
  - If there are stricter restrictions on a weekend, we record these stricter policies for just the Saturday and Sunday dates, and the less stringent ones on weekdays, so each data point accurately reflects the situation in that country on that given day
  - If coding a country with a contested government or multiple ruling parties, we follow the guidance to code the dominant tendency, and record the policies of the more formalised government, or the one which governs the larger proportion of the population
--  *Some examples that could indicate a 1:*
-   - In Santa Catarina, Brazil (SC), the state government issued a Decree recommending elderly people to stay home and only go outside for necessary activities
-- *Some examples that could indicate a 2:*
-   - In New Zealand, staff and visitors were “to stay away from aged care facilities” if they felt ill, and to be symptom free from any flu and cold for 48 hours before visiting 
-- *Some examples that could indicate a 3*:
-    - Under its Emergency Powers Act, the Finnish government used its emergency powers to ban visitors from care institutions, health care units and hospitals, with some family exceptions on a case-by-case basis
+
   
 
 
