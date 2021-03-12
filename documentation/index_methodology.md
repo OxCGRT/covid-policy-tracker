@@ -85,9 +85,10 @@ Here is an explicit example of the calculation for a given country/territory on 
 | H3 | 2 | N/A | | 2 | no=0 | | 100.00 |
 | H6 | 2 | 0 | | 4 | yes=1 | | 37.50 |
 | H7 | 2 | 1 | | 5 | yes=1 | | 40.00|
+| H8 | 2 | 1 | | 3 | yes=1 | | 66.66|
 | **Index** | | | | | | | |
-| Government response | | | | | | | 56.55 |
-| Containment and health | | | | | | | 51.80 |
+| Government response | | | | | | | 57.18 |
+| Containment and health | | | | | | | 52.86 |
 | Stringency | | | | | | | 43.98 |
 | Economic support | | | | | | | 87.50 |
 
@@ -131,7 +132,7 @@ The individual sub-index scores for the legacy index are calculated through a sl
 
 ## Index methodology changelog
 
-- 15 March 2021: added H8 Protection of elderly people and edited format of x for H7 column for Government response index and Containment health index rows to 'x'
+- 15 March 2021: added H8 Protection of elderly people 
 - 14 January 2021: replaced 'country' with 'country/territory'
 - 09 December 2020: added H7 Vaccination Policy and edited format of x for H7 column for Government response index and Containment health index rows to 'x'
 - 29 October 2020: edited format of x for H6 column for Government response index and Containment and health index rows to `x`
