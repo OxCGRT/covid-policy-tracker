@@ -1,5 +1,5 @@
 # OxCGRT Coding Interpretation Guide
-***Version 1.5 <br/>Date: 4 March 2021***
+***Version 1.6 <br/>Date: 15 March 2021***
 
 This guide details the resolutions of frequently asked [codebook](codebook.md) interpretation queries, where indicators may be interpreted in different ways. This is in order to ensure consistency, and standardize coding across the database. Queries related specifically to subnational data are labelled as such.
 
@@ -185,6 +185,22 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
 - Vaccinations for residents of Long Term Care Facilities (LTCFs) are coded under the ‘Elderly’ category as the majority of people living in such homes are elderly residents.
 - When there is a vaccine shortage and there are not enough doses to vaccinate the target population, this is coded back down to a 0.
 
+ ### H8 Protection of elderly people
+ - This indicator focuses mainly on institutions where elderly people live, but also has scope to record restrictions that form the equivalent level of protection in settings where elderly people are cared for in the home or community, especially in countries, regions, and territories where institutions are not used.
+ - Elderly people are defined here relative to the country, region, or territory being coded, for example the local retirement age, and no absolute chronologic age is defined.
+ - Long Term Care Facilities (LTCF) here are used only to refer to institutions for elderly people. Policies for other vulnerable groups are not recorded here- this indicator does not cover vulnerable populations other than specifically elderly people, and does not cover prison populations .
+ - The provision of guidance and specific information campaign material for LTCFs for elderly people is coded as a 1. Public officials urging caution regarding the protection of elderly  people can also be coded here, for example on social media platforms- in the same way as the H1 indicator.
+ - If the C6 indicator is 2 or a 3, this can count as a 2 or a 3 for H8, because as the elderly are a subset of the general population, orders for all to stay at home therefore require elderly people to stay at home.
+ - If there are both policies recommending or requiring elderly people to stay at home, and also policies in place regarding Long Term Care Facilities , the most stringent policy is coded. While the priority is to record policies in LTCFs, if these are not in place, policies regarding stay at home requirements specifically for elderly people are equally valid. 
+- *Some examples that could indicate a 1:*
+  - In Santa Catarina, Brazil (SC), the state government issued a Decree recommending elderly people to stay home and only go outside for necessary activities
+- *Some examples that could indicate a 2:*
+   - In New Zealand, staff and visitors were “to stay away from aged care facilities” if they felt ill, and to be symptom free from any flu and cold for 48 hours before visiting 
+- *Some examples that could indicate a 3*:
+    - Under its Emergency Powers Act, the Finnish government used its emergency powers to ban visitors from care institutions, health care units and hospitals, with some family exceptions on a case-by-case basis
+
+
+
 
 ## General Interpretation Guidance 
  
@@ -197,8 +213,11 @@ There are a few general rules our coders follow while collecting data:
  - If there are stricter restrictions on a weekend, we record these stricter policies for just the Saturday and Sunday dates, and the less stringent ones on weekdays, so each data point accurately reflects the situation in that country on that given day
  - If coding a country with a contested government or multiple ruling parties, we follow the guidance to code the dominant tendency, and record the policies of the more formalised government, or the one which governs the larger proportion of the population
 
+  
+
 
  ## Interpretation guide changelog
+- 15 March 2021: V1.6 added H8 guidance
 - 04 March 2021: V1.5 added in new guidance for C1, C2, C3, H7
 - 14 January 2021: V1.4 replaced 'country' with 'country/territory', and additions to C7, C8, E1, E2, E4, H5, and General Interpretation Guidance
 - 17 December 2020: V1.3 added in detail regarding availability for H7

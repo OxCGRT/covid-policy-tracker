@@ -1,10 +1,13 @@
 **UPDATE:**
 
+
 <!---- We have published a new format for our indicators ([/data/OxCGRT_latest_combined.csv](data/OxCGRT_latest_combined.csv)) which combines our ordinal measures of policy strictness with their geographical scope. This is described [below](#getting-data-from-this-github-repository).--->
 <!---- Our main datasets in this repository also include Brazilian state data.--->
 <!-- - we have published a new indicator for vaccine policy, H7
 - We have changed our data source for cases and deaths from the European Centre for Disease Prevention and Control ([ECDC](https://www.ecdc.europa.eu/en)) to the [JHU CSSE data repository](https://github.com/CSSEGISandData/COVID-19) for all countries and the US States. Data sources for the UK nations and Brazil states remain unaltered. -->
 - We are creating a mailing list to provide technical users with slightly more detailed release notes, and advance warning of changes to database structure. You can register for these email updates here: http://eepurl.com/hiMsdL
+- We have updated our new academic citation for the project
+- We have added a new indicator, H8 Protection of elderly people to our datasets
 
 
 ---
@@ -18,13 +21,15 @@ This is a project from the [Blavatnik School of Government](www.bsg.ox.ac.uk). M
 
 ---
 
-__Cite as:__ Thomas Hale, Sam Webster, Anna Petherick, Toby Phillips, and Beatriz Kira. (2020). _Oxford COVID-19 Government Response Tracker_. Blavatnik School of Government.
+__Academic citation:__ Thomas Hale, Noam Angrist, Rafael Goldszmidt, Beatriz Kira, Anna Petherick, Toby Phillips, Samuel Webster, Emily Cameron-Blake, Laura Hallas, Saptarshi Majumdar, and Helen Tatlow. (2021). “A global panel database of pandemic policies (Oxford COVID-19 Government Response Tracker).” Nature Human Behaviour. https://doi.org/10.1038/s41562-021-01079-8
+
+__Academic citation:__  Hale, Thomas, Noam Angrist, Emily Cameron-Blake, Laura Hallas, Beatriz Kira, Saptarshi Majumdar, Anna Petherick, Toby Phillips, Helen Tatlow, Samuel Webster (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government.
 
 ---
 
 ## The database
 
-OxCGRT collects publicly available information on 19 indicators of government response. This information is collected by a team of over 200 volunteers from the Oxford community and is updated continuously.
+OxCGRT collects publicly available information on 20 indicators of government response. This information is collected by a team of over 200 volunteers from the Oxford community and is updated continuously.
 
 We also include statistics on the number of reported Covid-19 cases and deaths in each country. These are taken from the [JHU CSSE data repository](https://github.com/CSSEGISandData/COVID-19) for all countries and the US States. 
 
@@ -32,7 +37,7 @@ We also include statistics on the number of reported Covid-19 cases and deaths i
 
 Full descriptions of the policy indicators and their meaning can be found in our [codebook](documentation/codebook.md). For more detailed guidance about the codebook and how we interpret the indicators, see the [coding interpretation guide](documentation/interpretation_guide.md). This ensures consistency, and standardizes coding across the database.
 
-Eight of the policy indicators (C1-C8) record information on [_containment and closure_ policies](documentation/codebook.md#containment-and-closure-policies), such as school closures and restrictions in movement. Four of the indicators (E1-E4) record [_economic_ policies](documentation/codebook.md#economic-policies) such as income support to citizens or provision of foreign aid. And seven indicators (H1-H7) record [_health system_ policies](documentation/codebook.md#health-system-policies) such as the Covid-19 testing regime or emergency investments into healthcare.
+Eight of the policy indicators (C1-C8) record information on [_containment and closure_ policies](documentation/codebook.md#containment-and-closure-policies), such as school closures and restrictions in movement. Four of the indicators (E1-E4) record [_economic_ policies](documentation/codebook.md#economic-policies) such as income support to citizens or provision of foreign aid. And eight indicators (H1-H7) record [_health system_ policies](documentation/codebook.md#health-system-policies) such as the Covid-19 testing regime or emergency investments into healthcare.
 
 Finally, we have a [miscellaneous indicator (M1)](documentation/codebook.md#miscellaneous-policies) for notes that do not fit elsewhere.
 
