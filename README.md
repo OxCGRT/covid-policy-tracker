@@ -21,9 +21,9 @@ This is a project from the [Blavatnik School of Government](www.bsg.ox.ac.uk). M
 
 ---
 
-__Academic citation:__ Thomas Hale, Noam Angrist, Rafael Goldszmidt, Beatriz Kira, Anna Petherick, Toby Phillips, Samuel Webster, Emily Cameron-Blake, Laura Hallas, Saptarshi Majumdar, and Helen Tatlow. (2021). “A global panel database of pandemic policies (Oxford COVID-19 Government Response Tracker).” Nature Human Behaviour. https://doi.org/10.1038/s41562-021-01079-8
+__Recommended reference for academic publications:__ Thomas Hale, Noam Angrist, Rafael Goldszmidt, Beatriz Kira, Anna Petherick, Toby Phillips, Samuel Webster, Emily Cameron-Blake, Laura Hallas, Saptarshi Majumdar, and Helen Tatlow. (2021). “A global panel database of pandemic policies (Oxford COVID-19 Government Response Tracker).” Nature Human Behaviour. https://doi.org/10.1038/s41562-021-01079-8
 
-__Academic citation:__  Hale, Thomas, Noam Angrist, Emily Cameron-Blake, Laura Hallas, Beatriz Kira, Saptarshi Majumdar, Anna Petherick, Toby Phillips, Helen Tatlow, Samuel Webster (2020). Oxford COVID-19 Government Response Tracker, Blavatnik School of Government.
+__Full credit for media use (CC BY License):__  Thomas Hale , Noam Angrist , Rafael Goldszmidt , Lucy Ellen, Beatriz Kira , Anna Petherick , Toby Phillips, Samuel Webster, Jessica Anania, Emily Cameron-Blake , Thomas Boby, Laura Hallas, Maria Luciano, Saptarshi Majumdar, Radhika Nagesh, Helen Tatlow, Andrew Wood, and Yuxi Zhang. Oxford COVID-19 Government Response Tracker, Blavatnik School of Government, University of Oxford. Oxford COVID-19 Government Response Tracker, Blavatnik School of Government, University of Oxford.
 
 ---
 
