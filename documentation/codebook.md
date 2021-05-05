@@ -1,6 +1,6 @@
 # Codebook for the Oxford Covid-19 Government Response Tracker
 
-***Codebook version 2.9 <br/>18 March 2021***
+***Codebook version 3.0 <br/>5 May 2021***
 
 This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)). The dataset contains 20 indicators and a miscellaneous notes field organised into four groups:
 - [C - containment and closure policies](#containment-and-closure-policies)
@@ -24,7 +24,7 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 | --- | --- | --- | --- | --- |
 | C1 | `C1_School closing` | Record closings of schools and universities | Ordinal scale | 0 - no measures <br/>1 - recommend closing or all schools open with alterations resulting in significant differences compared to non-Covid-19 operations <br/>2 - require closing (only some levels or categories, eg just high school, or just public schools) <br/>3 - require closing all levels <br/>Blank - no data |
 | | `C1_Flag` | | Binary flag for geographic scope | 0 - targeted <br/>1- general <br/>Blank - no data |
-| C2 | `C2_Workplace closing` | Record closings of workplaces | Ordinal scale | 0 - no measures <br/>1 - recommend closing (or recommend work from home) <br/>2 - require closing (or work from home) for some sectors or categories of workers <br/>3 - require closing (or work from home) for all-but-essential workplaces (eg grocery stores, doctors) <br/>Blank - no data |
+| C2 | `C2_Workplace closing` | Record closings of workplaces | Ordinal scale | 0 - no measures <br/>1 - recommend closing (or recommend work from home) or all businesses open with alterations resulting in significant differences compared to non-Covid-19 operation <br/>2 - require closing (or work from home) for some sectors or categories of workers <br/>3 - require closing (or work from home) for all-but-essential workplaces (eg grocery stores, doctors) <br/>Blank - no data |
 | | `C2_Flag` | | Binary flag for geographic scope | 0 - targeted <br/>1- general <br/>Blank - no data |
 | C3 | `C3_Cancel public events` | Record cancelling public events | Ordinal scale | 0 - no measures <br/>1 - recommend cancelling <br/>2 - require cancelling <br/>Blank - no data |
 | | `C3_Flag` | | Binary flag for geographic scope | 0 - targeted <br/>1- general <br/>Blank - no data |
@@ -74,6 +74,7 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 
 ## Codebook changelog
 
+- 5 May 2021 v3.0 added 'or all businesses open with alterations resulting in significant differences compared to non-Covid-19 operations' to C2 level 1
 - 18 March 2021 v2.9 added H8 'Protection of elderly people' indicator
 - 05 March 2021 v2.8 added 'non elderly' to definition of Clinically vulnerable groups' for H7
 - 14 January 2021 v2.7 changed 'country' to 'country/territory' and removed 'private' from C4 definition, replaced E1 flag 'formal sector workers only' to 'formal sector workers only or informal sector workers only', and 'informal workers too' to 'all workers'
