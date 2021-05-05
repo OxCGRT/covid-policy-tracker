@@ -199,15 +199,11 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
 - *Some examples that could indicate a 1:*
   - In Santa Catarina, Brazil (SC), the state government issued a Decree recommending elderly people to stay home and only go outside for necessary activities
   - Sanitation, hygiene, and distancing recommendations are made for elderly care homes
-  - Directives for health facilities or local health departments to consider/issue vulnerable individual health advice
-  - Directives from a state agency for facilities or local health departments to consider national advice
   - Encouragement from a state agency to restrict visitors.
-  - Recommendations for individuals at high risk of developing COVID-19 complications to shield themselves (ex: avoid travel, avoid non-essential outings, limit contacts and gatherings).
 - *Some examples that could indicate a 2:*
    - In New Zealand, staff and visitors were “to stay away from aged care facilities” if they felt ill, and to be symptom free from any flu and cold for 48 hours before visiting
    - Restrictions on movements within nursing facility visits or when visiting nursing facilities, such as requiring outdoor visits only.
    - Requiring screening for fever/COVID-19 symptoms before entrance to a nursing facility or testing requirements when visiting a facility.
-   - Required mask wearing when in combination with other distancing, sanitation, or health policies such as outlined above)
    - Substantial limits to visitor volume (ex: to a single family member).
    - Substantial sanitation or health precautions such as frequent testing of staff and visitors, decreased capacity of rooms or facility space, significantly altered care schedules, or significant PPE requirements. Increased cleaning or mask wearing alone would not qualify.
    - A general stay at home order
@@ -226,7 +222,6 @@ There are a few general rules our coders follow while collecting data:
  - The index methodology can be found [here](index_methodology.md)  detailing how the different indices are calculated
  - If there are stricter restrictions on a weekend, we record these stricter policies for just the Saturday and Sunday dates, and the less stringent ones on weekdays, so each data point accurately reflects the situation in that country on that given day
  - If coding a country with a contested government or multiple ruling parties, we follow the guidance to code the dominant tendency, and record the policies of the more formalised government, or the one which governs the larger proportion of the population
- - **Subnational**: If a state robustly institutionalises a federal recommendation or requirement under their own policy, for example by republishing federal guidance as the state’s own, this can be coded as a state policy intervention, as well as one introduced by the national government, and thus coded independently under the subnational jurisdiction coding. If the stringency of the policy has clearly been driven by the state, then the code would be raised at the subnational level.
 
   
 
