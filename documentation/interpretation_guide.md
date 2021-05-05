@@ -1,5 +1,5 @@
 # OxCGRT Coding Interpretation Guide
-***Version 1.6 <br/>Date: 15 March 2021***
+***Version 1.7 <br/>Date: 5 May 2021***
 
 This guide details the resolutions of frequently asked [codebook](codebook.md) interpretation queries, where indicators may be interpreted in different ways. This is in order to ensure consistency, and standardize coding across the database. Queries related specifically to subnational data are labelled as such.
 
@@ -86,6 +86,8 @@ If there are restrictions for the circulation of private cars based on certain c
 - A requirement for a negative PCR test before entering a country is recorded under 1- screening, as all passengers could circumvent the requirement to undergo a two week quarantine by testing negative.
 - C8 refers to incoming international travellers. Bans on people travelling internationally due to stay at home requirements are not recorded here.
 - If land borders are closed, but international flights are permitted, then still we record C8 based on whether there is a total ban on entry from some countries, and if not, based on screening or quarantine requirements. If residents of the closed border countries could still get on a flight, then this does not constitute a full ban. If the policy would prevent *most* people from a certain country from entering, representing a ban on entry from that country, then this could be considered an edge case for recording a 3 - ban on entry from some countries.
+- This indicator is to record policies relating to incoming travellers to the jurisdiction being coded, not restrictions on outbound travel.
+- **Constituent countries**: For constituent countries/regions/territories where the international travel restrictions may be determined by another country/region/territory, we record the policies and rules that apply to the jurisdiction being coded, in order to reflect the de facto lived reality of citizens there. This may mean coding a C8 that is set by another government if they control the international travel of a constituent country. If the jurisdiction being coded has a more stringent C8 policy imposed by another country/region/territory, we code the most stringent policy in place. For example- Puerto Rico’s international travel restrictions are set by the government or PRI, and the US federal government, meaning C8 can be seen as both a national and subnational unit. We code the most stringent C8 policy applying to PRI, even if this is from another country/region/territory (in this case, the USA). Constituent  countries/regions/territories to consider this for C8 are: Aruba, American Samoa, Bermuda, Greenland, Guam, New Caledonia, Puerto Rico, French Polynesia, and the United States Virgin Islands.
 
 
 ### E1- Income Support
@@ -113,7 +115,7 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
 
 ### E4- Providing Support to other countries
 
-- We only record money here that a country/territory DONATES to another country/territory, not that is received. We do not record in-kind support, for example donations of medical equipment, as a monetary equivalent; but we would still record a note of the in-kind support.
+- We only record money here that a country/territory/subnational unit DONATES to another country/territory/subnational unit, not that is received. We do not record in-kind support, for example donations of medical equipment, as a monetary equivalent; but we would still record a note of the in-kind support.
 - We record donations to international organisations, such as  WHO, WFP, as long as the country being recorded is the donor and it is to a specific relief fund specifically related to COVID. Donations to a generic WHO fund which might not be used specifically for COVID related issues is not specific enough to record.
 
 ### H1- Public Information Campaigns
@@ -180,10 +182,11 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
 - Key workers are broadly defined according to local conditions, and may also be described as essential, frontline, and high risk employees.
 - Broad groups may include a large group of adults (eg. all those aged over 40), or other broadly defined population groups (eg. students)
 - A policy recorded as “no cost to individual” may also include a very small nominal cost to the individual, such as the small pharmaceutical co-payments (eg. $5) in some public health systems
-- Vaccines are defined as having passed Phase 3 clinical trials and approved by the government for use in that country, region, or territory
+- Vaccines are defined as having passed Phase 3 clinical trials and approved by the government for use in that country, region, or territory. The brands of vaccine being administered are recorded in the notes.
 - The ‘clinically vulnerable groups’ category does not record the elderly as they are recorded in the ‘elderly’ category.
 - Vaccinations for residents of Long Term Care Facilities (LTCFs) are coded under the ‘Elderly’ category as the majority of people living in such homes are elderly residents.
-- When there is a vaccine shortage and there are not enough doses to vaccinate the target population, this is coded back down to a 0.
+- When there is a vaccine shortage and there are not enough doses to vaccinate the target population, we reduce the value to reflect this reduction, based on the three criteria listed above
+- We code a 5 (Universal Coverage) when the vaccine is available to everyone 16+ or 18+ (the lowest age permitted by the vaccine brand currently), and there is evidence that this is taking place on the ground. 
 
  ### H8 Protection of elderly people
  - This indicator focuses mainly on institutions where elderly people live, but also has scope to record restrictions that form the equivalent level of protection in settings where elderly people are cared for in the home or community, especially in countries, regions, and territories where institutions are not used.
@@ -192,14 +195,21 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
  - The provision of guidance and specific information campaign material for LTCFs for elderly people is coded as a 1. Public officials urging caution regarding the protection of elderly  people can also be coded here, for example on social media platforms- in the same way as the H1 indicator.
  - If the C6 indicator is 2 or a 3, this can count as a 2 or a 3 for H8, because as the elderly are a subset of the general population, orders for all to stay at home therefore require elderly people to stay at home.
  - If there are both policies recommending or requiring elderly people to stay at home, and also policies in place regarding Long Term Care Facilities , the most stringent policy is coded. While the priority is to record policies in LTCFs, if these are not in place, policies regarding stay at home requirements specifically for elderly people are equally valid. 
+ - If masks are required to be worn generally in the country/region/territory, including in elderly care homes, this does not warrant a 1 coding for H8. 
 - *Some examples that could indicate a 1:*
   - In Santa Catarina, Brazil (SC), the state government issued a Decree recommending elderly people to stay home and only go outside for necessary activities
+  - Sanitation, hygiene, and distancing recommendations are made for elderly care homes
+  - Encouragement from a state agency to restrict visitors.
 - *Some examples that could indicate a 2:*
-   - In New Zealand, staff and visitors were “to stay away from aged care facilities” if they felt ill, and to be symptom free from any flu and cold for 48 hours before visiting 
+   - In New Zealand, staff and visitors were “to stay away from aged care facilities” if they felt ill, and to be symptom free from any flu and cold for 48 hours before visiting
+   - Restrictions on movements within nursing facility visits or when visiting nursing facilities, such as requiring outdoor visits only.
+   - Requiring screening for fever/COVID-19 symptoms before entrance to a nursing facility or testing requirements when visiting a facility.
+   - Substantial limits to visitor volume (ex: to a single family member).
+   - Substantial sanitation or health precautions such as frequent testing of staff and visitors, decreased capacity of rooms or facility space, significantly altered care schedules, or significant PPE requirements. Increased cleaning or mask wearing alone would not qualify.
+   - A general stay at home order
 - *Some examples that could indicate a 3*:
     - Under its Emergency Powers Act, the Finnish government used its emergency powers to ban visitors from care institutions, health care units and hospitals, with some family exceptions on a case-by-case basis
-
-
+    - Ban on visitation from all non-essential personnel. No visitors are allowed unless in exceptional circumstances such as compassionate or end of life scenario
 
 
 ## General Interpretation Guidance 
@@ -217,6 +227,7 @@ There are a few general rules our coders follow while collecting data:
 
 
  ## Interpretation guide changelog
+- 5 May 2021: V1.7 added in new guidance for C8, C4, H7, H8, and General 
 - 15 March 2021: V1.6 added H8 guidance
 - 04 March 2021: V1.5 added in new guidance for C1, C2, C3, H7
 - 14 January 2021: V1.4 replaced 'country' with 'country/territory', and additions to C7, C8, E1, E2, E4, H5, and General Interpretation Guidance
