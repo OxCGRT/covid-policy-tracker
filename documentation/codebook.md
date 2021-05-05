@@ -1,6 +1,6 @@
 # Codebook for the Oxford Covid-19 Government Response Tracker
 
-***Codebook version 3.0 <br/>5 May 2021***
+***Codebook version 2.10 <br/>5 May 2021***
 
 This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)). The dataset contains 20 indicators and a miscellaneous notes field organised into four groups:
 - [C - containment and closure policies](#containment-and-closure-policies)
@@ -74,7 +74,7 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 
 ## Codebook changelog
 
-- 5 May 2021 v3.0 added 'or all businesses open with alterations resulting in significant differences compared to non-Covid-19 operations' to C2 level 1
+- 5 May 2021 v2.10 added 'or all businesses open with alterations resulting in significant differences compared to non-Covid-19 operations' to C2 level 1
 - 18 March 2021 v2.9 added H8 'Protection of elderly people' indicator
 - 05 March 2021 v2.8 added 'non elderly' to definition of Clinically vulnerable groups' for H7
 - 14 January 2021 v2.7 changed 'country' to 'country/territory' and removed 'private' from C4 definition, replaced E1 flag 'formal sector workers only' to 'formal sector workers only or informal sector workers only', and 'informal workers too' to 'all workers'
