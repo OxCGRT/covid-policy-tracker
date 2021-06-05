@@ -18,7 +18,7 @@ The different indices are comprised as follows:
 | Economic support index | 2 | | | | | | | | | `x` | `x` | | | | | | | | | |
 | [Legacy stringency index](#legacy-stringency-index) | 7 | `x` | `x` | `?` | `?` | `x` | `?` | `?` | `x` | | | | | `x` | | | | | | |
 
-Two versions of each indicator are present in the database. A regular version which will return `null` values if there is not enough data to calculate the index, and a "display" version which will extraploate to smooth over the last seven days of the index based on the most recent complete data. This is explained [below](#dealing-with-gaps-in-the-data-for-display-purposes).
+Two versions of each indicator are present in the database. A regular version which will return `null` values if there is not enough data to calculate the index, and a "display" version which will extrapolate to smooth over the last seven days of the index based on the most recent complete data. This is explained [below](#dealing-with-gaps-in-the-data-for-display-purposes).
 
 ## Calculating sub-index scores for each indicator
 
