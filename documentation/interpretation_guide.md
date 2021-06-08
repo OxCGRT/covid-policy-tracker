@@ -222,11 +222,13 @@ There are a few general rules our coders follow while collecting data:
  - The index methodology can be found [here](index_methodology.md)  detailing how the different indices are calculated
  - If there are stricter restrictions on a weekend, we record these stricter policies for just the Saturday and Sunday dates, and the less stringent ones on weekdays, so each data point accurately reflects the situation in that country on that given day
  - If coding a country with a contested government or multiple ruling parties, we follow the guidance to code the dominant tendency, and record the policies of the more formalised government, or the one which governs the larger proportion of the population
+ - Besides the guidance for C8, we do not code non-COVID policies for other indicators, such as those resulting from civil war or natural disasters.
 
   
 
 
  ## Interpretation guide changelog
+- 24 May 2021: V1.8 added in new guidance for non-COVID policies to General
 - 5 May 2021: V1.7 added in new guidance for C8, C4, H7, H8, and General 
 - 15 March 2021: V1.6 added H8 guidance
 - 04 March 2021: V1.5 added in new guidance for C1, C2, C3, H7
