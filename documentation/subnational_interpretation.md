@@ -1,6 +1,6 @@
 # Interpretation for subnational data 
 
-***version 2.2 <br/>05 May 2021***
+***version 2.3 <br/>11 June 2021***
 
 This document describes how national and subnational policies are reported in the [/data](../data/) folder in our primary OxCGRT dataset [(OxCGRT/covid-policy-tracker)](https://github.com/OxCGRT/covid-policy-tracker), and how this differs from secondary subnational-only data products found in other repositories.
 
@@ -8,12 +8,12 @@ This document describes how national and subnational policies are reported in th
 
 In the primary OxCGRT dataset described in this repository, we represent the overall policy environment that applies to residents of the given jurisdiction. Subnational units coded in this dataset therefore account for those policies 'inherited' from higher levels of government where applicable. 
 
-To do this, we record policies made at the state level and below (eg we also include decisions of county or city governments), and this is termed STATE_WIDE. We then also record policies made by the national government, and this is termed NAT_GOV. The subnational data reported in our primary dataset is a combination of the two. We first start with STATE_WIDE indicators, and then replace an indicator with the NAT_GOV counterpart if both of the following conditions are true:
+To do this, we record policies made at the state level or equivalent and below (eg we also include decisions of county or city governments), and this is termed STATE_WIDE. We then also record policies made by the national government, and this is termed NAT_GOV. The subnational data reported in our primary dataset is a combination of the two. We first start with STATE_WIDE indicators, and then replace an indicator with the NAT_GOV counterpart if both of the following conditions are true:
 1. The corresponding NAT_GOV policy is not geographically targeted, but rather applies nationwide
 2. The corresponding NAT_GOV policy is equal to or greater than the STATE_WIDE or STATE_GOV indicator on the ordinal scale for that indicator
 The resulting observations are marked with a_TOTAL suffix. For example, observations labelled BRA NAT_TOTAL describe Brazil as a whole, and observations labelled with USA as the country/territory code, US_TX as the region code, and STATE_TOTAL as the jurisdiction describe the US state of Texas as a whole. In this way, NAT_TOTAL and STATE_TOTAL measures in the core dataset are comparable, in that they show the totality of policies in effect within a given jurisdiction. 
 
-If a state robustly institutionalises a federal recommendation or requirement under their own policy, for example by republishing federal guidance as the state’s own, this can be coded as a state policy intervention, as well as one introduced by the national government, and thus coded independently under the subnational jurisdiction coding.
+If a state robustly institutionalises a national recommendation or requirement under their own policy, for example by republishing national guidance as the state’s own, this can be coded as a state policy intervention, as well as one introduced by the national government, and thus coded independently under the subnational jurisdiction coding.
 
 Subnational data in this repo use this method to account for interaction of state and national policies. 
 
@@ -36,6 +36,7 @@ However, in our primary dataset in this [OxCGRT/covid-policy-tracker](https://gi
 Indicator meanings and interpretation of targeted/general distinctions for subnational data products are consistent with those in the existing OxCGRT [codebook](documentation/codebook.md). 
 
 ## Changelog of subnational guidance
+- 11 June 2021: added 'state level or equivalent' and replaced 'federal' with 'national'
 - 5 May 2021: added guidance regarding how to code states institutionalising federal policies at the subnational level
 - 14 January 2021: replaced 'country' with 'country/territory'
 - 09 December 2020: published v2 to GitHub
