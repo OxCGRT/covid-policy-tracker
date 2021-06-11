@@ -228,6 +228,7 @@ There are a few general rules our coders follow while collecting data:
  
 - **Implementation not announcement:** We start coding a policy from the day the policy was implemented in practice, not the day it was announced.
 - **We report the most stringent government policy** with the highest ordinal value. If the most stringent policy is only present in a limited geographic area or sector, we use a binary flag variable to describe this scope and reflect whether the policy is targeted or general the binary flag model is described in detail here in the [codebook](codebook.md)
+- **We also report the most stringent policy with the highest ordinal value in place where there are different restrictions for people who have a vaccination/negative PCR test results/immunity pass, and those that do not.** Therefore the coding reflects the more stringent government policies in place for those who do not have an exemption. If anyone can turn up ‘at the door’, and get tested onsite with a rapid test to gain entry, we would not code this as a ‘required closure’, as anyone can ‘test out’ of restrictions easily. This policy must apply to all sectors within the indicator, and be a government policy, not that of a private business. If people can only gain entry with evidence of full vaccination, presence of antibodies, evidence of immunity, or a negative PCR test from a recent timeframe, then we code the restrictions in place for those who do not have this as the most stringent policy.
 - **Notes and Web Archived links:** For every change we make in the database, we add a note, with a website link to where the information was found. In order to save the webpage that we gained the information from, we webarchive the link. This saves the page on the date that it was accessed to prevent it being lost. These may look like this http://web.archive.org/web/20200517163106/https://covid19.govt.nz/, or http://archive.vn/XifX8. 
  - The index methodology can be found [here](index_methodology.md)  detailing how the different indices are calculated
  - If there are stricter restrictions on a weekend, we record these stricter policies for just the Saturday and Sunday dates, and the less stringent ones on weekdays, so each data point accurately reflects the situation in that country on that given day
@@ -238,7 +239,7 @@ There are a few general rules our coders follow while collecting data:
 
 
  ## Interpretation guide changelog
-- 11 June 2021: V1.9 replaced 'federal government' with 'national government' in C8 detail about subnational data, and guidance on LFT to H2
+- 11 June 2021: V1.9 replaced 'federal government' with 'national government' in C8 detail about subnational data, and guidance on LFT to H2, and guidance on coding the strictest policy where there are immunity or negative test related exemptions
 - 24 May 2021: V1.8 added in new guidance for non-COVID policies to General
 - 5 May 2021: V1.7 added in new guidance for C8, C4, H7, H8, and General 
 - 15 March 2021: V1.6 added H8 guidance
