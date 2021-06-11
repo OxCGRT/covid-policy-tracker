@@ -221,6 +221,40 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
     - Under its Emergency Powers Act, the Finnish government used its emergency powers to ban visitors from care institutions, health care units and hospitals, with some family exceptions on a case-by-case basis
     - Ban on visitation from all non-essential personnel. No visitors are allowed unless in exceptional circumstances such as compassionate or end of life scenario
 
+### V1- Vaccine Prioritisation
+- We code this from when the official priority groups plan is published, not from when potential categories are discussed informally
+
+### V2- Vaccine eligibility/availability 
+- For each category selected in V1, we then mark it as de facto (happening) in V2 when there is evidence from anywhere within a country/region/territory that this group is being vaccinated. Unlike H7, we do not require at least 20% of said group to be vaccinated in order to select the category in V2.
+- If V1 is coded as universal, we select all general ages above 16 in V2. if the vaccine is approved for additional groups, such as infants, this can then be added when the policy comes into effect
+
+### V3- Vaccine financial support
+- If people receive the vaccine from their private healthcare insurance (e.g. Israel’s HMO members) we code this depending on whether the government is still fully funding the vaccine, or requires copayment from the insurer (therefore not fully government funded)
+- If full government funding is available, we code this as the default. We only code other options if they are the only ones available to individuals
+
+### V1 and 2- Specific guidance around categories
+- **‘Clinically vulnerable’** is used for people who are extremely clinically vulnerable, and ‘at risk’ may be used for groups that are not ‘extremely’ vulnerable, but still have comorbidities that make them eligible for vaccination sooner. We code both, and use ‘clinically vulnerable’ and ‘at risk+age’ to reflect different prioritisation dates for different groups of people
+- **Frontline workers**- If specific groups (e.g. Police) are listed, we select the best fitting category for them, and include in the notes section which groups specifically were targeted. Do not also tick the “frontline/essential workers (when subcategories not specified)” box. If there has been a vague/ambiguous reference to frontline or essential workers, select ‘frontline/essential workers (when subcategories not specified)’. 
+- **Primary and secondary students, Tertiary education students**- If a country specifies that students will be targeted, and not young people aged 5-16, or 16+, we only record the students. If all young people in an age group are prioritised, we would not record students, and only include the students categories if they are specifically prioritised separately- not inferring one from the other
+- **Age categories**
+    - We tick the age ranges which are mentioned in the plan. If only an age floor is mentioned, we tick all ages above this which are part of this (e.g. if all over 70s are eligible, tick 70-74, 75-79, and 80+). If specific age ranges are mentioned, we only tick these- e.g. 25-29 and 40-44
+    - If ‘at risk’ is a subset of ‘general’, once the vaccine is available generally in an age group, the ‘at risk’ groups in or above that age can be unticked. E.g. If ‘general 60+’ is recorded- we do not record ‘at risk 60+’ as it is a subset of the ‘general’ population,If the V3 values are different for different age groups this can be left ticked.
+    - If the two groups are being prioritised differently, it is acceptable to code these separately
+    - We code the lowest age to whom the vaccine is available in a country/region/territory. E.g. E.g. in SGP recorded the first day some over 80s were eligible for vaccination in a specific area as ‘80+’, before this was available nationwide.
+- **Subnational variation in policy**
+     - If different subnational jurisdictions have the authority to set the V1 priority list and they do it differently, we still code the national priority/recommendation list if available and make a note. If there is no national recommendation for V1, we would code this as ‘No policy’, and code V2 for which groups are de facto eligible.
+- **Missing categories**- If there is a missing category (that is, a country specifies a priority group that does not obviously fit into our list of groups) , coders have two options:
+     - **Option A: Best Fit**- Use the below ‘Best Fit’ table to decide which category to use as a proxy for this, and record this decision in the table below to ensure standardization. Also record this in detail in the notes so that the specific category can be extracted if needed
+     - **Option B: Exclude**- If the group is repeated in the government policy, or not on the list in the portal, and there is not a suitable best fit, exclude it from V1/V2  but ensure the note contains the true list
+
+### Vaccination best fit table for categories
+
+Here will record where categories have been substituted when category not listed in V1/2 for standardization of ‘best fit’ 
+
+| OxCGRT Category  | Examples of country-designated categories that have resulted in this box being ticked  | 
+| --- | --- | 
+| Police/ first responders | Occupations important to functioning of society (IRL) <br/> Groups of persons who are of critical importance to the functioning of Singapore (SGP) <br/> Ambulance and paramedic staff (AUS) <br/> Emergency health  staff (FIN) <br/> Firefighters (FRA)
+
 
 ## General Interpretation Guidance 
  
@@ -239,7 +273,7 @@ There are a few general rules our coders follow while collecting data:
 
 
  ## Interpretation guide changelog
-- 11 June 2021: V1.9 replaced 'federal government' with 'national government' in C8 detail about subnational data, and guidance on LFT to H2, and guidance on coding the strictest policy where there are immunity or negative test related exemptions
+- 11 June 2021: V1.9 replaced 'federal government' with 'national government' in C8 detail about subnational data, and guidance on LFT to H2, and guidance on coding the strictest policy where there are immunity or negative test related exemptions, added vaccination policy guidance for new V1-3 indicators
 - 24 May 2021: V1.8 added in new guidance for non-COVID policies to General
 - 5 May 2021: V1.7 added in new guidance for C8, C4, H7, H8, and General 
 - 15 March 2021: V1.6 added H8 guidance
