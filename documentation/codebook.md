@@ -83,6 +83,10 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 
 ### Vaccination policies summary CSV interpretation
 
+
+
+
+
 ## Codebook changelog
 
 - 11 June 2021 v2.11 added vaccination policy data (V1-V3)
