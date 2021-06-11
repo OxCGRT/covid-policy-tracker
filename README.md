@@ -1,7 +1,7 @@
 **UPDATE:**
 
 
-<!----- We have added data for 3 new indicators on vaccination policies. These will be rolled out to cover all countries over time
+<!---- We have added data for 3 new indicators on vaccination policies. These will be rolled out to cover all countries over time
 <!---- We have published a new format for our indicators ([/data/OxCGRT_latest_combined.csv](data/OxCGRT_latest_combined.csv)) which combines our ordinal measures of policy strictness with their geographical scope. This is described [below](#getting-data-from-this-github-repository).--->
 <!---- Our main datasets in this repository also include Brazilian state data.--->
 <!-- - we have published a new indicator for vaccine policy, H7
