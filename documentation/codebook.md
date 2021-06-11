@@ -70,54 +70,9 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 
 | ID | Name | Description | Measurement | Coding |
 | --- | --- | --- | --- | --- |
-| V1 | `V1_Vaccine prioritisation` | Reports the existence of a prioritised plan for vaccine rollout | Ranked list of categories of eligible groups | 0 - no policy <br/>Universal/generally available <br/>OR- Blank - Infants 0-4 yrs <br/>- Young people 5-16 yrs <br/> - General 16+ yrs
- - <br/>General 20+ yrs
- - <br/>General 25+ yrs
- - <br/>Blank General 30+ yrs
- - <br/>Blank General 35+ yrs
- - <br/>Blank General 40+ yrs
- - <br/>Blank General 45+ yrs
- - <br/>Blank General 50+ yrs
- - <br/>Blank General 55+ yrs
- - <br/>Blank General 60+ yrs
- - <br/>Blank General 65+ yrs
- - <br/>Blank General 70+ yrs
- - <br/>Blank General 75+ yrs
- - <br/>Blank General 80+ yrs
- - <br/>Blank At Risk 16+ yrs
- - <br/>Blank At Risk 20+ yrs
- - <br/>Blank At Risk 25+ yrs
- - <br/>Blank At Risk 30+ yrs
- - <br/>Blank At Risk 35+ yrs
- - <br/>Blank At Risk 40+ yrs
- - <br/>Blank At Risk 45+ yrs
- - <br/>Blank At Risk 50+ yrs
- - <br/>Blank At Risk 55+ yrs
- - <br/>Blank At Risk 60+ yrs
- - <br/>Blank At Risk 65+ yrs
- - <br/>Blank At Risk 70+ yrs
- - <br/>Blank At Risk 75+ yrs
- - <br/>Blank At Risk 80+ yrs
-Airport/Border/Airline Staff
-Clinically vulnerable/chronic illness/significant underlying health condition (excluding elderly and disabled)
-Crowded/communal living conditions (dormitories for migrant workers, temporary accommodation)
-Disabled People
-Educators
-Ethnic minorities
-Factory workers
-Frontline/essential workers (when subcategories not specified)
-Frontline retail workers
-Healthcare workers/carers (excluding care home staff)
-Military
-Other 'high contact' professions/groups (taxi drivers, security guards)
-People living with a vulnerable/shielding person or other priority group
-Police/ first responders
-Pregnant people
-Primary and secondary school students
-Religious/Spiritual Leaders
-Residents in an elderly care home
-Staff working in an elderly care home
-Tertiary education students
+| V1 | `V1_Vaccine prioritisation` | Reports the existence of a prioritised plan for vaccine rollout | Ranked list of categories of eligible groups | 0 - no policy <br/>Universal/generally available <br/> -Infants 0-4 yrs <br/>- Young people 5-16 yrs <br/> - General 16+ yrs <br/>-General 20+ yrs
+ - <br/>-General 25+ yrs <br/>-General 30+ yrs <br/>-General 35+ yrs <br/>-General 40+ yrs <br/>-General 45+ yrs <br/>-General 50+ yrs <br/>-General 55+ yrs <br/>-General 60+ yrs <br/>-General 65+ yrs <br/>-General 70+ yrs <br/>-General 75+ yrs <br/>-General 80+ yrs <br/>-At Risk 16+ yrs <br/>-At Risk 20+ yrs <br/>- At Risk 25+ yrs <br/>-At Risk 30+ yrs <br/>-At Risk 35+ yrs <br/>-At Risk 40+ yrs <br/>-At Risk 45+ yrs <br/>- At Risk 50+ yrs<br/>- At Risk 55+ yrs<br/>- At Risk 60+ yrs <br/>- At Risk 65+ yrs<br/>-At Risk 70+ yrs <br/>- At Risk 75+ yrs <br/>- At Risk 80+ yrs <br/>- Airport/Border/Airline Staf <br/>- Clinically vulnerable/chronic illness/significant underlying health condition (excluding elderly and disabled) <br/>- Crowded/communal living conditions (dormitories for migrant workers, temporary accommodations <br/>- Disabled People <br/>- Educator <br/>- Ethnic minoritie <br/>- Factory worker <br/>- Frontline/essential workers (when subcategories not specified <br/>- Frontline retail workers <br/>- Healthcare workers/carers (excluding care home staff <br/>- Military
+ <br/>- Other 'high contact' professions/groups (taxi drivers, security guards <br/>- People living with a vulnerable/shielding person or other priority grou <br/>- Police/ first responders <br/>- Pregnant people <br/>- Primary and secondary school students <br/>- Religious/Spiritual Leaders <br/>- Residents in an elderly care home <br/>- Staff working in an elderly care home <br/>- Tertiary education students
 
 
 
