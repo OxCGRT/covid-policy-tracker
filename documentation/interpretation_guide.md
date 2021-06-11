@@ -142,7 +142,17 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
     - Testing announced as available for all symptomatic people or all people in suspicion of being in contact with a case
 - *Some examples that could indicate a 3*:
     - Widespread testing capacity reported for whoever wants it (ie not just in one big city) and good evidence that there is capacity on the ground to meet this
-    Announcing that anyone interested in getting a test will receive one
+    - Announcing that anyone interested in getting a test will receive one
+-  Widespread lateral flow testing (LFT) can result in a 3 code for H2 only if follow up PCR tests are available for everyone who could test positive. If lateral flow tests are available, but there is no further connection to PCR testing for positive tests, this would not be coded. In this instance we would not consider LFT and only record the state of PCR testing in the country/region/territory. Some examples of LFT and PCR interactions are below:
+- *Some examples that could indicate a 0:*
+    - No testing policy in place
+    - Lateral Flow Tests available but no PCR tests available at all
+- *Some examples that could indicate a 1:*
+    - Lateral flow tests backed up by PCR tests only available to those who have symptoms and meet specific criteria
+- *Some examples that could indicate a 2:*
+    - Lateral flow tests backed up by PCR tests, but LFTs are available only to those showing symptoms
+- *Some examples that could indicate a 3:*
+    - Widespread lateral flow testing available to everyone (including asymptomatic people), and all positive LFTs will be followed up by a PCR test
 
 
 ### H3 - Contact tracing
@@ -228,7 +238,7 @@ There are a few general rules our coders follow while collecting data:
 
 
  ## Interpretation guide changelog
-- 11 June 2021: V1.9 replaced 'federal government' with 'national government' in C8 detail about subnational data
+- 11 June 2021: V1.9 replaced 'federal government' with 'national government' in C8 detail about subnational data, and guidance on LFT to H2
 - 24 May 2021: V1.8 added in new guidance for non-COVID policies to General
 - 5 May 2021: V1.7 added in new guidance for C8, C4, H7, H8, and General 
 - 15 March 2021: V1.6 added H8 guidance
