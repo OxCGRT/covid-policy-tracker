@@ -70,10 +70,7 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 
 | ID | Name | Description | Measurement | Coding |
 | --- | --- | --- | --- | --- |
-| V1 | `V1_Vaccine prioritisation` | Reports the existence of a prioritised plan for vaccine rollout | Ranked list of categories of eligible groups | 0 - no policy <br/>Universal/generally available <br/>OR-
-  - <br/>Blank Infants 0-4 yrs
- - <br/>Blank Young people 5-16 yrs
- - <br/>Blank General 16+ yrs
+| V1 | `V1_Vaccine prioritisation` | Reports the existence of a prioritised plan for vaccine rollout | Ranked list of categories of eligible groups | 0 - no policy <br/>Universal/generally available <br/>OR- Blank Infants 0-4 yrs <br/>Blank Young people 5-16 yrs <br/>Blank General 16+ yrs
  - <br/>Blank General 20+ yrs
  - <br/>Blank General 25+ yrs
  - <br/>Blank General 30+ yrs
