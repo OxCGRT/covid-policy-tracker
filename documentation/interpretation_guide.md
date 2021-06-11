@@ -1,5 +1,5 @@
 # OxCGRT Coding Interpretation Guide
-***Version 1.7 <br/>Date: 5 May 2021***
+***Version 1.8 <br/>Date: 11 June 2021***
 
 This guide details the resolutions of frequently asked [codebook](codebook.md) interpretation queries, where indicators may be interpreted in different ways. This is in order to ensure consistency, and standardize coding across the database. Queries related specifically to subnational data are labelled as such.
 
@@ -81,7 +81,7 @@ If there are restrictions for the circulation of private cars based on certain c
 - This indicator does not have a binary flag variable to reflect geographic variation in policies. Therefore, we generally record the level of policy that applies everywhere across the jurisdiction - the highest common value of policy nationwide or statewide. We do not report any policies of a higher value that are only available in limited areas.  *For example* if one airport is screening passenger arrivals, but the majority of them are not, this would not be recorded as a 1. All airports across the country/territory would need to be screening before this policy could be seen to apply generally and be recorded.
 - If visitors are meant to self quarantine/isolate after travelling to certain areas, but there are no enforcement or tracking measures in place, we record the official policy accordingly, and make a note that the situation on the ground may not reflect this.
 - If a country/territory is still repatriating citizens from overseas, but otherwise has closed borders, this still counts as a full border closure (4). This indicator focuses largely on requirements for foriegn passengers, in the sense that even during “total closure”, countries will still let their citizens cross the border to return home (although may subject them to quarantine).
-- **For subnational (state-level) data:** As international travel is usually an issue for the federal government, subnational governments will rarely implement relevant policies for C8. The sorts of state-level activity that would be recorded under C8 include when individual airports proactively screen passengers, or if states created their own mandatory quarantines for international travelers.
+- **For subnational (state-level) data:** As international travel is usually an issue for the national government, subnational governments will rarely implement relevant policies for C8. The sorts of state-level activity that would be recorded under C8 include when individual airports proactively screen passengers, or if states created their own mandatory quarantines for international travelers.
 - If country/territory borders are completely closed, but it is because of a civil war, or other non-covid related reasons, this will still be reported as a 4. While this is not a covid-specific policy, in practice the border is still closed so we want to best represent the lived reality of people living there, in order to understand the effect this could have on COVID-19.
 - A requirement for a negative PCR test before entering a country is recorded under 1- screening, as all passengers could circumvent the requirement to undergo a two week quarantine by testing negative.
 - C8 refers to incoming international travellers. Bans on people travelling internationally due to stay at home requirements are not recorded here.
@@ -228,6 +228,7 @@ There are a few general rules our coders follow while collecting data:
 
 
  ## Interpretation guide changelog
+- 11 June 2021: V1.9 replaced 'federal government' with 'national government' in C8 detail about subnational data
 - 24 May 2021: V1.8 added in new guidance for non-COVID policies to General
 - 5 May 2021: V1.7 added in new guidance for C8, C4, H7, H8, and General 
 - 15 March 2021: V1.6 added H8 guidance
