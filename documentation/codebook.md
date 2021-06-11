@@ -1,18 +1,19 @@
 # Codebook for the Oxford Covid-19 Government Response Tracker
 
-***Codebook version 2.10 <br/>5 May 2021***
+***Codebook version 2.11 <br/>11 June 2021***
 
-This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)). The dataset contains 20 indicators and a miscellaneous notes field organised into four groups:
+This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)). The dataset contains 23 indicators and a miscellaneous notes field organised into five groups:
 - [C - containment and closure policies](#containment-and-closure-policies)
 - [E - economic policies](#economic-policies)
 - [H - health system policies](#health-system-policies)
+- [V - vaccination policies](#vaccination-policies)
 - [M - miscellaneous policies](#miscellaneous-policies)
 
 For more detailed guidance about the codebook and how we interpret the indicators, see the [coding interpretation guide](interpretation_guide.md). This ensures consistency, and standardizes coding across the database.
 
 Updates to this codebook are recorded in the [changelog](#codebook-changelog) below.
 
-Most indicators are recorded on an ordinal scale that represents the level of strictness of the policy. Four of the indicators (E3, E4, H4 and H5) are recorded as a US dollar value of fiscal spending.
+Most indicators are recorded on an ordinal scale that represents the level of strictness of the policy. Four of the indicators (E3, E4, H4 and H5) are recorded as a US dollar value of fiscal spending. V1 and V2 record categorical data on eligible groups for vaccination in a population.
 
 Government coronavirus policies often vary by region within countries. We code the most stringent government policy that is in place in a country/territory, as represented by the highest ordinal value. Sometimes the most stringent policy in a country/territory will only apply to a small part of the population. If the most stringent policy is only present in a limited geographic area or sector (eg perhaps only one state has implemented policies at a high level), we use a binary flag variable to denote this limited scope. Ten of the indicators (C1-C7, H1, H6 and H8) have a flag for whether they are "targeted" to a specific geographical region (flag=0) or whether they are a "general" policy that is applied across the whole country/territory (flag=1).) E1 has a flag to describe whether income support is for just formal sector workers (flag=0) or whether it includes informal workers as well (flag=1). H7 has a flag to describe whether vaccine policy is funded at cost to the individual (flag=0) or by government (flag=1).
 
@@ -65,6 +66,63 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 | H8 | `H8_Protection of elderly people` | Record policies for protecting elderly people (as defined locally) in Long Term Care Facilities and/or the community and home setting | Ordinal scale | 0 - no measures <br/>1 - Recommended isolation, hygiene, and visitor restriction measures in LTCFs and/or elderly  people to stay at home <br/>2 - Narrow restrictions for isolation, hygiene in LTCFs, some limitations on external visitors and/or restrictions protecting elderly people at home <br/>3 - Extensive restrictions for isolation and hygiene in LTCFs, all non-essential external visitors prohibited, and/or all elderly people required to stay at home and not leave the home with minimal exceptions, and receive no external visitors <br/>Blank - no data | 
 | | `H8_Flag` | | Binary flag for geographic scope | 0 - targeted <br/>1- general <br/>Blank - no data |
 
+### Vaccination policies
+
+| ID | Name | Description | Measurement | Coding |
+| --- | --- | --- | --- | --- |
+| V1 | `V1_Vaccine prioritisation` | Reports the existence of a prioritised plan for vaccine rollout | Ranked list of categories of eligible groups | 0 - no policy <br/>Universal/generally available <br/>OR-
+  - <br/>Blank Infants 0-4 yrs
+ - <br/>Blank Young people 5-16 yrs
+ - <br/>Blank General 16+ yrs
+ - <br/>Blank General 20+ yrs
+ - <br/>Blank General 25+ yrs
+ - <br/>Blank General 30+ yrs
+ - <br/>Blank General 35+ yrs
+ - <br/>Blank General 40+ yrs
+ - <br/>Blank General 45+ yrs
+ - <br/>Blank General 50+ yrs
+ - <br/>Blank General 55+ yrs
+ - <br/>Blank General 60+ yrs
+ - <br/>Blank General 65+ yrs
+ - <br/>Blank General 70+ yrs
+ - <br/>Blank General 75+ yrs
+ - <br/>Blank General 80+ yrs
+ - <br/>Blank At Risk 16+ yrs
+ - <br/>Blank At Risk 20+ yrs
+ - <br/>Blank At Risk 25+ yrs
+ - <br/>Blank At Risk 30+ yrs
+ - <br/>Blank At Risk 35+ yrs
+ - <br/>Blank At Risk 40+ yrs
+ - <br/>Blank At Risk 45+ yrs
+ - <br/>Blank At Risk 50+ yrs
+ - <br/>Blank At Risk 55+ yrs
+ - <br/>Blank At Risk 60+ yrs
+ - <br/>Blank At Risk 65+ yrs
+ - <br/>Blank At Risk 70+ yrs
+ - <br/>Blank At Risk 75+ yrs
+ - <br/>Blank At Risk 80+ yrs
+Airport/Border/Airline Staff
+Clinically vulnerable/chronic illness/significant underlying health condition (excluding elderly and disabled)
+Crowded/communal living conditions (dormitories for migrant workers, temporary accommodation)
+Disabled People
+Educators
+Ethnic minorities
+Factory workers
+Frontline/essential workers (when subcategories not specified)
+Frontline retail workers
+Healthcare workers/carers (excluding care home staff)
+Military
+Other 'high contact' professions/groups (taxi drivers, security guards)
+People living with a vulnerable/shielding person or other priority group
+Police/ first responders
+Pregnant people
+Primary and secondary school students
+Religious/Spiritual Leaders
+Residents in an elderly care home
+Staff working in an elderly care home
+Tertiary education students
+
+
 
 ### Miscellaneous policies
 
@@ -72,8 +130,11 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 | --- | --- | --- | --- | --- |
 | M1 | `M1_Wildcard` | Record policy announcements that do not fit anywhere else | Free text notes field | Note unusual or interesting interventions that are worth flagging  |
 
+### Vaccination policies summary CSV interpretation
+
 ## Codebook changelog
 
+- 11 June 2021 v2.11 added vaccination policy data (V1-V3)
 - 5 May 2021 v2.10 added 'or all businesses open with alterations resulting in significant differences compared to non-Covid-19 operations' to C2 level 1
 - 18 March 2021 v2.9 added H8 'Protection of elderly people' indicator
 - 05 March 2021 v2.8 added 'non elderly' to definition of Clinically vulnerable groups' for H7
