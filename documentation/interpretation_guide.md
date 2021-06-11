@@ -243,6 +243,7 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
     - We code the lowest age to whom the vaccine is available in a country/region/territory. E.g. E.g. in SGP recorded the first day some over 80s were eligible for vaccination in a specific area as ‘80+’, before this was available nationwide.
 - **Subnational variation in policy**
      - If different subnational jurisdictions have the authority to set the V1 priority list and they do it differently, we still code the national priority/recommendation list if available and make a note. If there is no national recommendation for V1, we would code this as ‘No policy’, and code V2 for which groups are de facto eligible.
+- **Overseas territories** - We will not code V2 for overseas territories, e.g. Aruba, Madeira, Azores, but just for the country/region/territory itself being coded
 - **Missing categories**- If there is a missing category (that is, a country specifies a priority group that does not obviously fit into our list of groups) , coders have two options:
      - **Option A: Best Fit**- Use the below ‘Best Fit’ table to decide which category to use as a proxy for this, and record this decision in the table below to ensure standardization. Also record this in detail in the notes so that the specific category can be extracted if needed
      - **Option B: Exclude**- If the group is repeated in the government policy, or not on the list in the portal, and there is not a suitable best fit, exclude it from V1/V2  but ensure the note contains the true list
