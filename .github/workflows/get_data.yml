@@ -17,6 +17,7 @@ jobs:
           curl 'https://oxcgrtportal.azurewebsites.net/api/CSVDownload?type=changes_responses' -s -f -o 'data/OxCGRT_latest_responses.csv'
           curl 'https://oxcgrtportal.azurewebsites.net/api/CSVDownload?type=changes_all' -s -f -o 'data/OxCGRT_latest_allchanges.csv'
           curl 'https://oxcgrtportal.azurewebsites.net/api/CSVDownload?type=combined' -s -f -o 'data/OxCGRT_latest_combined.csv'
+          curl 'https://oxcgrtportal.azurewebsites.net/api/csvdownload?type=vaccine_full' -s -f -o 'data/OxCGRT_vaccines_full.csv'
       - name: Commit changes
         run: |
          git config --local user.email "action@github.com"
