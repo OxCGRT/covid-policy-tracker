@@ -1,5 +1,5 @@
 # OxCGRT Coding Interpretation Guide
-***Version 1.7 <br/>Date: 5 May 2021***
+***Version 1.8 <br/>Date: 11 June 2021***
 
 This guide details the resolutions of frequently asked [codebook](codebook.md) interpretation queries, where indicators may be interpreted in different ways. This is in order to ensure consistency, and standardize coding across the database. Queries related specifically to subnational data are labelled as such.
 
@@ -81,7 +81,7 @@ If there are restrictions for the circulation of private cars based on certain c
 - This indicator does not have a binary flag variable to reflect geographic variation in policies. Therefore, we generally record the level of policy that applies everywhere across the jurisdiction - the highest common value of policy nationwide or statewide. We do not report any policies of a higher value that are only available in limited areas.  *For example* if one airport is screening passenger arrivals, but the majority of them are not, this would not be recorded as a 1. All airports across the country/territory would need to be screening before this policy could be seen to apply generally and be recorded.
 - If visitors are meant to self quarantine/isolate after travelling to certain areas, but there are no enforcement or tracking measures in place, we record the official policy accordingly, and make a note that the situation on the ground may not reflect this.
 - If a country/territory is still repatriating citizens from overseas, but otherwise has closed borders, this still counts as a full border closure (4). This indicator focuses largely on requirements for foriegn passengers, in the sense that even during “total closure”, countries will still let their citizens cross the border to return home (although may subject them to quarantine).
-- **For subnational (state-level) data:** As international travel is usually an issue for the federal government, subnational governments will rarely implement relevant policies for C8. The sorts of state-level activity that would be recorded under C8 include when individual airports proactively screen passengers, or if states created their own mandatory quarantines for international travelers.
+- **For subnational (state-level) data:** As international travel is usually an issue for the national government, subnational governments will rarely implement relevant policies for C8. The sorts of state-level activity that would be recorded under C8 include when individual airports proactively screen passengers, or if states created their own mandatory quarantines for international travelers.
 - If country/territory borders are completely closed, but it is because of a civil war, or other non-covid related reasons, this will still be reported as a 4. While this is not a covid-specific policy, in practice the border is still closed so we want to best represent the lived reality of people living there, in order to understand the effect this could have on COVID-19.
 - A requirement for a negative PCR test before entering a country is recorded under 1- screening, as all passengers could circumvent the requirement to undergo a two week quarantine by testing negative.
 - C8 refers to incoming international travellers. Bans on people travelling internationally due to stay at home requirements are not recorded here.
@@ -142,7 +142,17 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
     - Testing announced as available for all symptomatic people or all people in suspicion of being in contact with a case
 - *Some examples that could indicate a 3*:
     - Widespread testing capacity reported for whoever wants it (ie not just in one big city) and good evidence that there is capacity on the ground to meet this
-    Announcing that anyone interested in getting a test will receive one
+    - Announcing that anyone interested in getting a test will receive one
+-  Widespread lateral flow testing (LFT) can result in a 3 code for H2 only if follow up PCR tests are available for everyone who could test positive. If lateral flow tests are available, but there is no further connection to PCR testing for positive tests, this would not be coded. In this instance we would not consider LFT and only record the state of PCR testing in the country/region/territory. Some examples of LFT and PCR interactions are below:
+- *Some examples that could indicate a 0:*
+    - No testing policy in place
+    - Lateral Flow Tests available but no PCR tests available at all
+- *Some examples that could indicate a 1:*
+    - Lateral flow tests backed up by PCR tests only available to those who have symptoms and meet specific criteria
+- *Some examples that could indicate a 2:*
+    - Lateral flow tests backed up by PCR tests, but LFTs are available only to those showing symptoms
+- *Some examples that could indicate a 3:*
+    - Widespread lateral flow testing available to everyone (including asymptomatic people), and all positive LFTs will be followed up by a PCR test
 
 
 ### H3 - Contact tracing
@@ -211,6 +221,51 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
     - Under its Emergency Powers Act, the Finnish government used its emergency powers to ban visitors from care institutions, health care units and hospitals, with some family exceptions on a case-by-case basis
     - Ban on visitation from all non-essential personnel. No visitors are allowed unless in exceptional circumstances such as compassionate or end of life scenario
 
+### V1- Vaccine Prioritisation
+- We code this from when the official priority groups plan is published, not from when potential categories are discussed informally
+
+### V2- Vaccine eligibility/availability 
+- For each category selected in V1, we then mark it as de facto (happening) in V2 when there is evidence from anywhere within a country/region/territory that this group is being vaccinated. Unlike H7, we do not require at least 20% of said group to be vaccinated in order to select the category in V2.
+- If V1 is coded as universal, we select all general ages above 16 in V2. if the vaccine is approved for additional groups, such as infants, this can then be added when the policy comes into effect
+
+### V3- Vaccine financial support
+- If people receive the vaccine from their private healthcare insurance (e.g. Israel’s HMO members) we code this depending on whether the government is still fully funding the vaccine, or requires copayment from the insurer (therefore not fully government funded)
+- If full government funding is available, we code this as the default. We only code other options if they are the only ones available to individuals
+
+### V1 and 2- Specific guidance around categories
+- **‘Clinically vulnerable’** is used for people who are extremely clinically vulnerable, and ‘at risk’ may be used for groups that are not ‘extremely’ vulnerable, but still have comorbidities that make them eligible for vaccination sooner. We code both, and use ‘clinically vulnerable’ and ‘at risk+age’ to reflect different prioritisation dates for different groups of people
+- **Frontline workers**- If specific groups (e.g. Police) are listed, we select the best fitting category for them, and include in the notes section which groups specifically were targeted. Do not also tick the “frontline/essential workers (when subcategories not specified)” box. If there has been a vague/ambiguous reference to frontline or essential workers, select ‘frontline/essential workers (when subcategories not specified)’. 
+- **Primary and secondary students, Tertiary education students**- If a country specifies that students will be targeted, and not young people aged 5-16, or 16+, we only record the students. If all young people in an age group are prioritised, we would not record students, and only include the students categories if they are specifically prioritised separately- not inferring one from the other
+- **Age categories**
+    - We tick the age ranges which are mentioned in the plan. If only an age floor is mentioned, we tick all ages above this which are part of this (e.g. if all over 70s are eligible, tick 70-74, 75-79, and 80+). If specific age ranges are mentioned, we only tick these- e.g. 25-29 and 40-44
+    - If ‘at risk’ is a subset of ‘general’, once the vaccine is available generally in an age group, the ‘at risk’ groups in or above that age can be unticked. E.g. If ‘general 60+’ is recorded- we do not record ‘at risk 60+’ as it is a subset of the ‘general’ population,If the V3 values are different for different age groups this can be left ticked.
+    - If the two groups are being prioritised differently, it is acceptable to code these separately
+    - We code the lowest age to whom the vaccine is available in a country/region/territory. E.g. E.g. in SGP recorded the first day some over 80s were eligible for vaccination in a specific area as ‘80+’, before this was available nationwide.
+- **Subnational variation in policy**
+     - If different subnational jurisdictions have the authority to set the V1 priority list and they do it differently, we still code the national priority/recommendation list if available and make a note. If there is no national recommendation for V1, we would code this as ‘No policy’, and code V2 for which groups are de facto eligible.
+- **Overseas territories** - We will not code V2 for overseas territories, e.g. Aruba, Madeira, Azores, but just for the country/region/territory itself being coded
+- **Missing categories**- If there is a missing category (that is, a country specifies a priority group that does not obviously fit into our list of groups) , coders have two options:
+     - **Option A: Best Fit**- Use the below ‘Best Fit’ table to decide which category to use as a proxy for this, and record this decision in the table below to ensure standardization. Also record this in detail in the notes so that the specific category can be extracted if needed
+     - **Option B: Exclude**- If the group is repeated in the government policy, or not on the list in the portal, and there is not a suitable best fit, exclude it from V1/V2  but ensure the note contains the true list
+
+### Vaccination best fit table for categories
+
+Here will record where categories have been substituted when category not listed in V1/2 for standardization of ‘best fit’ 
+
+| OxCGRT Category  | Examples of country-designated categories that have resulted in this box being ticked  | 
+| --- | --- | 
+| Police/ first responders | Occupations important to functioning of society (IRL) <br/> Groups of persons who are of critical importance to the functioning of Singapore (SGP) <br/> Ambulance and paramedic staff (AUS) <br/> Emergency health  staff (FIN) <br/> Firefighters (FRA)
+| Disabled  | People with a learning or neurological disability (GBR) <br/> People with Down’s Syndrome (PRT)
+| Border staff  | Key workers in essential jobs who cannot avoid high risk of exposure (IRL) <br/> Maritime and aviation (SGP)
+| Frontline retail workers   | Restaurant workers 
+| Frontline workers (when not otherwise specified)  | Other people aged 65-69 and key workers essential to the vaccine programme’ (IRL)  <br/> Workers identified as performing a critical function in society [unspecified] (DNK) <br/> Operators essential essential for the country's economic activities (FRA) <br/> Essential professions In this phase, people with essential social and/or economic profession are vaccinated (BEL) 
+| Tertiary education students   | University, college, or technical trade schools 
+| Educators  | University, college, or technical trade schools  <br/> Teachers in any level of school <br/> Instructors/professors in colleges and universities
+| Other high contact professions   | Disability care staff (AUS)
+| Ethnic minorities  | Aboriginal and Torres Strait Islander people > 55 (AUS) <br/> Indigenous populations (CAN)
+| Factory staff   | Meat processing staff (AUS)
+| Young people aged 5-16  | People aged under 18  (IRL)
+| Crowded/communal living conditions (dormitories for migrant workers, temporary accommodation)  | People in communal facilities with an increased risk of infection and outbreaks (with residents of mixed ages)  <br/> Migrant dormitories/crowded accommodation (SGP) <br/> People living or working in crowded settings (IRL)  <br/> Prison populations (ISR)  <br/> People who live in socially vulnerable situations, such as the homeless or the undocumented. (SWE) <br/>Homeless (KOR)  <br/> Vulnerable and precarious people (homeless…), living in communities (prisons, psychiatric establishments, homes) (FRA)  <br/> People in communal facilities with an increased risk of infection and outbreaks (with residents of mixed ages) (CHE) 
 
 ## General Interpretation Guidance 
  
@@ -218,6 +273,7 @@ There are a few general rules our coders follow while collecting data:
  
 - **Implementation not announcement:** We start coding a policy from the day the policy was implemented in practice, not the day it was announced.
 - **We report the most stringent government policy** with the highest ordinal value. If the most stringent policy is only present in a limited geographic area or sector, we use a binary flag variable to describe this scope and reflect whether the policy is targeted or general the binary flag model is described in detail here in the [codebook](codebook.md)
+- **We also report the most stringent policy with the highest ordinal value in place where there are different restrictions for people who have a vaccination/negative PCR test results/immunity pass, and those that do not.** Therefore the coding reflects the more stringent government policies in place for those who do not have an exemption. If anyone can turn up ‘at the door’, and get tested onsite with a rapid test to gain entry, we would not code this as a ‘required closure’, as anyone can ‘test out’ of restrictions easily. This policy must apply to all sectors within the indicator, and be a government policy, not that of a private business. If people can only gain entry with evidence of full vaccination, presence of antibodies, evidence of immunity, or a negative PCR test from a recent timeframe, then we code the restrictions in place for those who do not have this as the most stringent policy or a required closure.
 - **Notes and Web Archived links:** For every change we make in the database, we add a note, with a website link to where the information was found. In order to save the webpage that we gained the information from, we webarchive the link. This saves the page on the date that it was accessed to prevent it being lost. These may look like this http://web.archive.org/web/20200517163106/https://covid19.govt.nz/, or http://archive.vn/XifX8. 
  - The index methodology can be found [here](index_methodology.md)  detailing how the different indices are calculated
  - If there are stricter restrictions on a weekend, we record these stricter policies for just the Saturday and Sunday dates, and the less stringent ones on weekdays, so each data point accurately reflects the situation in that country on that given day
@@ -228,6 +284,7 @@ There are a few general rules our coders follow while collecting data:
 
 
  ## Interpretation guide changelog
+- 11 June 2021: V1.9 replaced 'federal government' with 'national government' in C8 detail about subnational data, and guidance on LFT to H2, and guidance on coding the strictest policy where there are immunity or negative test related exemptions, added vaccination policy guidance for new V1-3 indicators
 - 24 May 2021: V1.8 added in new guidance for non-COVID policies to General
 - 5 May 2021: V1.7 added in new guidance for C8, C4, H7, H8, and General 
 - 15 March 2021: V1.6 added H8 guidance
