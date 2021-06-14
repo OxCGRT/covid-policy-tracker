@@ -236,7 +236,7 @@ There are a few general rules our coders follow while collecting data:
  - Besides the guidance for C8, we do not code non-COVID policies for other indicators, such as those resulting from civil war or natural disasters.
 
  ## Interpretation guide changelog
-- 14 June 2021: V1.9 replaced 'federal government' with 'national government' in C8 detail about subnational data, and guidance on LFT to H2
+- 14 June 2021: V1.9 replaced 'federal government' with 'national government' in C8 detail about subnational data, and added guidance on LFT to H2
 - 24 May 2021: V1.8 added in new guidance for non-COVID policies to General
 - 5 May 2021: V1.7 added in new guidance for C8, C4, H7, H8, and General 
 - 15 March 2021: V1.6 added H8 guidance
