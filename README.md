@@ -9,6 +9,7 @@
 <!----- We are creating a mailing list to provide technical users with slightly more detailed release notes, and advance warning of changes to database structure. You can register for these email updates here: http://eepurl.com/hiMsdL
 <!----- We have updated our new academic citation for the project
 <!----- We have added a new indicator, H8 Protection of elderly people to our datasets
+
 - We are creating a mailing list to provide technical users with slightly more detailed release notes, and advance warning of changes to database structure. You can register for these email updates here: http://eepurl.com/hiMsdL
 - We have added data for 3 new indicators on vaccination policies and subnational data for China
 
