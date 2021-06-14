@@ -1,5 +1,5 @@
 # OxCGRT Coding Interpretation Guide
-***Version 1.7 <br/>Date: 5 May 2021***
+***Version 1.9 <br/>Date: 14 June 2021***
 
 This guide details the resolutions of frequently asked [codebook](codebook.md) interpretation queries, where indicators may be interpreted in different ways. This is in order to ensure consistency, and standardize coding across the database. Queries related specifically to subnational data are labelled as such.
 
@@ -81,7 +81,7 @@ If there are restrictions for the circulation of private cars based on certain c
 - This indicator does not have a binary flag variable to reflect geographic variation in policies. Therefore, we generally record the level of policy that applies everywhere across the jurisdiction - the highest common value of policy nationwide or statewide. We do not report any policies of a higher value that are only available in limited areas.  *For example* if one airport is screening passenger arrivals, but the majority of them are not, this would not be recorded as a 1. All airports across the country/territory would need to be screening before this policy could be seen to apply generally and be recorded.
 - If visitors are meant to self quarantine/isolate after travelling to certain areas, but there are no enforcement or tracking measures in place, we record the official policy accordingly, and make a note that the situation on the ground may not reflect this.
 - If a country/territory is still repatriating citizens from overseas, but otherwise has closed borders, this still counts as a full border closure (4). This indicator focuses largely on requirements for foriegn passengers, in the sense that even during “total closure”, countries will still let their citizens cross the border to return home (although may subject them to quarantine).
-- **For subnational (state-level) data:** As international travel is usually an issue for the federal government, subnational governments will rarely implement relevant policies for C8. The sorts of state-level activity that would be recorded under C8 include when individual airports proactively screen passengers, or if states created their own mandatory quarantines for international travelers.
+- **For subnational (state-level) data:** As international travel is usually an issue for the national government, subnational governments will rarely implement relevant policies for C8. The sorts of state-level activity that would be recorded under C8 include when individual airports proactively screen passengers, or if states created their own mandatory quarantines for international travelers.
 - If country/territory borders are completely closed, but it is because of a civil war, or other non-covid related reasons, this will still be reported as a 4. While this is not a covid-specific policy, in practice the border is still closed so we want to best represent the lived reality of people living there, in order to understand the effect this could have on COVID-19.
 - A requirement for a negative PCR test before entering a country is recorded under 1- screening, as all passengers could circumvent the requirement to undergo a two week quarantine by testing negative.
 - C8 refers to incoming international travellers. Bans on people travelling internationally due to stay at home requirements are not recorded here.
@@ -142,7 +142,17 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
     - Testing announced as available for all symptomatic people or all people in suspicion of being in contact with a case
 - *Some examples that could indicate a 3*:
     - Widespread testing capacity reported for whoever wants it (ie not just in one big city) and good evidence that there is capacity on the ground to meet this
-    Announcing that anyone interested in getting a test will receive one
+    - Announcing that anyone interested in getting a test will receive one
+-  Widespread lateral flow testing (LFT) can result in a 3 code for H2 only if follow up PCR tests are available for everyone who could test positive. If lateral flow tests are available, but there is no further connection to PCR testing for positive tests, this would not be coded. In this instance we would not consider LFT and only record the state of PCR testing in the country/region/territory. Some examples of LFT and PCR interactions are below:
+- *Some examples that could indicate a 0:*
+    - No testing policy in place
+    - Lateral Flow Tests available but no PCR tests available at all
+- *Some examples that could indicate a 1:*
+    - Lateral flow tests backed up by PCR tests only available to those who have symptoms and meet specific criteria
+- *Some examples that could indicate a 2:*
+    - Lateral flow tests backed up by PCR tests, but LFTs are available only to those showing symptoms
+- *Some examples that could indicate a 3:*
+    - Widespread lateral flow testing available to everyone (including asymptomatic people), and all positive LFTs will be followed up by a PCR test
 
 
 ### H3 - Contact tracing
@@ -212,6 +222,7 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
     - Ban on visitation from all non-essential personnel. No visitors are allowed unless in exceptional circumstances such as compassionate or end of life scenario
 
 
+
 ## General Interpretation Guidance 
  
 There are a few general rules our coders follow while collecting data:
@@ -224,10 +235,8 @@ There are a few general rules our coders follow while collecting data:
  - If coding a country with a contested government or multiple ruling parties, we follow the guidance to code the dominant tendency, and record the policies of the more formalised government, or the one which governs the larger proportion of the population
  - Besides the guidance for C8, we do not code non-COVID policies for other indicators, such as those resulting from civil war or natural disasters.
 
-  
-
-
  ## Interpretation guide changelog
+- 14 June 2021: V1.9 replaced 'federal government' with 'national government' in C8 detail about subnational data, and added guidance on LFT to H2
 - 24 May 2021: V1.8 added in new guidance for non-COVID policies to General
 - 5 May 2021: V1.7 added in new guidance for C8, C4, H7, H8, and General 
 - 15 March 2021: V1.6 added H8 guidance
