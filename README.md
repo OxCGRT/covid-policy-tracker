@@ -11,7 +11,6 @@
 - We are creating a mailing list to provide technical users with slightly more detailed release notes, and advance warning of changes to database structure. You can register for these email updates here: http://eepurl.com/hiMsdL
 - We have added data for 3 new indicators on vaccination policies and subnational data for China
 
-
 ---
 ---
 
