@@ -236,7 +236,6 @@ There are a few general rules our coders follow while collecting data:
  - If coding a country with a contested government or multiple ruling parties, we follow the guidance to code the dominant tendency, and record the policies of the more formalised government, or the one which governs the larger proportion of the population
  - Besides the guidance for C8, we do not code non-COVID policies for other indicators, such as those resulting from civil war or natural disasters.
 
-
  ## Interpretation guide changelog
 - 24 May 2021: V1.8 added in new guidance for non-COVID policies to General
 - 5 May 2021: V1.7 added in new guidance for C8, C4, H7, H8, and General 
