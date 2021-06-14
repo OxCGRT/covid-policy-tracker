@@ -1,6 +1,6 @@
 # Codebook for the Oxford Covid-19 Government Response Tracker
 
-***Codebook version 2.11 <br/>11 June 2021***
+***Codebook version 2.1 <br/>5 May 2021***
 
 This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)). The dataset contains 23 indicators and a miscellaneous notes field organised into five groups:
 - [C - containment and closure policies](#containment-and-closure-policies)
@@ -66,14 +66,6 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 | H8 | `H8_Protection of elderly people` | Record policies for protecting elderly people (as defined locally) in Long Term Care Facilities and/or the community and home setting | Ordinal scale | 0 - no measures <br/>1 - Recommended isolation, hygiene, and visitor restriction measures in LTCFs and/or elderly  people to stay at home <br/>2 - Narrow restrictions for isolation, hygiene in LTCFs, some limitations on external visitors and/or restrictions protecting elderly people at home <br/>3 - Extensive restrictions for isolation and hygiene in LTCFs, all non-essential external visitors prohibited, and/or all elderly people required to stay at home and not leave the home with minimal exceptions, and receive no external visitors <br/>Blank - no data | 
 | | `H8_Flag` | | Binary flag for geographic scope | 0 - targeted <br/>1- general <br/>Blank - no data |
 
-### Vaccination policies
-
-| ID | Name | Description | Measurement | Coding |
-| --- | --- | --- | --- | --- |
-| V1 | `V1_Vaccine prioritisation` | Reports the ranked position for different groups within a countries prioritisation plan | Rank order | 0 - no policy <br/>Universal/generally available  <br/> OR <br/> - Infants 0-4 yrs <br/>- Young people 5-16 yrs <br/> - General 16+ yrs <br/>- General 20+ yrs <br/>-General 25+ yrs <br/>- General 30+ yrs <br/>- General 35+ yrs <br/>- General 40+ yrs <br/>- General 45+ yrs <br/>- General 50+ yrs <br/>- General 55+ yrs <br/>-General 60+ yrs <br/>- General 65+ yrs <br/>- General 70+ yrs <br/>- General 75+ yrs <br/>- General 80+ yrs <br/>- At Risk 16+ yrs <br/>- At Risk 20+ yrs <br/>- At Risk 25+ yrs <br/>- At Risk 30+ yrs <br/>- At Risk 35+ yrs <br/>- At Risk 40+ yrs <br/>- At Risk 45+ yrs <br/>- At Risk 50+ yrs<br/>- At Risk 55+ yrs<br/>- At Risk 60+ yrs <br/>- At Risk 65+ yrs<br/>- At Risk 70+ yrs <br/>- At Risk 75+ yrs <br/>- At Risk 80+ yrs <br/>- Airport/Border/Airline Staf <br/>- Clinically vulnerable/chronic illness/significant underlying health condition (excluding elderly and disabled) <br/>- Crowded/communal living conditions (dormitories for migrant workers, temporary accommodations <br/>- Disabled People <br/>- Educators <br/>- Ethnic minorities <br/>- Factory workers <br/>- Frontline/essential workers (when subcategories not specified <br/>- Frontline retail workers <br/>- Healthcare workers/carers (excluding care home staff <br/>- Military <br/>- Other 'high contact' professions/groups (taxi drivers, security guards <br/>- People living with a vulnerable/shielding person or other priority grou <br/>- Police/ first responders <br/>- Pregnant people <br/>- Primary and secondary school students <br/>- Religious/Spiritual Leaders <br/>- Residents in an elderly care home <br/>- Staff working in an elderly care home <br/>- Tertiary education students
-| V2 | `V2_Vaccine eligibility/availability` | Record which categories of people – regardless of their position in a prioritised rollout plan – are currently receiving vaccines. | Ordinal scale | 0 - no policy <br/>Universal/generally available  <br/> OR <br/> - Infants 0-4 yrs <br/>- Young people 5-16 yrs <br/> - General 16+ yrs <br/>- General 20+ yrs <br/>-General 25+ yrs <br/>- General 30+ yrs <br/>- General 35+ yrs <br/>- General 40+ yrs <br/>- General 45+ yrs <br/>- General 50+ yrs <br/>- General 55+ yrs <br/>-General 60+ yrs <br/>- General 65+ yrs <br/>- General 70+ yrs <br/>- General 75+ yrs <br/>- General 80+ yrs <br/>- At Risk 16+ yrs <br/>- At Risk 20+ yrs <br/>- At Risk 25+ yrs <br/>- At Risk 30+ yrs <br/>- At Risk 35+ yrs <br/>- At Risk 40+ yrs <br/>- At Risk 45+ yrs <br/>- At Risk 50+ yrs<br/>- At Risk 55+ yrs<br/>- At Risk 60+ yrs <br/>- At Risk 65+ yrs<br/>- At Risk 70+ yrs <br/>- At Risk 75+ yrs <br/>- At Risk 80+ yrs <br/>- Airport/Border/Airline Staf <br/>- Clinically vulnerable/chronic illness/significant underlying health condition (excluding elderly and disabled) <br/>- Crowded/communal living conditions (dormitories for migrant workers, temporary accommodations <br/>- Disabled People <br/>- Educators <br/>- Ethnic minorities <br/>- Factory workers <br/>- Frontline/essential workers (when subcategories not specified <br/>- Frontline retail workers <br/>- Healthcare workers/carers (excluding care home staff <br/>- Military <br/>- Other 'high contact' professions/groups (taxi drivers, security guards <br/>- People living with a vulnerable/shielding person or other priority grou <br/>- Police/ first responders <br/>- Pregnant people <br/>- Primary and secondary school students <br/>- Religious/Spiritual Leaders <br/>- Residents in an elderly care home <br/>- Staff working in an elderly care home <br/>- Tertiary education students
-| V3 | `V3_Vaccine financial support` | Record how vaccines are funded for each category of people identified in V2 as currently receiving vaccines. | Ordinal scale | <br/> 1 - full cost borne by the individual (or through private health insurance) or no policy <br/>2 -  partially funded by government and individual pays nominal fee <br/>3 -  fully covered by government funding, FREE <br/>Blank - no data |
-
 
 ### Miscellaneous policies
 
@@ -81,22 +73,8 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 | --- | --- | --- | --- | --- |
 | M1 | `M1_Wildcard` | Record policy announcements that do not fit anywhere else | Free text notes field | Note unusual or interesting interventions that are worth flagging  |
 
-### Vaccination policies summary CSV data output 
-
-| ID | Name | Description | Measurement | CSummary data output |
-| --- | --- | --- | --- | --- |
-| V1 | `V1_Vaccine prioritisation (summary)` | Reports the existence of a prioritised plan for vaccine rollout | Ordinal scale| 0 - no plan <br/> 1 – a prioritised plan is in place <br/>2 – no prioritised plan; there is universal eligibility and availability
-| V1 | `V1_Vaccine prioritisation` | Record the ranked position for different groups within a countries prioritisation plan | Rank order | Blank – category not selected for prioritisation <br/> 1, 2, 3, 4…. – category has been selected for prioritisation; number represents the rank of prioritisation.  
-| V2 | `V2_Vaccine eligibility/availability (summary)` | Reports whether any categories of people are receiving vaccines | Ordinal scale | <br/> Blank – no data <br/> 0 – no categories  are receiving vaccines   <br/> 1 – vaccines are available to some categories
-| V2 | `V2_Vaccine eligibility/availability` | Record which categories of people – regardless of their position in a prioritised rollout plan – are currently receiving vaccines. | Ordinal (binary) scale | <br/> Blank – no data <br/> 0 – 0 – vaccines are not being made available to this category    <br/> 1- vaccines are being made available to this category
-| V3 | `V3_Vaccine financial support (summary)` | Reports the overall approach taken to vaccine funding – whether paid by the individual or the government. | Ordinal scale |  <br/> 0– no data <br/> 1 – full cost to the individual for all categories identified in V2 <br/> 2 – full cost to the individual for some categories identified in V2, some subsidy for other categories <br/> 3- partial funding by the government for all of the categories identified in V2 <br/> 4 – partial funding by the government for some categories identified in V2, full funding for other categories <br/> 5 – all categories fully funded by the government 
-| V3 | `V3_Vaccine financial support` | Record how vaccines are funded for each category of people identified in V2 as currently receiving vaccines. | Ordinal scale | <br/> 1 - full cost borne by the individual (or through private health insurance) or no policy <br/>2 -  partially funded by government and individual pays nominal fee <br/>3 -  fully covered by government funding
-
-
 
 ## Codebook changelog
-
-- 11 June 2021 v2.11 added vaccination policy data (V1-V3)
 - 5 May 2021 v2.10 added 'or all businesses open with alterations resulting in significant differences compared to non-Covid-19 operations' to C2 level 1
 - 18 March 2021 v2.9 added H8 'Protection of elderly people' indicator
 - 05 March 2021 v2.8 added 'non elderly' to definition of Clinically vulnerable groups' for H7
