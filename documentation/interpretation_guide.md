@@ -1,5 +1,5 @@
 # OxCGRT Coding Interpretation Guide
-***Version 1.8 <br/>Date: 24 May 2021***
+***Version 1.9 <br/>Date: 14 June 2021***
 
 This guide details the resolutions of frequently asked [codebook](codebook.md) interpretation queries, where indicators may be interpreted in different ways. This is in order to ensure consistency, and standardize coding across the database. Queries related specifically to subnational data are labelled as such.
 
@@ -229,7 +229,6 @@ There are a few general rules our coders follow while collecting data:
  
 - **Implementation not announcement:** We start coding a policy from the day the policy was implemented in practice, not the day it was announced.
 - **We report the most stringent government policy** with the highest ordinal value. If the most stringent policy is only present in a limited geographic area or sector, we use a binary flag variable to describe this scope and reflect whether the policy is targeted or general the binary flag model is described in detail here in the [codebook](codebook.md)
-- **We also report the most stringent policy with the highest ordinal value in place where there are different restrictions for people who have a vaccination/negative PCR test results/immunity pass, and those that do not.** Therefore the coding reflects the more stringent government policies in place for those who do not have an exemption. If anyone can turn up ‘at the door’, and get tested onsite with a rapid test to gain entry, we would not code this as a ‘required closure’, as anyone can ‘test out’ of restrictions easily. This policy must apply to all sectors within the indicator, and be a government policy, not that of a private business. If people can only gain entry with evidence of full vaccination, presence of antibodies, evidence of immunity, or a negative PCR test from a recent timeframe, then we code the restrictions in place for those who do not have this as the most stringent policy or a required closure.
 - **Notes and Web Archived links:** For every change we make in the database, we add a note, with a website link to where the information was found. In order to save the webpage that we gained the information from, we webarchive the link. This saves the page on the date that it was accessed to prevent it being lost. These may look like this http://web.archive.org/web/20200517163106/https://covid19.govt.nz/, or http://archive.vn/XifX8. 
  - The index methodology can be found [here](index_methodology.md)  detailing how the different indices are calculated
  - If there are stricter restrictions on a weekend, we record these stricter policies for just the Saturday and Sunday dates, and the less stringent ones on weekdays, so each data point accurately reflects the situation in that country on that given day
@@ -237,6 +236,7 @@ There are a few general rules our coders follow while collecting data:
  - Besides the guidance for C8, we do not code non-COVID policies for other indicators, such as those resulting from civil war or natural disasters.
 
  ## Interpretation guide changelog
+- 14 June 2021: V1.9 replaced 'federal government' with 'national government' in C8 detail about subnational data, and guidance on LFT to H2
 - 24 May 2021: V1.8 added in new guidance for non-COVID policies to General
 - 5 May 2021: V1.7 added in new guidance for C8, C4, H7, H8, and General 
 - 15 March 2021: V1.6 added H8 guidance
