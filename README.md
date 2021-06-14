@@ -1,5 +1,9 @@
 **UPDATE:**
 
+- We are creating a mailing list to provide technical users with slightly more detailed release notes, and advance warning of changes to database structure. You can register for these email updates here: http://eepurl.com/hiMsdL
+- We have added data for 3 new indicators on vaccination policies and subnational data for China
+
+
 <!---- We have published a new format for our indicators ([/data/OxCGRT_latest_combined.csv](data/OxCGRT_latest_combined.csv)) which combines our ordinal measures of policy strictness with their geographical scope. This is described [below](#getting-data-from-this-github-repository).--->
 <!----  Our main datasets in this repository also include Brazilian state data.--->
 <!----  we have published a new indicator for vaccine policy, H7
@@ -8,8 +12,7 @@
 <!----- We have updated our new academic citation for the project
 <!----- We have added a new indicator, H8 Protection of elderly people to our datasets
 
-- We are creating a mailing list to provide technical users with slightly more detailed release notes, and advance warning of changes to database structure. You can register for these email updates here: http://eepurl.com/hiMsdL
-- We have added data for 3 new indicators on vaccination policies and subnational data for China
+
 
 
 ---
