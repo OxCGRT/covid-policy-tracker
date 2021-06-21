@@ -1,6 +1,6 @@
 # Codebook for the Oxford Covid-19 Government Response Tracker
 
-***Codebook version 3.01 <br/>12 June 2021***
+***Codebook version 3.02 <br/>21 June 2021***
 
 This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)). The dataset contains 23 indicators and a miscellaneous notes field organised into five groups:
 - [C - containment and closure policies](#containment-and-closure-policies)
@@ -84,6 +84,7 @@ As explained in our [index methodology documentation](index_methodology.md), an 
 | M1 | `M1_Wildcard` | Record policy announcements that do not fit anywhere else | Free text notes field | Note unusual or interesting interventions that are worth flagging  |
 
 ## Codebook changelog
+- 21 June 2021 v3.02 edits to vaccine policy indicators table
 - 12 June 2021 v3.01 added section for vaccine policies
 - 5 May 2021 v2.10 added 'or all businesses open with alterations resulting in significant differences compared to non-Covid-19 operations' to C2 level 1
 - 18 March 2021 v2.9 added H8 'Protection of elderly people' indicator
