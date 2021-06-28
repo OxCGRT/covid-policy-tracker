@@ -1,6 +1,6 @@
 # Codebook for the Oxford Covid-19 Government Response Tracker
 
-***Codebook version 3.02 <br/>21 June 2021***
+***Codebook version 3.03 <br/>28 June 2021***
 
 This document is the authoritative codebook for the Oxford Covid-19 Government Response Tracker ([GitHub repo](https://github.com/OxCGRT/covid-policy-tracker), [university website](https://www.bsg.ox.ac.uk/covidtracker)). The dataset contains 23 indicators and a miscellaneous notes field organised into five groups:
 - [C - containment and closure policies](#containment-and-closure-policies)
