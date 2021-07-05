@@ -64,7 +64,7 @@ Note that the database only contains flag values if the indicator has a non-zero
 
 (_if v<sub>j,t</sub>=0 then the function F<sub>j</sub>-f<sub>j,t</sub> is also treated as 0, see paragraph above._)
 
-Our data is not always fully compelte and sometimes indicators are missing. We make the conservative assumption that an absence of data corresponds to a sub-index score (_I<sub>j,t</sub>_) of zero.
+Our data is not always fully complete and sometimes indicators are missing. We make the conservative assumption that an absence of data corresponds to a sub-index score (_I<sub>j,t</sub>_) of zero.
 
 Here is an explicit example of the calculation for a given country/territory on a single day:
 
