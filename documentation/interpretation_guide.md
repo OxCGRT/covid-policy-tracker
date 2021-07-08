@@ -236,7 +236,7 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
 If people receive the vaccine from their private healthcare insurance-run organisations (e.g. Israel’s HMO members) we code this depending on whether the government is still fully funding the vaccine, or requires copayment from the insurer (therefore not fully government funded). 
 If full government funding is available for a certain group, we code this as the default. We only code other options if they are the only ones available to individuals of that group.
 
-### V1 and 2- Category specific guidance 
+### V1 and V2- Category specific guidance 
 
 - Primary and secondary students, Tertiary education students
     - If a country specifies that students will be targeted, and **not** `5-15 yrs young people`, we only record the `Primary and secondary school students` or `Tertiary education students` categories
