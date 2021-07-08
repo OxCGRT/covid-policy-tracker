@@ -221,7 +221,7 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
     - Under its Emergency Powers Act, the Finnish government used its emergency powers to ban visitors from care institutions, health care units and hospitals, with some family exceptions on a case-by-case basis
     - Ban on visitation from all non-essential personnel. No visitors are allowed unless in exceptional circumstances such as compassionate or end of life scenario
 
-### V1- Vaccine Prioritisation
+### V1- Vaccine prioritisation
 
 - We code this from when the official priority groups plan is published, not from when potential categories are discussed informally.
 
