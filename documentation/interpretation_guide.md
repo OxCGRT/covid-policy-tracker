@@ -255,17 +255,17 @@ Here we record where categories have been substituted when category not listed i
 
 | OxCGRT Category  | Examples of country-designated categories that have resulted in this box being ticked  | 
 | --- | --- | 
-| Police/ first responders | Occupations important to functioning of society (IRL) <br/> Groups of persons who are of critical importance to the functioning of Singapore (SGP) <br/> Ambulance and paramedic staff (AUS) <br/> Emergency health  staff (FIN) <br/> Firefighters (FRA) <br/> Fire (AUS)
-| Disabled people  | People with a learning or neurological disability (GBR) <br/> People with Down’s Syndrome (PRT) <br/>  People in communal facilities with an increased risk of infection and outbreaks (for example homes for the handicapped) (CHE)
-| Border staff  | Key workers in essential jobs who cannot avoid high risk of exposure (IRL) <br/> Maritime and aviation (SGP)
-| Frontline retail workers   | Restaurant workers 
-| Frontline workers (when not otherwise specified)  | Other people aged 65-69 and key workers essential to the vaccine programme’ (IRL)  <br/> Workers identified as performing a critical function in society [unspecified] (DNK) <br/> Operators essential essential for the country's economic activities (FRA) <br/> Essential professions In this phase, people with essential social and/or economic profession are vaccinated (BEL) 
-| Tertiary education students   | University, college, or technical trade schools 
-| Educators  | University, college, or technical trade schools  <br/> Teachers in any level of school <br/> Instructors/professors in colleges and universities
-| Other high contact professions   | Disability care staff (AUS)
-| Ethnic minorities  | Aboriginal and Torres Strait Islander people > 55 (AUS) <br/> Indigenous populations (CAN)
-| Factory staff   | Meat processing staff (AUS)
-| Crowded/communal living conditions (dormitories for migrant workers, temporary accommodations)  | People in communal facilities with an increased risk of infection and outbreaks (with residents of mixed ages)  <br/> Migrant dormitories/crowded accommodation (SGP) <br/> People living or working in crowded settings (IRL)  <br/> Prison populations (ISR)  <br/> People who live in socially vulnerable situations, such as the homeless or the undocumented. (SWE) <br/>Homeless (KOR)  <br/> Vulnerable and precarious people (homeless…), living in communities (prisons, psychiatric establishments, homes) (FRA)  <br/> People in communal facilities with an increased risk of infection and outbreaks (with residents of mixed ages) (CHE) 
+| `Police/ first responders` | Occupations important to functioning of society (IRL) <br/> Groups of persons who are of critical importance to the functioning of Singapore (SGP) <br/> Ambulance and paramedic staff (AUS) <br/> Emergency health  staff (FIN) <br/> Firefighters (FRA) <br/> Fire (AUS)
+| `Disabled people`  | People with a learning or neurological disability (GBR) <br/> People with Down’s Syndrome (PRT) <br/>  People in communal facilities with an increased risk of infection and outbreaks (for example homes for the handicapped) (CHE)
+| `Border staff`  | Key workers in essential jobs who cannot avoid high risk of exposure (IRL) <br/> Maritime and aviation (SGP)
+| `Frontline retail workers`   | Restaurant workers 
+| `Frontline workers (when not otherwise specified)`  | Other people aged 65-69 and key workers essential to the vaccine programme’ (IRL)  <br/> Workers identified as performing a critical function in society [unspecified] (DNK) <br/> Operators essential essential for the country's economic activities (FRA) <br/> Essential professions In this phase, people with essential social and/or economic profession are vaccinated (BEL) 
+| `Tertiary education students`   | University, college, or technical trade schools 
+| `Educators`  | University, college, or technical trade schools  <br/> Teachers in any level of school <br/> Instructors/professors in colleges and universities
+| `Other high contact professions`   | Disability care staff (AUS)
+| `Ethnic minorities`  | Aboriginal and Torres Strait Islander people > 55 (AUS) <br/> Indigenous populations (CAN)
+| `Factory staff`   | Meat processing staff (AUS)
+| `Crowded/communal living conditions (dormitories for migrant workers, temporary accommodations)`  | People in communal facilities with an increased risk of infection and outbreaks (with residents of mixed ages)  <br/> Migrant dormitories/crowded accommodation (SGP) <br/> People living or working in crowded settings (IRL)  <br/> Prison populations (ISR)  <br/> People who live in socially vulnerable situations, such as the homeless or the undocumented. (SWE) <br/>Homeless (KOR)  <br/> Vulnerable and precarious people (homeless…), living in communities (prisons, psychiatric establishments, homes) (FRA)  <br/> People in communal facilities with an increased risk of infection and outbreaks (with residents of mixed ages) (CHE) 
 
 ## General Interpretation Guidance 
  
