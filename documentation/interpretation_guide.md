@@ -1,5 +1,5 @@
 # OxCGRT Coding Interpretation Guide
-***Version 1.9 <br/>Date: 14 June 2021***
+***Version 1.10 <br/>Date: 8 July 2021***
 
 This guide details the resolutions of frequently asked [codebook](codebook.md) interpretation queries, where indicators may be interpreted in different ways. This is in order to ensure consistency, and standardize coding across the database. Queries related specifically to subnational data are labelled as such.
 
@@ -9,7 +9,7 @@ Updates to this coding interpretation are recorded in the [changelog](#Interpret
 
 ### C1 - School Closures
 
-- In October the defintion of C1 was expanded at level 1, to include both recommendations and significant differneces compared to non-COVID 19 operations. This means even in the absence of a recommendation to close, we may report a jurisdiction at C1=1 if they impose social distancing, capacity limitations or other public health precautions that result in significant differences as compared to usual, non-Covid-19 operations. 
+- In October 2020 the definition of C1 was expanded at level 1, to include both recommendations and significant differences compared to non-COVID 19 operations. This means even in the absence of a recommendation to close, we may report a jurisdiction at C1=1 if they impose social distancing, capacity limitations or other substantial public health precautions that result in significant differences as compared to usual, non-Covid-19 operations. For example, hybrid in-person/online learning models to reduce the number of individuals in a classroom could justify a code of 1. 
 - School closures *and* university closures are captured in C1. 
 - Different governments use different wording (e.g. soft-closing, recommend, strongly recommend, recommend without restricting civil liberty), so we standardize what these mean in practice. If the situation is that all schools are closed, or policies in place make it impossible for them to open and meet these requirements, then that would count as a full closure. 
 - Childcare, nurseries, language courses, and driving schools, do not count as educational closures. These are recorded as workplaces under C2
@@ -20,7 +20,7 @@ Updates to this coding interpretation are recorded in the [changelog](#Interpret
 - If teachers are back in school to prepare for the new school year, but no students are allowed back, this would not alter the coding, as no students are present in person for education.
 - If the situation is that schools are in theory allowed to open, but all schools remain closed, or policies in place make it impossible for them to open and meet these requirements, then that would count as a full closure.
 - If individual school districts have the authority to decide closures/openings, we generally record policies conservatively with a ’targeted’ flag, as recording ‘general’ policies would require a high level of confidence that all schools in a jurisdiction are closed. If the state/nation is transitioning from a period of state or nationally induced total closure (3G) to giving individual districts the authority to choose, and some districts still follow the stricter policy, this would usually be represented as 3T. 
-- We take account of summer school openings. If schools have been closed (3) but then some summer school is allowed, the value would change (likely 3T if some school districts remain totally closed, or a 2G if summer school has a ‘general’ country/territory wide scope). 
+- We take account of summer school openings. If schools have been closed (3) but then some summer school is allowed, the value would change (likely 3T if some school districts remain totally closed, or a 2G if summer school has a ‘general’ country/territory wide scope). Summer school or other vacation-based programming includes substantial school-run educational programming such as entrance examination classes, remedial classes, or summer term courses, but does not include more peripheral activities such as recreational summer camps. 
 - If a narrowly defined list of university courses which rely on essential in-person teaching, for example medical programs, are permitted to operate as an exemption, but all other in-person university teaching is cancelled, we treat this as a closure of universities.
 
 ###  C2- Workplace closing
@@ -221,7 +221,52 @@ Sometimes governments make ambiguous funding announcements (where it is not clea
     - Under its Emergency Powers Act, the Finnish government used its emergency powers to ban visitors from care institutions, health care units and hospitals, with some family exceptions on a case-by-case basis
     - Ban on visitation from all non-essential personnel. No visitors are allowed unless in exceptional circumstances such as compassionate or end of life scenario
 
+### V1- Vaccine Prioritisation
 
+- We code this from when the official priority groups plan is published, not from when potential categories are discussed informally
+
+### V2- Vaccine eligibility/availability 
+
+- We select categories in V2 when there is evidence from anywhere within a country/region/territory that this group is being vaccinated. This logic **differs** from the logic currently used to code H7, where we only code a new ordinal level when this is the situation nationally, for at least 20% of the target group.We may re-code H7 in the future in order to align these two approaches
+- If V2 eligibility/availability and therefore access to vaccines is universal, we select all general ages above 16 in V2. if the vaccine is approved for additional groups, such as infants 0-4, this can then be added when the policy comes into effect
+- If vaccination centres are offering vaccinations to people who walk in, if there is excess capacity, and there is evidence of this being a widespread policy occurring in multiple locations in a consistent manner, we code this under V2 using the relevant age category. If this is open to anyone, we code this as all of the 16+ general age categories. If this is only available to a specific group, we code that group. If this is very sparse and ad-hoc, with only evidence for example from one centre only, we do not code this, but add detail in the note.
+
+### V3- Vaccine financial support
+
+If people receive the vaccine from their private healthcare insurance-run organisations (e.g. Israel’s HMO members) we code this depending on whether the government is still fully funding the vaccine, or requires copayment from the insurer (therefore not fully government funded). 
+If full government funding is available for a certain group, we code this as the default. We only code other options if they are the only ones available to individuals of that group.
+
+### V1 and 2- Category specific guidance 
+
+- Primary and secondary students, Tertiary education students
+    - If a country specifies that students will be targeted, and **not** `5-15 yrs young people`, we only record the `Primary and secondary school students` or `Tertiary education students` categories
+    - If all young people in an age group are prioritised, we would report the age group (eg. `0-4 yrs infants`, `5-15 yrs young people`) and would not record anything for the students categories. We only include the students categories if they are specifically prioritised separately- not inferring one from the other
+- Frontline workers- We **only** record `Frontline/essential workers (when subcategories not specified)` if there has been a vague/ambiguous reference to frontline or essential workers without specifying discrete groups. If specific groups (e.g. `Police`) _are_ listed, we select the best fitting category for them based on the ‘Best fit’ table, and include in the notes section which groups specifically were targeted. 
+- Other high contact professions- this category is used we include in the notes section which groups specifically were targeted under this category- for example taxi drivers or public transport operators.
+- Clinically vulnerable and at risk- ‘Clinically vulnerable’ represents people who live with illnesses and conditions which place them on the prioritisation list. These may include those who have had an organ transplant, people undergoing chemotherapy, or have a severe lung condition, for example. Where these cases and examples are clearly defined and evidence shows that some of these groups are being vaccinated -  we select the `Clinically Vulnerable/chronic illness/significant underlying health condition` category, even if the eligible conditions are different from the examples given above.  The age-related `At risk` categories are used for groups that are not extremely vulnerable, but still have comorbidities and underlying health conditions that make them eligible for vaccination sooner. 
+- We report the age ranges which are mentioned in the plan. If the lowest age that can receive a vaccine (age floor) is mentioned, we record all ages above this which are part of this (e.g. if all over 70s are eligible, we report `General 70-74`, `Genera 75-79`, and `General 80+`). If specific age ranges are mentioned, we only select these- e.g. `General 25-29` and `General 40-44`
+- If the vaccine is only available to people `at risk` in a certain age group, but then becomes generally available to all people in that age group, we stop recording the `At risk` variable and start recording the `General` variable. E.g. If `General 60+` is recorded we do not record `At risk 60+` as it is a subset of the ‘general’ population. However if the V3 funding arrangements are different for `At risk` people compared to the `General` population, then we will still report both separately at V2. 
+- Missing categories- If there is a missing category (that is, a country specifies a priority group that does not obviously fit into our list of groups), our data collectors have two options:
+  - *Option A*: Best Fit - Use the ‘Best fit’ table below to decide which category to use as a proxy for this to ensure standardization. We will also record this in detail in the notes.
+  - *Option B*: Do not record - If the group is not on the list in the portal, and there is not a suitable best fit, we exclude it from V1/V2  but ensure the note contains the true list
+
+### Vaccination best fit table for categories
+ 
+Here we record where categories have been substituted when category not listed in V1/2 for standardization of ‘best fit’ 
+
+| OxCGRT Category  | Examples of country-designated categories that have resulted in this box being ticked  | 
+| --- | --- | 
+| Police/ first responders | Occupations important to functioning of society (IRL) <br/> Groups of persons who are of critical importance to the functioning of Singapore (SGP) <br/> Ambulance and paramedic staff (AUS) <br/> Emergency health  staff (FIN) <br/> Firefighters (FRA) <br/> Fire (AUS)
+| Disabled people  | People with a learning or neurological disability (GBR) <br/> People with Down’s Syndrome (PRT) <br/>  People in communal facilities with an increased risk of infection and outbreaks (for example homes for the handicapped) (CHE)
+| Border staff  | Key workers in essential jobs who cannot avoid high risk of exposure (IRL) <br/> Maritime and aviation (SGP)
+| Frontline retail workers   | Restaurant workers 
+| Frontline workers (when not otherwise specified)  | Other people aged 65-69 and key workers essential to the vaccine programme’ (IRL)  <br/> Workers identified as performing a critical function in society [unspecified] (DNK) <br/> Operators essential essential for the country's economic activities (FRA) <br/> Essential professions In this phase, people with essential social and/or economic profession are vaccinated (BEL) 
+| Tertiary education students   | University, college, or technical trade schools 
+| Educators  | University, college, or technical trade schools  <br/> Teachers in any level of school <br/> Instructors/professors in colleges and universities
+| Other high contact professions   | Disability care staff (AUS)
+| Ethnic minorities  | Aboriginal and Torres Strait Islander people > 55 (AUS) <br/> Indigenous populations (CAN)
+| Factory staff   | Meat processing staff (AUS)
+| Crowded/communal living conditions (dormitories for migrant workers, temporary accommodation)  | People in communal facilities with an increased risk of infection and outbreaks (with residents of mixed ages)  <br/> Migrant dormitories/crowded accommodation (SGP) <br/> People living or working in crowded settings (IRL)  <br/> Prison populations (ISR)  <br/> People who live in socially vulnerable situations, such as the homeless or the undocumented. (SWE) <br/>Homeless (KOR)  <br/> Vulnerable and precarious people (homeless…), living in communities (prisons, psychiatric establishments, homes) (FRA)  <br/> People in communal facilities with an increased risk of infection and outbreaks (with residents of mixed ages) (CHE) 
 
 ## General Interpretation Guidance 
  
@@ -231,11 +276,13 @@ There are a few general rules our coders follow while collecting data:
 - **We report the most stringent government policy** with the highest ordinal value. If the most stringent policy is only present in a limited geographic area or sector, we use a binary flag variable to describe this scope and reflect whether the policy is targeted or general the binary flag model is described in detail here in the [codebook](codebook.md)
 - **Notes and Web Archived links:** For every change we make in the database, we add a note, with a website link to where the information was found. In order to save the webpage that we gained the information from, we webarchive the link. This saves the page on the date that it was accessed to prevent it being lost. These may look like this http://web.archive.org/web/20200517163106/https://covid19.govt.nz/, or http://archive.vn/XifX8. 
  - The index methodology can be found [here](index_methodology.md)  detailing how the different indices are calculated
- - If there are stricter restrictions on a weekend, we record these stricter policies for just the Saturday and Sunday dates, and the less stringent ones on weekdays, so each data point accurately reflects the situation in that country on that given day
- - If coding a country with a contested government or multiple ruling parties, we follow the guidance to code the dominant tendency, and record the policies of the more formalised government, or the one which governs the larger proportion of the population
- - Besides the guidance for C8, we do not code non-COVID policies for other indicators, such as those resulting from civil war or natural disasters.
+ - **If there are stricter restrictions on a weekend**, we record these stricter policies for just the Saturday and Sunday dates, and the less stringent ones on weekdays, so each data point accurately reflects the situation in that country on that given day
+ - **If coding a country with a contested government or multiple ruling parties**, we follow the guidance to code the dominant tendency, and record the policies of the more formalised government, or the one which governs the larger proportion of the population
+ - **We do not code non-COVID policies for other indicators besides the guidance for C8**, such as those resulting from civil war or natural disasters.
+ - **Where vaccination and testing exemptions are in place we report the most stringent policy**. Exemptions may include less stringent restrictions for people who have evidence of COVID-19 vaccination, a negative PCR test, or of immunity). Therefore the coding reflects the more stringent government policies applied to people who do not have an exemption (ie. usually a required closure or behaviour). The only time we would report the lower policy is if anyone can arrive and get tested onsite with a rapid test to gain entry. We would not code this as a required closure, as anyone can ‘test out’ of restrictions easily. Such at-the-door testing must apply to all sectors within the indicator, and be a government policy, not that of a private business. 
 
  ## Interpretation guide changelog
+- 8 July 2021: V1.10 added guidance for vaccination/exemptions coding, added Vaccination policy interpretation guidance, edits to C1 for school holidays
 - 14 June 2021: V1.9 replaced 'federal government' with 'national government' in C8 detail about subnational data, and added guidance on LFT to H2
 - 24 May 2021: V1.8 added in new guidance for non-COVID policies to General
 - 5 May 2021: V1.7 added in new guidance for C8, C4, H7, H8, and General 
