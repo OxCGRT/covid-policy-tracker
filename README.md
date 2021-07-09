@@ -25,7 +25,7 @@ This is a project from the [Blavatnik School of Government](www.bsg.ox.ac.uk). M
 ---
 #### Citing our data
 
-Our data is made available free to use for any purpose under a Creative Commons CC BY 4.0 license (see: [our license](https://github.com/OxCGRT/covid-policy-tracker/blob/master/LICENSE.txt), [summary at Creative Commons](https://creativecommons.org/licenses/by/4.0/)), this means you must give appropriate credit and link back to our original work.
+Our data is made available free to use for any purpose under a Creative Commons CC BY 4.0 license (see: [our license](https://github.com/OxCGRT/covid-policy-tracker/blob/master/LICENSE.txt), and a [summary of CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) at Creative Commons), this means you must give appropriate credit and link back to our original work. Here are three suggested ways to cite our work:
 
 - _Recommended reference for academic publications_: Thomas Hale, Noam Angrist, Rafael Goldszmidt, Beatriz Kira, Anna Petherick, Toby Phillips, Samuel Webster, Emily Cameron-Blake, Laura Hallas, Saptarshi Majumdar, and Helen Tatlow. (2021). “A global panel database of pandemic policies (Oxford COVID-19 Government Response Tracker).” Nature Human Behaviour. https://doi.org/10.1038/s41562-021-01079-8
 - _Short credit for media use (CC BY 4.0 License)_: Oxford COVID-19 Government Response Tracker, Blavatnik School of Government, University of Oxford.
